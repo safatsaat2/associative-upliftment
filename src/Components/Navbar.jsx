@@ -20,7 +20,7 @@ const Navbar = () => {
 
 
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="pt-6">
       {({ open }) => (
         <>
           <div className="lg:mx-[78px] max-w-7xl px-2 sm:px-2 lg:px-8">

@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div className="lg:flex items-center pt-20 gap-x-6">
+        <div className="lg:flex items-center mt-20 gap-x-6">
             <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" />
             <div>
                 <p className="pb-2">
