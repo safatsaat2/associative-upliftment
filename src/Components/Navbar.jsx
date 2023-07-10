@@ -23,9 +23,9 @@ const Navbar = () => {
     <Disclosure as="nav" className="">
       {({ open }) => (
         <>
-          <div className="mx-[78px] max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="lg:mx-[78px] max-w-7xl px-2 sm:px-2 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className=" inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex lg:items-center w-full lg:justify-between sm:items-stretch sm:justify-start">
+              <div className="flex  w-full items-center sm:items-stretch justify-between">
                 <div className="flex  items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
@@ -58,7 +58,7 @@ const Navbar = () => {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-black hover:bg-black hover:text-white",
+                            : "text-[#414141] hover:bg-black hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -69,7 +69,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div>
-                    <button className='bg-black text-white rounded-lg w-[217px] h-[48px]'>Get Started</button>
+                    <button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      : "text-[#414141] hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
