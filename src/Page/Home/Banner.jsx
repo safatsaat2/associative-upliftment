@@ -9,8 +9,8 @@ const Banner = () => {
                     <p className="text-white text-[20px] w-full lg:w-[685px] pb-4">You just give your product information. We will arrange it and present it to the audience.</p>
                     <button className='bg-white text-black rounded-lg lg:w-[217px] h-[48px] font-semibold'>Get Started</button>
                 </div>
-                <div>
-                    <img className="w-full" src="https://i.ibb.co/Zzr7whS/image-3.png" alt="" />
+                <div data-aos="zoom-in-up" data-aos-duration="1000"> 
+                    <img  className="w-full" src="https://i.ibb.co/Zzr7whS/image-3.png" alt="" />
                 </div>
             </div>
         </div>

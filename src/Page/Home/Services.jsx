@@ -41,15 +41,15 @@ const Services = () => {
   ];
   return (
     <div className="mt-20">
-      <h1 className="text-[64px] font-semibold text-center leading-[135%]">
+      <h1 data-aos="zoom-in-up" data-aos-duration="1000" className="text-[64px] font-semibold text-center leading-[135%]">
         Our Services
       </h1>
-      <p className="text-xl text-[#414141] leading-[145%] mt-4 mb-10 text-center">
+      <p data-aos="zoom-in-up" data-aos-duration="1000" className="text-xl text-[#414141] leading-[145%] mt-4 mb-10 text-center">
         Delivering Exceptional Solutions
       </p>
       <div className="grid grid-cols-3 gap-x-[92px] gap-y-[75px]">
         {services.map((service) => (
-          <div className="shadow flex flex-col justify-center items-center" key={service.name}>
+          <div className="shadow flex flex-col justify-center items-center hover:-translate-y-2 duration-500" key={service.name}>
 
               <Icon className="text-center text-[80px] mt-[34px] mb-2" icon={service.icon} />
 
