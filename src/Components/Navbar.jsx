@@ -36,7 +36,7 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex  w-full items-center sm:items-stretch justify-between">
+              <div className="flex w-full items-center justify-between">
                 <div className="flex  items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
@@ -44,7 +44,7 @@ const Navbar = () => {
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
+                    className="hidden w-auto lg:block"
                     src="https://i.ibb.co/S09RC71/au-logo-02-1.png"
                     alt="Your Company"
                   />
@@ -69,7 +69,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div>
-                    <Link to='login'><button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button></Link>
+                    <Link to='/signup'><button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button></Link>
                 </div>
               </div>
             </div>
