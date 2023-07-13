@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useContext, useState } from "react";
@@ -7,7 +7,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const SignUp = () => {
   const [phone, setPhone] = useState();
-  const {createUser} = useContext(AuthContext)
+  const {createUser, emailVerification} = useContext(AuthContext)
+  const navigate = useNavigate()
   const {
     register,
     handleSubmit,
@@ -19,7 +20,16 @@ const SignUp = () => {
     const email = data.email;
     const pass = data.password;
     createUser(email, pass)
-    .then(res => console.log(res))
+    .then(() =>
+      emailVerification()
+      .then(
+        res => {
+          navigate('/')
+        }
+      )
+      
+      )
+    .catch(err => console.log(err))
 
 
     console.log(email, pass, phone);
