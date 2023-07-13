@@ -1,7 +1,13 @@
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const SignUp = () => {
+  const [phone, setPhone] = useState();
+  const {createUser} = useContext(AuthContext)
   const {
     register,
     handleSubmit,
@@ -12,8 +18,11 @@ const SignUp = () => {
   const onSubmit = (data) => {
     const email = data.email;
     const pass = data.password;
+    createUser(email, pass)
+    .then(res => console.log(res))
 
-    console.log(email, pass);
+
+    console.log(email, pass, phone);
   };
   return (
     <div>
@@ -42,19 +51,73 @@ const SignUp = () => {
                     className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
                   />
                   {errors.email && (
-                    <span className="text-red-500">Name is required</span>
+                    <p className="text-red-500">Name is required</p>
                   )}
                 </div>
                 <div className="form-control my-10">
                   <p className="label mb-4">
                     <span className="label-text">Phone:</span>
                   </p>
-                  <input
-                    type="number"
-                    {...register("phone", { required: true })}
-                    placeholder="Provide Your Phone"
-                    className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
+                  <PhoneInput
+                    defaultCountry="US"
+                    placeholder="Enter phone number"
+                    value={phone}
+                    onChange={setPhone}
+                    countries={[
+                      "RU",
+                      "UA",
+
+                      "AU",
+                      "AT",
+
+                      "BY",
+                      "BE",
+                      "BO",
+
+                      "BG",
+                      "US",
+                      "GB",
+
+                      "CH",
+                      "SE",
+                      "ES",
+                      "ZA",
+                      "SI",
+                      "SK",
+
+                      "RO",
+                      "PT",
+                      "PL",
+                      "PE",
+                      "NO",
+                      "NZ",
+                      "NL",
+                      "MX",
+                      "LV",
+                      "KR",
+                      "KE",
+                      "JO",
+                      "JP",
+                      "JM",
+                      "IT",
+                      "IE",
+                      "IS",
+                      "HU",
+                      "GR",
+                      "DE",
+                      "GE",
+                      "FR",
+                      "FI",
+                      "FJ",
+                      "EE",
+                      "DK",
+                      "CZ",
+                      "CR",
+                      "CA",
+                    ]}
+                    className="border text-trans"
                   />
+
                   {errors.email && (
                     <span className="text-red-500">Phone is required</span>
                   )}
@@ -70,7 +133,7 @@ const SignUp = () => {
                     className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
                   />
                   {errors.email && (
-                    <span className="text-red-500">Email is required</span>
+                    <p className="text-red-500">Email is required</p>
                   )}
                 </div>
                 <div className="form-control">
@@ -80,18 +143,34 @@ const SignUp = () => {
                   <input
                     type="password"
                     {...register("password", {
-                        required: true,
-                        minLength: 6,
-                        maxLength: 20,
-                        pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/
+                      required: true,
+                      minLength: 6,
+                      maxLength: 20,
+                      pattern:
+                        /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                     })}
                     placeholder="Provide Your Password"
                     className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
                   />
-                  {errors.password?.type === 'required' && <p className="text-red-600">Password is required</p>}
-                                {errors.password?.type === 'minLength' && <p className="text-red-600">Password must be 6 characters</p>}
-                                {errors.password?.type === 'maxLength' && <p className="text-red-600">Password must be less than 20 characters</p>}
-                                {errors.password?.type === 'pattern' && <p className="text-red-600">Password must have one Uppercase one lower case, one number and one special character.</p>}
+                  {errors.password?.type === "required" && (
+                    <p className="text-red-600">Password is required</p>
+                  )}
+                  {errors.password?.type === "minLength" && (
+                    <p className="text-red-600">
+                      Password must be 6 characters
+                    </p>
+                  )}
+                  {errors.password?.type === "maxLength" && (
+                    <p className="text-red-600">
+                      Password must be less than 20 characters
+                    </p>
+                  )}
+                  {errors.password?.type === "pattern" && (
+                    <p className="text-red-600">
+                      Password must have one Uppercase one lower case, one
+                      number and one special character.
+                    </p>
+                  )}
                 </div>
                 <div className="form-control mt-6">
                   <input
