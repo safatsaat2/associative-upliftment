@@ -2,6 +2,8 @@
 import { Disclosure, } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
+import { useContext } from 'react';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -17,8 +19,15 @@ function classNames(...classes) {
 
 const Navbar = () => {
 
+const {user, logOut} = useContext(AuthContext)
 
-
+const signOut = () => {
+  logOut()
+  .then(() => {
+    alert(' User Has Log out')
+  })
+}
+ 
   return (
     <Disclosure as="nav" className="pt-6">
       {({ open }) => (
@@ -69,7 +78,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div>
-                    <Link to='/signup'><button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button></Link>
+                    {user ? <><button onClick={signOut} className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Logout</button></> : <><Link to='/signup'><button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button></Link></>}
                 </div>
               </div>
             </div>
