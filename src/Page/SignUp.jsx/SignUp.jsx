@@ -42,8 +42,8 @@ const SignUp = () => {
       <div>
         <div className="lg:bg-[url('https://i.ibb.co/N12vB7w/Vector-1.png')] bg-no-repeat bg-bottom  ">
           <div className="bg-no-repeat bg-top bg-[url('https://i.ibb.co/FxPRyv5/au-logo-02-3.png')]">
-            <h1 className="text-center text-[100px] my-20">
-              Associative Upliftment
+            <h1 className="text-center font-bold text-[80px] my-20">
+            International Associative Upliftment (IAU)
             </h1>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-x-20 ">
               <img
