@@ -6,7 +6,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { useContext } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'Service', href: '#' },
   { name: 'About', href: '#' },
   { name: 'Contact', href: '#' },

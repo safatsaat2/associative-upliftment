@@ -1,9 +1,8 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Icon } from "@iconify/react";
-import Swal from "sweetalert2";
 
 const Login = () => {
   const [modal, setModal] = useState(false);
