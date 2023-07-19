@@ -1,33 +1,29 @@
-
-import { Disclosure, } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom';
-import { AuthContext } from '../Provider/AuthProvider';
-import { useContext } from 'react';
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import { useContext } from "react";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Service', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
-]
+  { name: "Home", href: "/" },
+  { name: "Service", href: "services" },
+  { name: "About", href: "about" },
+  { name: "Contact", href: "#" },
+];
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-
+  return classes.filter(Boolean).join(" ");
+}
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
 
-const {user, logOut} = useContext(AuthContext)
+  const signOut = () => {
+    logOut().then(() => {
+      alert(" User Has Log out");
+    });
+  };
 
-const signOut = () => {
-  logOut()
-  .then(() => {
-    alert(' User Has Log out')
-  })
-}
- 
   return (
     <Disclosure as="nav" className="pt-6">
       {({ open }) => (
@@ -78,7 +74,25 @@ const signOut = () => {
                   </div>
                 </div>
                 <div>
-                    {user ? <><button onClick={signOut} className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Logout</button></> : <><Link to='/signup'><button className='bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]'>Get Started</button></Link></>}
+                  {user ? (
+                    <>
+                     <Link to='dashboard' className="text-[#414141] hover:bg-black hover:text-white mr-4 rounded-md px-3 py-2 text-sm font-medium">Dashboard</Link>
+                      <button
+                        onClick={signOut}
+                        className="bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]"
+                      >
+                        Logout
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <Link to="/signup">
+                        <button className="bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]">
+                          Get Started
+                        </button>
+                      </Link>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
