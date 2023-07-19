@@ -8,7 +8,8 @@ import Swal from "sweetalert2";
 
 const SignUp = () => {
   const [phone, setPhone] = useState();
-  const { createUser, emailVerification, user, logOut } = useContext(AuthContext);
+  const { createUser, emailVerification, user, logOut, updateUser } =
+    useContext(AuthContext);
   const navigate = useNavigate();
   const {
     register,
@@ -18,24 +19,30 @@ const SignUp = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    const number = data.number;
+    const name = data.name;
     const email = data.email;
     const pass = data.password;
     createUser(email, pass)
-      .then(() =>
-      {
-        logOut()
+      .then(() => {
         emailVerification().then(() => {
-          navigate("/login");
-          Swal.fire('Check your email to verify') 
-        })
-      }
-      )
+          updateUser(name, number).then(() => {
+            logOut();
+            navigate("/login");
+            Swal.fire("Check your email to verify");
+          });
+        });
+      })
       .catch((err) => console.log(err));
 
-    console.log(email, pass, phone);
+    console.log(email, pass, number);
   };
   if (user) {
-    return <div className="w-full h-full mx-auto my-auto">You are Already sign in!!</div>;
+    return (
+      <div className="w-full h-full mx-auto my-auto">
+        You are Already sign in!!
+      </div>
+    );
   }
   {
     return (
@@ -43,7 +50,7 @@ const SignUp = () => {
         <div className="lg:bg-[url('https://i.ibb.co/N12vB7w/Vector-1.png')] bg-no-repeat bg-bottom  ">
           <div className="bg-no-repeat bg-top bg-[url('https://i.ibb.co/FxPRyv5/au-logo-02-3.png')]">
             <h1 className="text-center font-bold text-[80px] my-20">
-            International Associative Upliftment (IAU)
+              International Associative Upliftment (IAU)
             </h1>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-x-20 ">
               <img
@@ -75,6 +82,7 @@ const SignUp = () => {
                     <PhoneInput
                       defaultCountry="US"
                       placeholder="Enter phone number"
+                      {...register("number", { required: true })}
                       value={phone}
                       onChange={setPhone}
                       countries={[
