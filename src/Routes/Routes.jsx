@@ -10,6 +10,7 @@ import Services from "../Page/Home/Services";
 import Footer from "../Page/Home/Footer";
 import About from "../Page/Home/About";
 import Dashboard from "../Page/Dashboard/Dashboard";
+import DashServices from "../Page/Dashboard/DashServices";
 
 
 export const router = createBrowserRouter([
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
     {
       path:'/dashboard',
       element:<Dashboard/>
+    },
+    {
+      path:'/dashboard/services',
+      element:<DashServices/>
     },
   ]);
 
