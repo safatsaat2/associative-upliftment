@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-number-input";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 const SignUp = () => {
   const [phone, setPhone] = useState();
@@ -27,9 +28,12 @@ const SignUp = () => {
       .then(() => {
         emailVerification().then(() => {
           updateUser(name, number).then(() => {
-            logOut();
-            navigate("/login");
-            Swal.fire("Check your email to verify");
+            const user = { name, number, email, verify: false };
+            axios.post("http://localhost:7000/users", user).then(() => {
+              logOut();
+              navigate("/login");
+              Swal.fire("Check your email to verify");
+            });
           });
         });
       })

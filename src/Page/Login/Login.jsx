@@ -30,12 +30,11 @@ const Login = () => {
         }
       })
       .catch((err) => console.log(err));
-    console.log(email, pass);
   };
 
   const againVerify = () => {
     emailVerification().then(() => {
-      setModal(!modal)
+      setModal(false)
     })
   }
 
