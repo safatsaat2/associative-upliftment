@@ -54,7 +54,7 @@ const DashServices = () => {
       <div className="w-full lg:w-3/4 bg-slate-100 ">
         <Dashboardtitle/>
         <div className="my-20 mx-4">
-      <div className="grid grid-cols-3 gap-x-[92px] gap-y-[75px] max-w-7xl mx-auto">
+      <div className="grid grid-cols-3 gap-x-10 gap-y-10 max-w-7xl mx-auto">
         {services.map((service) => (
           <>
             <div

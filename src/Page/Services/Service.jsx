@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import Footer from "../Home/Footer";
 
 const Service = () => {
+  
+ const [value, setValue] = useState('')
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
   console.log(id);
@@ -12,7 +14,14 @@ const Service = () => {
       .then((res) => res.json())
       .then((data) => setServicesData(data));
   }, []);
-
+  const submit = (event) =>{
+    event.preventDefault()
+     console.log(value)
+  }
+  const handleChange =(e) =>{
+    const value = e.target.value
+    setValue(value)
+  }
   const [filtered] = servicesData.filter((data) => data.id === id);
   console.log(filtered);
 
@@ -52,7 +61,7 @@ const Service = () => {
         </div>
         {/* Open the modal using ID.showModal() method */}
         <dialog id="my_modal_2" className="modal">
-          <form method="dialog" className="modal-box py-20">
+          <form onSubmit={submit} method="dialog" className="modal-box py-20">
             <h3 className="font-bold text-2xl text-center">
               {filtered?.title} Specialist Team
             </h3>
@@ -65,7 +74,8 @@ const Service = () => {
                       name="radio-10"
                       value="30"
                       className="radio checked:bg-black-500"
-                      checked
+                      onChange={handleChange}
+                      
                     />
                     <p className="label-text">Day</p>
                   </div>
@@ -77,7 +87,7 @@ const Service = () => {
                       name="radio-10"
                       value="150"
                       className="radio checked:bg-black-500"
-                      checked
+                      onChange={handleChange}
                     />
                     <p className="label-text">Week</p>
                   </div>
@@ -89,7 +99,7 @@ const Service = () => {
                       name="radio-10"
                       value="600"
                       className="radio checked:bg-black-500"
-                      checked
+                      onChange={handleChange}
                     />
                     <p className="label-text">Month</p>
                   </div>
@@ -99,9 +109,9 @@ const Service = () => {
                     <input
                       type="radio"
                       name="radio-10"
-                      value="30"
+                      value={value}
                       className="radio checked:bg-black-500"
-                      checked
+                      onChange={handleChange}
                     />
                     <p className="label-text">Others</p>
                   </div>
@@ -111,10 +121,14 @@ const Service = () => {
                 <p className="mt-6">$30</p>
                 <p className="mt-6">$150</p>
                 <p className="mt-6">$600</p>
+                <div className="form-control">
                 <input
                   className="border w-[190px] border-black rounded-lg mt-6"
+                  name="others"
                   type="text"
+                  onChange={handleChange}
                 />
+                </div>
               </div>
             </div>
             <div className="flex justify-center mt-6">
