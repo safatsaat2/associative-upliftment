@@ -1,9 +1,6 @@
 import { Icon } from "@iconify/react";
-import DashNav from "./DashNav";
-import Dashboardtitle from "./Dashboardtitle";
 
 const DashServices = () => {
-
   const services = [
     {
       id: "1",
@@ -49,11 +46,7 @@ const DashServices = () => {
     },
   ];
   return (
-    <div className="lg:flex">
-      <DashNav />
-      <div className="w-full lg:w-3/4 bg-slate-100 ">
-        <Dashboardtitle/>
-        <div className="my-20 mx-4">
+    <div className="my-10 mx-4">
       <div className="grid grid-cols-3 gap-x-10 gap-y-10 max-w-7xl mx-auto">
         {services.map((service) => (
           <>
@@ -151,9 +144,6 @@ const DashServices = () => {
         </form>
       </dialog>
     </div>
-      </div>
-    </div>
-    
   );
 };
 

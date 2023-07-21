@@ -1,6 +1,4 @@
 import axios from "axios";
-import DashNav from "./DashNav";
-import Dashboardtitle from "./Dashboardtitle";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -13,11 +11,7 @@ const DashNewOrder = () => {
         setOrders(data)
     })
   return (
-    <div className="lg:flex">
-      <DashNav />
-      <div className="w-full lg:w-3/4 bg-slate-100 ">
-        <Dashboardtitle />
-        <div className="my-20 mx-4">
+        <div className="my-10 mx-4">
             <div className="overflow-x-auto">
               <table className="table">
                 {/* head */}
@@ -43,10 +37,7 @@ const DashNewOrder = () => {
                 </tbody>
               </table>
             </div>
-          
         </div>
-      </div>
-    </div>
   );
 };
 

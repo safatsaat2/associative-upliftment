@@ -12,6 +12,7 @@ import About from "../Page/Home/About";
 import Dashboard from "../Page/Dashboard/Dashboard";
 import DashServices from "../Page/Dashboard/DashServices";
 import DashNewOrder from "../Page/Dashboard/DashNewOrder";
+import DashLayout from "../Page/Dashboard/DashLayout";
 
 
 export const router = createBrowserRouter([
@@ -38,7 +39,7 @@ export const router = createBrowserRouter([
       ]
     },
     {
-      path:'/login',
+      path:'login',
       element: <Login/>
     },
     {
@@ -47,15 +48,23 @@ export const router = createBrowserRouter([
     },
     {
       path:'/dashboard',
-      element:<Dashboard/>
+      element:<DashLayout/>,
+      children:[
+        {
+          path:'',
+          element:<Dashboard/>
+        },
+        {
+          path:'services',
+          element:<DashServices/>
+        },
+        {
+          path:'neworder',
+          element: <DashNewOrder/>
+        }
+      ]
     },
-    {
-      path:'/dashboard/services',
-      element:<DashServices/>
-    },
-    {
-      path:'/dashboard/neworder',
-      element: <DashNewOrder/>
-    }
+    
+    
   ]);
 
