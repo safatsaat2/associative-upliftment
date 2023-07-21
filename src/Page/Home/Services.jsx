@@ -10,42 +10,42 @@ const Services = ({ children }) => {
     {
       id: "1",
       icon: "mdi:business-outline",
-      name: "Business Management",
+      name: "Business Management Specialist Team",
       description:
         "Business management refers to the process of overseeing and controlling various aspects of a business to achieve its objectives.",
     },
     {
       id: "2",
       icon: "nimbus:marketing",
-      name: "Digital Marketing",
+      name: "Digital Marketing Specialist Team",
       description:
         "Digital marketing refers to the practice of promoting products, services, or brands using digital channels and technologies.",
     },
     {
       id: "3",
       icon: "fluent:developer-board-16-regular",
-      name: "Web Development",
+      name: "Web Development Specialist Team",
       description:
         "Web development refers to the process of designing, creating, and maintaining websites and web applications.",
     },
     {
       id: "4",
       icon: "material-symbols:graphic-eq",
-      name: "Graphic Design",
+      name: "Graphic Design Specialist Team",
       description:
         "Graphic design is the art and practice of creating visual content using various elements such as typography, images, illustrations, and colors.",
     },
     {
       id: "5",
       icon: "mdi:email-sync-outline",
-      name: "Email marketing",
+      name: "Email marketing Specialist Team",
       description:
         "Email marketing refers to the use of email to promote products, services, or brands and to engage with a target audience.",
     },
     {
       id: "6",
       icon: "dashicons:editor-video",
-      name: "Video Editor",
+      name: "Video Editor Specialist Team",
       description:
         "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
     },
@@ -78,7 +78,7 @@ const Services = ({ children }) => {
                 icon={service.icon}
               />
 
-              <h3 className="text-2xl font-semibold text-center mb-4">
+              <h3 className="text-lg font-semibold text-center mb-4">
                 {service.name}
               </h3>
               <p className="text-center px-5 text-[#414141] mb-[34px]">

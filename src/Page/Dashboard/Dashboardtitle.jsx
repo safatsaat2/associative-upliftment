@@ -4,7 +4,6 @@ import { useContext } from "react";
 
 const Dashboardtitle = () => {
     const { user } = useContext(AuthContext);
-  console.log(user);
   return (
     <div className="flex items-center justify-between mt-9">
       <div></div>

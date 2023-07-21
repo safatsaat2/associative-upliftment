@@ -11,6 +11,7 @@ import Footer from "../Page/Home/Footer";
 import About from "../Page/Home/About";
 import Dashboard from "../Page/Dashboard/Dashboard";
 import DashServices from "../Page/Dashboard/DashServices";
+import DashNewOrder from "../Page/Dashboard/DashNewOrder";
 
 
 export const router = createBrowserRouter([
@@ -52,5 +53,9 @@ export const router = createBrowserRouter([
       path:'/dashboard/services',
       element:<DashServices/>
     },
+    {
+      path:'/dashboard/neworder',
+      element: <DashNewOrder/>
+    }
   ]);
 

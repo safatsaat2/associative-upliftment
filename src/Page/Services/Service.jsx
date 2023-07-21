@@ -1,18 +1,19 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Home/Footer";
 import axios from "axios";
 import { AuthContext } from "../../Provider/AuthProvider";
+import moment from "moment/moment";
 
 const Service = () => {
   const {user} = useContext(AuthContext)
  const [value, setValue] = useState('')
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
+ 
 
-
-  console.log(id);
+  console.log();
   useEffect(() => {
     fetch("/public/services.json")
       .then((res) => res.json())
@@ -26,9 +27,12 @@ const Service = () => {
     const serviceName = filtered?.title;
     const price = value;
     const status = "";
-    const email = user?.email
+    const email = user?.email;
+    const date = moment().format('MMMM Do YYYY, h:mm:ss a');
+    const id = Math.floor((Math.random() * 100000))
+    
 
-    const order = {serviceName, price , status, email}
+    const order = {serviceName, price , status, email, date, id}
 
      axios.post('http://localhost:7000/orders', order)
      .then((res) =>{
@@ -84,7 +88,7 @@ const Service = () => {
         <dialog id="my_modal_2" className="modal">
           <form onSubmit={submit} method="dialog" className="modal-box py-20">
             <h3 className="font-bold text-2xl text-center">
-              {filtered?.title} Specialist Team
+              {filtered?.title}
             </h3>
             <div className="flex gap-x-20 mt-6 justify-center">
               <div>

@@ -21,9 +21,16 @@ const DashNav = () => {
         <p className="mt-10 text-md text-white font-medium cursor-pointer hover:bg-white hover:text-black mr-4 rounded-md px-3 py-2">
           Active Order
         </p>
+        <Link to= "neworder" onClick={toTop}>
+        <p className="mt-10 text-md text-white font-medium cursor-pointer hover:bg-white hover:text-black mr-4 rounded-md px-3 py-2">
+          New Order
+        </p>
+        </Link>
+        <Link to= "order" onClick={toTop}>
         <p className="mt-10 text-md text-white font-medium cursor-pointer hover:bg-white hover:text-black mr-4 rounded-md px-3 py-2">
           Orders
         </p>
+        </Link>
         <p className="mt-10 text-md text-white font-medium cursor-pointer hover:bg-white hover:text-black mr-4 rounded-md px-3 py-2">
           Your Offers
         </p>
