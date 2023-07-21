@@ -2,26 +2,47 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Home/Footer";
+import axios from "axios";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Service = () => {
-  
+  const {user} = useContext(AuthContext)
  const [value, setValue] = useState('')
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
+
+
   console.log(id);
   useEffect(() => {
     fetch("/public/services.json")
       .then((res) => res.json())
       .then((data) => setServicesData(data));
   }, []);
+
+
   const submit = (event) =>{
     event.preventDefault()
-     console.log(value)
+
+    const serviceName = filtered?.title;
+    const price = value;
+    const status = "";
+    const email = user?.email
+
+    const order = {serviceName, price , status, email}
+
+     axios.post('http://localhost:7000/orders', order)
+     .then((res) =>{
+      console.log(res)
+     })
   }
+
+
   const handleChange =(e) =>{
     const value = e.target.value
     setValue(value)
   }
+
+
   const [filtered] = servicesData.filter((data) => data.id === id);
   console.log(filtered);
 
