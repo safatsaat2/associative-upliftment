@@ -1,6 +1,4 @@
-import {
-    createBrowserRouter,
-  } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Page/Home/Home";
 import Login from "../Page/Login/Login";
@@ -13,58 +11,76 @@ import Dashboard from "../Page/Dashboard/Dashboard";
 import DashServices from "../Page/Dashboard/DashServices";
 import DashNewOrder from "../Page/Dashboard/DashNewOrder";
 import DashLayout from "../Page/Dashboard/DashLayout";
-
+import Privacy from "../Page/Privacy/Privacy";
+import Terms from "../Page/Terms/Terms";
 
 export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout/>,
-      children: [
-        {
-            path:'/',
-            element:<Home/>
-        },
-        {
-          path: '/services/:id',
-          element: <Service/>
-        },
-        {
-          path: '/services',
-          element: <Services><Footer/></Services>
-        },
-        {
-          path: '/about',
-          element: <About><Footer/></About>
-        }
-      ]
-    },
-    {
-      path:'login',
-      element: <Login/>
-    },
-    {
-      path:'/signup',
-      element: <SignUp/>
-    },
-    {
-      path:'/dashboard',
-      element:<DashLayout/>,
-      children:[
-        {
-          path:'',
-          element:<Dashboard/>
-        },
-        {
-          path:'services',
-          element:<DashServices/>
-        },
-        {
-          path:'neworder',
-          element: <DashNewOrder/>
-        }
-      ]
-    },
-    
-    
-  ]);
-
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/services/:id",
+        element: <Service />,
+      },
+      {
+        path: "/services",
+        element: 
+          <Services>
+            <Footer />
+          </Services>
+        ,
+      },
+      {
+        path: "/about",
+        element: 
+          <About>
+            <Footer />
+          </About>
+        ,
+      },
+      {
+        path: "/privacy",
+        element: 
+          <Privacy>
+            <Footer />
+          </Privacy>
+        ,
+      },
+      {
+        path: "/terms&conditions",
+        element: <Terms><Footer/></Terms>
+      },
+    ],
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+  },
+  {
+    path: "/dashboard",
+    element: <DashLayout />,
+    children: [
+      {
+        path: "",
+        element: <Dashboard />,
+      },
+      {
+        path: "services",
+        element: <DashServices />,
+      },
+      {
+        path: "neworder",
+        element: <DashNewOrder />,
+      },
+    ],
+  },
+]);

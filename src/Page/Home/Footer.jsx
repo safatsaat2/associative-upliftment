@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
             </Link>
 
-            <Link to="/about">
+            <Link to="/terms&conditions">
               <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Terms of use
               </div>
