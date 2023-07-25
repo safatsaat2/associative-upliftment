@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <!-- font link -->
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <!--  -->
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <!--  -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,5 +22,16 @@
       AOS.init();
     </script>
     <!--  -->
+    <!-- Paddle -->
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script type="text/javascript">
+      Paddle.Environment.set("sandbox");
+      Paddle.Setup({ vendor: 174695 });
+    </script>
+    <!-- <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script type="text/javascript">
+      Paddle.Setup({ vendor: 13515, debug: true });
+    </script> -->
+    <!-- Paddle -->
   </body>
 </html>
