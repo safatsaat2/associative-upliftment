@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,8 +14,27 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h4 className="text-4xl">Information</h4>
-          <div className="mt-12">
+          <h4 className="text-2xl font-bold">Others Page</h4>
+          <div className="mt-6">
+            <Link to="/about">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                About
+              </div>
+            </Link>
+
+            <Link to="/about">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+                Contact
+              </div>
+            </Link>
+
+            <Link to="/about">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+                Careers
+              </div>
+            </Link>
+          </div>
+          {/* <div className="mt-12">
             <div className="flex  items-center">
               <Icon className="text-2xl mr-4" icon="ic:outline-email" />
               <p className="leading-[155%] text-base font-sans">
@@ -26,14 +46,36 @@ const Footer = () => {
               <p className="leading-[155%] text-base font-sans">
                 +880 1568-723929
               </p>
-            </div>
+            </div> */}
+          {/* </div> */}
+        </div>
+        <div>
+          <h4 className="text-2xl font-bold">Support Links</h4>
+          <div className="mt-6">
+            <Link to="/privacy">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                Privacy Policy
+              </div>
+            </Link>
+
+            <Link to="/about">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+                Terms of use
+              </div>
+            </Link>
+
+            <Link to="/about">
+              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+                Our Team
+              </div>
+            </Link>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-x-8 w-[208px]">
+        {/* <div className="grid grid-cols-3 gap-x-8 w-[208px]">
           <Icon className="text-5xl" icon="ri:facebook-fill" />
           <Icon className="text-5xl" icon="ri:twitter-line" />
           <Icon className="text-5xl" icon="ri:instagram-line" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
