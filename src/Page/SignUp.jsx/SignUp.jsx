@@ -29,7 +29,7 @@ const SignUp = () => {
         emailVerification().then(() => {
           updateUser(name, number).then(() => {
             const user = { name, number, email, verify: false };
-            axios.post("http://localhost:7000/users", user).then(() => {
+            axios.post("https://associative-upliftment-server.vercel.app/users", user).then(() => {
               logOut();
               navigate("/login");
               Swal.fire("Check your email to verify");

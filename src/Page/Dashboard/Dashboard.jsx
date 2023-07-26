@@ -10,13 +10,13 @@ const Dashboard = () => {
   // const [clientSecret, setClientSecret] = useState("");
 
   // useEffect(() => {
-  //   fetch("http://localhost:7000/config").then(async (r) => {
+  //   fetch("https://associative-upliftment-server.vercel.app/config").then(async (r) => {
   //     const { publishableKey } = await r.json();
   //     setStripePromise(loadStripe(publishableKey));
   //   });
   // }, []);
   // useEffect(() => {
-  //   fetch("http://localhost:7000/create-payment-intent", {
+  //   fetch("https://associative-upliftment-server.vercel.app/create-payment-intent", {
   //     method: "POST",
   //     body: JSON.stringify({}),
   //   }).then(async (r) => {

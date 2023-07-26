@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <div className="relative lg:mt-[370px]">
         <div className="">
-          <Footer />
+          <Footer child={' '} />
         </div>
         <div className="absolute -top-72 right-0 left-0 max-w-7xl mx-auto">
           <SignUpNow />

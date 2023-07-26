@@ -34,7 +34,7 @@ const Service = () => {
 
     const order = {serviceName, price , status, email, date, id}
 
-     axios.post('http://localhost:7000/orders', order)
+     axios.post('https://associative-upliftment-server.vercel.app/orders', order)
      .then((res) =>{
       console.log(res)
      })
@@ -168,7 +168,7 @@ const Service = () => {
           </form>
         </dialog>
       </div>
-      <Footer />
+      <Footer child='ok' />
     </>
   );
 };

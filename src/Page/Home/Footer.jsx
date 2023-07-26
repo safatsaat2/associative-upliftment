@@ -1,10 +1,10 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
-const Footer = (child) => {
+const Footer = ({child}) => {
   return (
     <div className="border-t-2 w-full border-black">
-      <div className={child? `my-16 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center` : `mt-[167px] mb-4 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center`}>
+      <div className={child !== " " ? 'my-16 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center' : 'mt-[167px] mb-4 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center'}>
         <div className=" mx-auto">
           <img src="https://i.ibb.co/S09RC71/au-logo-02-1.png" alt="" />
           <p className="text-base font-sans mt-6">
