@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
         path: "/services",
         element: 
           <Services>
-            <Footer />
+            <Footer child='ok' />
           </Services>
         ,
       },
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
         path: "/about",
         element: 
           <About>
-            <Footer />
+            <Footer child='ok' />
           </About>
         ,
       },
@@ -47,13 +47,13 @@ export const router = createBrowserRouter([
         path: "/privacy",
         element: 
           <Privacy>
-            <Footer />
+            <Footer child='ok' />
           </Privacy>
         ,
       },
       {
         path: "/terms&conditions",
-        element: <Terms><Footer/></Terms>
+        element: <Terms><Footer child='ok'/></Terms>
       },
     ],
   },

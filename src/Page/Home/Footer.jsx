@@ -1,10 +1,10 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = (child) => {
   return (
     <div className="border-t-2 w-full border-black">
-      <div className="mt-[167px] mb-16 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center">
+      <div className={child? `my-16 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center` : `mt-[167px] mb-4 grid grid-cols-1 lg:max-w-[1076px] lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center`}>
         <div className=" mx-auto">
           <img src="https://i.ibb.co/S09RC71/au-logo-02-1.png" alt="" />
           <p className="text-base font-sans mt-6">
@@ -17,19 +17,19 @@ const Footer = () => {
           <h4 className="text-2xl font-bold">Others Page</h4>
           <div className="mt-6">
             <Link to="/about">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 About
               </div>
             </Link>
 
             <Link to="/about">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Contact
               </div>
             </Link>
 
             <Link to="/about">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Careers
               </div>
             </Link>
@@ -53,29 +53,30 @@ const Footer = () => {
           <h4 className="text-2xl font-bold">Support Links</h4>
           <div className="mt-6">
             <Link to="/privacy">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Privacy Policy
               </div>
             </Link>
 
             <Link to="/terms&conditions">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Terms of use
               </div>
             </Link>
 
             <Link to="/about">
-              <div className="mt-5 text-xl font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
+              <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Our Team
               </div>
             </Link>
           </div>
         </div>
-        {/* <div className="grid grid-cols-3 gap-x-8 w-[208px]">
-          <Icon className="text-5xl" icon="ri:facebook-fill" />
-          <Icon className="text-5xl" icon="ri:twitter-line" />
-          <Icon className="text-5xl" icon="ri:instagram-line" />
-        </div> */}
+      </div>
+      <div className="flex gap-x-8 my-6 justify-center pt-4 border-t border-black">
+        <a href="https://www.facebook.com/Associative.Upliftment?mibextid=ZbWKwL" target="blank"><Icon className="text-2xl" icon="ri:facebook-fill" /></a>
+        <a href="https://www.youtube.com/@AssociativeUpliftment" target="blank"><Icon className="text-2xl" icon="iconoir:youtube" /></a>
+        <a href="https://instagram.com/associative_upliftment?igshid=NjIwNzIyMDk2Mg==" target="blank"><Icon className="text-2xl" icon="ri:instagram-line" /></a>
+        <a href="https://www.linkedin.com/company/associative-upliftment/" target="blank"><Icon className="text-2xl" icon="teenyicons:linkedin-outline" /></a>
       </div>
     </div>
   );
