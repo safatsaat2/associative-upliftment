@@ -7,11 +7,10 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import moment from "moment/moment";
 
 const Service = () => {
-  const {user} = useContext(AuthContext)
- const [value, setValue] = useState('')
+  const { user } = useContext(AuthContext);
+  const [value, setValue] = useState("");
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
- 
 
   console.log();
   useEffect(() => {
@@ -20,32 +19,29 @@ const Service = () => {
       .then((data) => setServicesData(data));
   }, []);
 
-
-  const submit = (event) =>{
-    event.preventDefault()
+  const submit = (event) => {
+    event.preventDefault();
 
     const serviceName = filtered?.title;
     const price = value;
     const status = "";
     const email = user?.email;
-    const date = moment().format('MMMM Do YYYY, h:mm:ss a');
-    const id = Math.floor((Math.random() * 100000))
-    
+    const date = moment().format("MMMM Do YYYY, h:mm:ss a");
+    const id = Math.floor(Math.random() * 100000);
 
-    const order = {serviceName, price , status, email, date, id}
+    const order = { serviceName, price, status, email, date, id };
 
-     axios.post('https://associative-upliftment-server.vercel.app/orders', order)
-     .then((res) =>{
-      console.log(res)
-     })
-  }
+    axios
+      .post("https://associative-upliftment-server.vercel.app/orders", order)
+      .then((res) => {
+        console.log(res);
+      });
+  };
 
-
-  const handleChange =(e) =>{
-    const value = e.target.value
-    setValue(value)
-  }
-
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setValue(value);
+  };
 
   const [filtered] = servicesData.filter((data) => data.id === id);
   console.log(filtered);
@@ -57,7 +53,7 @@ const Service = () => {
           {filtered?.title}
         </h1>
         <p className=" mt-6">{filtered?.description}</p>
-        <p className=" mt-6">{filtered?.whyUsTitle}</p>
+        <p className=" mt-6 font-bold">{filtered?.whyUsTitle}</p>
         <p className=" mt-4">{filtered?.whyUs1}</p>
         <p className=" mt-4">{filtered?.whyUs2}</p>
         <p className=" mt-4">{filtered?.whyUs3}</p>
@@ -100,7 +96,6 @@ const Service = () => {
                       value="30"
                       className="radio checked:bg-black-500"
                       onChange={handleChange}
-                      
                     />
                     <p className="label-text">Day</p>
                   </div>
@@ -147,12 +142,12 @@ const Service = () => {
                 <p className="mt-6">$150</p>
                 <p className="mt-6">$600</p>
                 <div className="form-control">
-                <input
-                  className="border w-[190px] border-black rounded-lg mt-6"
-                  name="others"
-                  type="text"
-                  onChange={handleChange}
-                />
+                  <input
+                    className="border w-[190px] border-black rounded-lg mt-6"
+                    name="others"
+                    type="text"
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
             </div>
@@ -168,7 +163,7 @@ const Service = () => {
           </form>
         </dialog>
       </div>
-      <Footer child='ok' />
+      <Footer child="ok" />
     </>
   );
 };

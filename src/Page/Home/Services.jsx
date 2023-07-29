@@ -49,6 +49,34 @@ const Services = ({ children }) => {
       description:
         "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
     },
+    {
+      id: "7",
+      icon: "tabler:writing",
+      name: "Writing & translation Specialist Team",
+      description:
+        "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
+    },
+    {
+      id: "8",
+      icon: "bx:data",
+      name: "Data Specialist Team",
+      description:
+        "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
+    },
+    {
+      id: "9",
+      icon: "tabler:music",
+      name: "Music & Audio Specialist Team",
+      description:
+        "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
+    },
+    {
+      id: "10",
+      icon: "streamline:image-camera-1-photos-picture-camera-photography-photo-pictures",
+      name: "Photography Specialist Team",
+      description:
+        "Video editing is the process of manipulating and rearranging video footage to create a final edited product.",
+    },
   ];
   return (
     <div className="mt-20">
@@ -66,9 +94,12 @@ const Services = ({ children }) => {
       >
         Delivering Exceptional Solutions
       </p>
-      <div className="grid grid-cols-3 gap-x-[92px] gap-y-[75px] max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 gap-x-[92px] gap-y-[75px] max-w-7xl mx-auto">
         {services.map((service) => (
-          <Link key={service.name} to={children ? `${service.id}` : `services/${service.id}`}>
+          <Link
+            key={service.name}
+            to={children ? `${service.id}` : `services/${service.id}`}
+          >
             <div
               className="shadow h-[300px] flex flex-col justify-center items-center hover:-translate-y-2 duration-500 cursor-pointer"
               onClick={toTop}

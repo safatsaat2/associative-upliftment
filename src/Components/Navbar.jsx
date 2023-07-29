@@ -7,6 +7,7 @@ import { useContext } from "react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Service", href: "services" },
+  { name: "Shop", href: "shop" },
   { name: "About", href: "about" },
   { name: "Contact", href: "#" },
 ];
@@ -45,12 +46,12 @@ const Navbar = () => {
                 <div className="flex  items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="https://i.ibb.co/S09RC71/au-logo-02-1.png"
+                    src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
                     alt="Your Company"
                   />
                   <img
                     className="hidden w-auto lg:block"
-                    src="https://i.ibb.co/S09RC71/au-logo-02-1.png"
+                    src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
                     alt="Your Company"
                   />
                 </div>
