@@ -1,4 +1,5 @@
 import About from "./About";
+import Ad from "./Ad";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import Services from "./Services";
@@ -12,9 +13,10 @@ const Home = () => {
         <About />
         <Services />
       </div>
+      <Ad />
       <div className="relative lg:mt-[370px]">
         <div className="">
-          <Footer child={' '} />
+          <Footer child={" "} />
         </div>
         <div className="absolute -top-72 right-0 left-0 max-w-7xl mx-auto">
           <SignUpNow />
