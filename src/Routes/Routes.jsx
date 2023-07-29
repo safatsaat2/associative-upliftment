@@ -13,6 +13,7 @@ import DashNewOrder from "../Page/Dashboard/DashNewOrder";
 import DashLayout from "../Page/Dashboard/DashLayout";
 import Privacy from "../Page/Privacy/Privacy";
 import Terms from "../Page/Terms/Terms";
+import Contact from "../Page/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path: "/terms&conditions",
         element: <Terms><Footer child='ok'/></Terms>
+      },
+      {
+        path: "/contact",
+        element: <Contact><Footer child='ok'/></Contact>
       },
     ],
   },

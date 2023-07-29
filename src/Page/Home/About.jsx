@@ -30,7 +30,7 @@ const About = ({children}) => {
           </p>
         </div>
       </div>
-      <div className="lg:flex items-center mt-40 gap-x-6 max-w-7xl mx-auto">
+      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl mx-auto">
         <div>
           <h3 className="text-4xl font-bold pb-6">Sell quality products quickly.</h3>
           <p className="pb-2">

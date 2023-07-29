@@ -1,3 +1,4 @@
+import Carro from "../Carro/Carro";
 import About from "./About";
 import Ad from "./Ad";
 import Banner from "./Banner";
@@ -12,8 +13,12 @@ const Home = () => {
         <Banner />
         <About />
         <Services />
+        
       </div>
       <Ad />
+      <div className="max-w-7xl mx-auto">
+      <Carro/>
+      </div>
       <div className="relative lg:mt-[370px]">
         <div className="">
           <Footer child={" "} />
