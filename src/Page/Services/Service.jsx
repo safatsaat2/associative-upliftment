@@ -14,7 +14,7 @@ const Service = () => {
 
   console.log();
   useEffect(() => {
-    fetch("/public/services.json")
+    fetch("/services.json")
       .then((res) => res.json())
       .then((data) => setServicesData(data));
   }, []);

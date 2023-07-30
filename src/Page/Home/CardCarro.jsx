@@ -106,7 +106,7 @@ const CardCarro = () => {
           {slide2.map((card) => (
             <div
               key={card.id}
-              className="mx-5 shadow-lg rounded-xl bg-slate-50"
+              className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
             >
               <img
                 className="w-[400px] h-[350px] rounded-t-xl"
