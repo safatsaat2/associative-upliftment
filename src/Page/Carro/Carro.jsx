@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Carro = () => {
   return (
-    <div className="carousel w-full mt-20">
+    <div className="carousel w-full mb-20">
       <div id="slide1" className="carousel-item relative w-full">
         <Link to="/services/1" className="w-full ml-4">
           <img src="https://i.ibb.co/42GrXMt/Group-59.png" className="rounded-md" />
@@ -45,6 +45,7 @@ const Carro = () => {
         <Link to="/services/5" className="w-full ml-4">
           <img src="https://i.ibb.co/fXGjyZD/Group-59-2.png" className="rounded-md" />
         </Link>
+        
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide1" className="btn btn-circle">
             ❮
