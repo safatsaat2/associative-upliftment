@@ -2,8 +2,8 @@ import Carro from "../Carro/Carro";
 import About from "./About";
 import Ad from "./Ad";
 import Banner from "./Banner";
+import CardCarro from "./CardCarro";
 import Footer from "./Footer";
-import Services from "./Services";
 import SignUpNow from "./SignUpNow";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <Ad />
       <div className="max-w-7xl mx-auto">
-
+      <CardCarro/>
       </div>
       <div className="relative lg:mt-[370px]">
         <div className="">
