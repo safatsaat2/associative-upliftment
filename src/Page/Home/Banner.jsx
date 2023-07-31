@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="bg-black w-full rounded-3xl mt-8">
+        <div className="bg-black w-full rounded-none lg:rounded-3xl mt-8">
             <div className="flex flex-col-reverse lg:flex lg:flex-row lg:justify-between items-center w-full p-6">
                 <div className="text-white ">
                     <h1 className="text-4xl lg:text-[100px] font-sans font-semibold lg:leading-[115px] pb-4 w-full lg:w-[710px]">Grow Your <span className="text-[#1A9755]">Business</span> By Joining us</h1>

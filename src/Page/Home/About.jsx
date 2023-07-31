@@ -1,9 +1,9 @@
 const About = ({children}) => {
   return (
     <>
-      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl mx-auto">
+      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
         <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" />
-        <div>
+        <div className="mt-5 text-center">
           <p className="pb-2">
             International Associative Upliftment is a global Service Company.
             There is always a team working daily to grow your business.
@@ -30,8 +30,8 @@ const About = ({children}) => {
           </p>
         </div>
       </div>
-      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl mx-auto">
-        <div>
+      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
+        <div className="text-center">
           <h3 className="text-4xl font-bold pb-6">Sell quality products quickly.</h3>
           <p className="pb-2">
             Planning to decorate your project by a talented master craftsman in
@@ -52,7 +52,7 @@ const About = ({children}) => {
             Plan.
           </p>
         </div>
-        <img className="w-[628px] rounded-2xl" src="https://i.ibb.co/Qpyn7Gx/image.png" alt="" />
+        <img className="w-[628px] rounded-2xl mt-5" src="https://i.ibb.co/Qpyn7Gx/image.png" alt="" />
       </div>
       <div className="mt-20">{children}</div>
     </>
