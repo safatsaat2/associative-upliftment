@@ -80,7 +80,7 @@ const Navbar = () => {
                      <Link to='dashboard' className="text-[#414141] hover:bg-black hover:text-white mr-4 rounded-md px-3 py-2 text-sm font-medium">Dashboard</Link>
                       <button
                         onClick={signOut}
-                        className="bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]"
+                        className="bg-black text-white rounded-lg p-2 lg:w-[217px] lg:h-[48px]"
                       >
                         Logout
                       </button>
