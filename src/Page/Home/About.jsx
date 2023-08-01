@@ -3,7 +3,7 @@ const About = ({children}) => {
     <>
       <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
         <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" />
-        <div className="mt-5 text-center">
+        <div className="mt-5">
           <p className="pb-2">
             International Associative Upliftment is a global Service Company.
             There is always a team working daily to grow your business.
@@ -31,7 +31,7 @@ const About = ({children}) => {
         </div>
       </div>
       <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
-        <div className="text-center">
+        <div >
           <h3 className="text-4xl font-bold pb-6">Sell quality products quickly.</h3>
           <p className="pb-2">
             Planning to decorate your project by a talented master craftsman in
