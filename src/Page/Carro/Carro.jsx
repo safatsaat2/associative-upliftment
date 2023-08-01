@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
 
-
-
-
-
-
-
 const Carro = () => {
   return (
     <>
