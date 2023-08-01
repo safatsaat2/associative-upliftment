@@ -60,7 +60,7 @@ const CardCarro = () => {
   ];
   return (
     <>
-      <div className="carousel w-full mt-20">
+      <div className="carousel w-full mt-20 hidden lg:block">
         <div id="slide3" className="carousel-item relative w-full">
           {slide1.map((card) => (
             <div
@@ -138,6 +138,232 @@ const CardCarro = () => {
               ❮
             </a>
             <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="carousel w-full mt-20">
+        <div id="slide15" className="carousel-item relative w-full">
+
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/1KXd596/image.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">Book Cover Design</p>
+                <p>By Strategy Stars Team</p>
+                <ReactStars
+                  value={3}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide16" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide16" className="carousel-item relative w-full">
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/ZcMSZww/image.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">Magazines Design</p>
+                <p>By Dynamic Squad Team</p>
+                <ReactStars
+                  value={4}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide15" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide16" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide17" className="carousel-item relative w-full">
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/gZ3yvXX/Frame-4141.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">UI/UX Design</p>
+                <p>By Galaxy Gliders Team</p>
+                <ReactStars
+                  value={5}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide16" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide18" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide19" className="carousel-item relative w-full">
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/nRPh3Pm/image.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">Illustration Design</p>
+                <p>By Galaxy Gliders Team</p>
+                <ReactStars
+                  value={6}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide18" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide20" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide20" className="carousel-item relative w-full">
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/nBG5sHm/image.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">Dragon Squad Team</p>
+                <p>By Galaxy Gliders Team</p>
+                <ReactStars
+                  value={7}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide19" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide21" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide21" className="carousel-item relative w-full">
+          <div
+            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+          >
+            <img
+              className="w-[400px] h-[350px] rounded-t-xl"
+              src="https://i.ibb.co/J3NdKz9/image.png"
+              alt=""
+            />
+            <div className="flex items-center my-2">
+              <img
+                className="w-16 h-16 ml-5 my-5 rounded-full"
+                src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg"
+                alt=""
+              />
+              <div className="ml-5">
+                <p className="font-semibold text-lg">Photography Product</p>
+                <p>By Galactic Guardians Team</p>
+                <ReactStars
+                  value={8}
+                  count={8}
+                  size={24}
+                  edit={false}
+                  color2={"#ffd700"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+            <a href="#slide20" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide15" className="btn btn-circle">
               ❯
             </a>
           </div>
