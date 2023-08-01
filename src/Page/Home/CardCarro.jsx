@@ -143,7 +143,7 @@ const CardCarro = () => {
           </div>
         </div>
       </div>
-      <div className="carousel w-full mt-20">
+      <div className="carousel w-full my-20 lg:hidden">
         <div id="slide15" className="carousel-item relative w-full">
 
           <div
@@ -215,7 +215,7 @@ const CardCarro = () => {
             <a href="#slide15" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide16" className="btn btn-circle">
+            <a href="#slide17" className="btn btn-circle">
               ❯
             </a>
           </div>
