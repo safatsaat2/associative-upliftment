@@ -2,7 +2,7 @@ const About = ({children}) => {
   return (
     <>
       <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
-        <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" />
+        {/* <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" /> */}
         <div className="mt-5">
           <p className="pb-2">
             International Associative Upliftment is a global Service Company.
@@ -52,7 +52,7 @@ const About = ({children}) => {
             Plan.
           </p>
         </div>
-        <img className="w-[628px] rounded-2xl mt-5" src="https://i.ibb.co/Qpyn7Gx/image.png" alt="" />
+        {/* <img className="w-[628px] rounded-2xl mt-5" src="https://i.ibb.co/Qpyn7Gx/image.png" alt="" /> */}
       </div>
       <div className="mt-20">{children}</div>
     </>
