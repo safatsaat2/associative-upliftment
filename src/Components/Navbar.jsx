@@ -88,7 +88,7 @@ const Navbar = () => {
                   ) : (
                     <>
                       <Link to="/signup">
-                        <button className="bg-black text-white rounded-lg lg:w-[217px] lg:h-[48px]">
+                        <button className="bg-black text-white rounded-lg p-2 lg:w-[217px] lg:h-[48px]">
                           Get Started
                         </button>
                       </Link>

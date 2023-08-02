@@ -4,6 +4,7 @@ const Carro = () => {
   return (
     <>
       <div className="hidden lg:block">
+        <h1 className="text-5xl text-center font-bold pb-8">Our Shop</h1>
         <div className="carousel w-full mb-20">
           <div id="slide1" className="carousel-item relative w-full">
             <Link to="/services/1" className="w-full ml-4">
@@ -61,6 +62,7 @@ const Carro = () => {
       </div>
       <div className="block mx-auto w-full lg:hidden">
         <div className="carousel w-full mb-20">
+        <h1 className="text-3xl text-center font-bold pb-8">Our Shop</h1>
           <div id="slide5" className="carousel-item relative w-full">
             <Link to="/services/1" className="w-full mx-20">
               <img src="https://i.ibb.co/42GrXMt/Group-59.png" className="rounded-md" />

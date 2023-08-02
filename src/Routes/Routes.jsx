@@ -14,6 +14,7 @@ import DashLayout from "../Page/Dashboard/DashLayout";
 import Privacy from "../Page/Privacy/Privacy";
 import Terms from "../Page/Terms/Terms";
 import Contact from "../Page/Contact/Contact";
+import Shop from "../Page/Shop/Shop";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,14 @@ export const router = createBrowserRouter([
           <Privacy>
             <Footer child='ok' />
           </Privacy>
+        ,
+      },
+      {
+        path: "/shop",
+        element: 
+          <Shop>
+            <Footer child='ok' />
+          </Shop>
         ,
       },
       {

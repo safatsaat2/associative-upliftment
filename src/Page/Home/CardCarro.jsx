@@ -53,14 +53,16 @@ const CardCarro = () => {
       id: "1",
       img: "https://i.ibb.co/J3NdKz9/image.png",
       title: "Photography Product",
-      user: "Galactic Guardians Team",
+      user: "Galactic Specialist Team",
       userPic: "https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg",
       star: 8,
     },
   ];
   return (
     <>
-      <div className="carousel w-full mt-20 hidden lg:block">
+    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-20">Our Special Team</h1>
+      <div className="carousel w-full mt-20 hidden lg:inline-flex">
+      
         <div id="slide3" className="carousel-item relative w-full">
           {slide1.map((card) => (
             <div
@@ -232,7 +234,7 @@ const CardCarro = () => {
             <div className="flex items-center my-2">
               <img
                 className="w-16 h-16 ml-5 my-5 rounded-full"
-                src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg"
+                src="https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg"
                 alt=""
               />
               <div className="ml-5">
@@ -257,7 +259,7 @@ const CardCarro = () => {
             </a>
           </div>
         </div>
-        <div id="slide19" className="carousel-item relative w-full">
+        <div id="slide18" className="carousel-item relative w-full">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -274,7 +276,7 @@ const CardCarro = () => {
               />
               <div className="ml-5">
                 <p className="font-semibold text-lg">Illustration Design</p>
-                <p>By Galaxy Gliders Team</p>
+                <p>By Titans Alliance Team</p>
                 <ReactStars
                   value={6}
                   count={8}
@@ -310,8 +312,8 @@ const CardCarro = () => {
                 alt=""
               />
               <div className="ml-5">
-                <p className="font-semibold text-lg">Dragon Squad Team</p>
-                <p>By Galaxy Gliders Team</p>
+                <p className="font-semibold text-lg">Full Stack Development</p>
+                <p>By Dragon Squad Team</p>
                 <ReactStars
                   value={7}
                   count={8}
@@ -348,7 +350,7 @@ const CardCarro = () => {
               />
               <div className="ml-5">
                 <p className="font-semibold text-lg">Photography Product</p>
-                <p>By Galactic Guardians Team</p>
+                <p>By Galactic Specialist Team</p>
                 <ReactStars
                   value={8}
                   count={8}

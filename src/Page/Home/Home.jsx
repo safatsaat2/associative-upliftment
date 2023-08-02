@@ -9,8 +9,9 @@ import SignUpNow from "./SignUpNow";
 const Home = () => {
   return (
     <div>
+      <Banner />
       <div className="max-w-7xl mx-auto">
-        <Banner />
+        
         <About />  
         <Carro/>    
       </div>
