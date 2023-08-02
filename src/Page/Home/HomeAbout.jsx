@@ -1,16 +1,16 @@
 
 const HomeAbout = () => {
     return (
-        <div className="my-20">
+        <div className="my-10 lg:my-20">
             <div className="lg:flex items-center gap-x-6 max-w-7xl lg:mx-auto mx-4">
                 <img className="w-[628px] rounded-2xl" src="https://i.ibb.co/NTfW7sF/Whats-App-Image-2023-08-02-at-20-27-41.jpg" alt="" />
                 <div className="mt-5">
                     <p className="pb-2">
-                        International Associative Upliftment is a global Service Company.
+                        International Associative Upliftment {`(IAU)`} is a global Service Company.
                         There is always a team working daily to grow your business.
                     </p>
                     <p className="pb-2">
-                        International Associative Upliftment (IAU) Company operates
+                        International Associative Upliftment {`(IAU)`} Company operates
                         worldwide. We create good and successful businesses at a low cost.
                         We have different professional team members for each company for
                         each business. For your company, we have (Team Supervisor), Business

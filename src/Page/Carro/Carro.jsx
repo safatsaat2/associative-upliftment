@@ -61,6 +61,7 @@ const Carro = () => {
         </div>
       </div>
       <div className="block mx-auto w-full lg:hidden">
+      <h1 className="text-3xl text-center font-bold pb-8">Our Shop</h1>
         <div className="carousel w-full mb-20">
         <h1 className="text-3xl text-center font-bold pb-8">Our Shop</h1>
           <div id="slide5" className="carousel-item relative w-full">

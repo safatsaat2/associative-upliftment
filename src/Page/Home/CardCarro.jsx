@@ -53,14 +53,14 @@ const CardCarro = () => {
       id: "1",
       img: "https://i.ibb.co/J3NdKz9/image.png",
       title: "Photography Product",
-      user: "Galactic Specialist Team",
+      user: "Galactic Guardians Team",
       userPic: "https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg",
       star: 8,
     },
   ];
   return (
     <>
-    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-20">Our Special Team</h1>
+    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-10">Our Special Team</h1>
       <div className="carousel w-full mt-20 hidden lg:inline-flex">
       
         <div id="slide3" className="carousel-item relative w-full">
@@ -145,8 +145,8 @@ const CardCarro = () => {
           </div>
         </div>
       </div>
-      <div className="carousel w-full my-20 lg:hidden">
-        <div id="slide15" className="carousel-item relative w-full">
+      <div className="carousel w-full mt-10 mb-20 lg:hidden">
+        <div id="slide16" className="carousel-item relative w-full">
 
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
@@ -177,15 +177,15 @@ const CardCarro = () => {
           </div>
 
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
+            <a href="#slide21" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide16" className="btn btn-circle">
+            <a href="#slide17" className="btn btn-circle">
               ❯
             </a>
           </div>
         </div>
-        <div id="slide16" className="carousel-item relative w-full">
+        <div id="slide17" className="carousel-item relative w-full">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -214,15 +214,15 @@ const CardCarro = () => {
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
-            <a href="#slide15" className="btn btn-circle">
+            <a href="#slide16" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide17" className="btn btn-circle">
+            <a href="#slide18" className="btn btn-circle">
               ❯
             </a>
           </div>
         </div>
-        <div id="slide17" className="carousel-item relative w-full">
+        <div id="slide18" className="carousel-item relative w-full">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -251,15 +251,15 @@ const CardCarro = () => {
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
-            <a href="#slide16" className="btn btn-circle">
+            <a href="#slide17" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide18" className="btn btn-circle">
+            <a href="#slide19" className="btn btn-circle">
               ❯
             </a>
           </div>
         </div>
-        <div id="slide18" className="carousel-item relative w-full">
+        <div id="slide19" className="carousel-item relative w-full">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -350,7 +350,7 @@ const CardCarro = () => {
               />
               <div className="ml-5">
                 <p className="font-semibold text-lg">Photography Product</p>
-                <p>By Galactic Specialist Team</p>
+                <p>By Galactic Guardians Team</p>
                 <ReactStars
                   value={8}
                   count={8}
@@ -365,7 +365,7 @@ const CardCarro = () => {
             <a href="#slide20" className="btn btn-circle">
               ❮
             </a>
-            <a href="#slide15" className="btn btn-circle">
+            <a href="#slide16" className="btn btn-circle">
               ❯
             </a>
           </div>

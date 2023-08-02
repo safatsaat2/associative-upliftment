@@ -11,7 +11,7 @@ const Banner = () => {
                     <Link to='/signup'><button className='bg-white px-2 lg:px-0 text-black rounded-lg lg:w-[217px] h-[48px] font-semibold'>Get Started</button></Link>
                 </div>
                 <div data-aos="zoom-in-up" data-aos-duration="1000"> 
-                    <img  className="w-full mb-6 lg:mb-0" src="https://i.ibb.co/SKCZ8xX/image.png" alt="" />
+                    <img  className="w-full h-[600px] mb-6 lg:mb-0" src="https://i.ibb.co/SKCZ8xX/image.png" alt="" />
                 </div>
             </div>
         </div>
