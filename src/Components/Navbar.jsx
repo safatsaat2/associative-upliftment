@@ -6,10 +6,10 @@ import { useContext } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Service", href: "services" },
-  { name: "Shop", href: "shop" },
-  { name: "About", href: "about" },
-  { name: "Contact", href: "contact" },
+  { name: "Service", href: "/services" },
+  { name: "Shop", href: "/shop" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 function classNames(...classes) {

@@ -94,7 +94,7 @@ const Services = ({ children }) => {
       >
         Delivering Exceptional Solutions
       </p>
-      <div className="grid grid-cols-2 gap-x-[92px] gap-y-[75px] max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[92px] gap-y-[75px] max-w-7xl mx-auto">
         {services.map((service) => (
           <Link
             key={service.name}
