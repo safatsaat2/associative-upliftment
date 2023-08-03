@@ -1,5 +1,5 @@
 
-const HomeAbout = () => {
+const AboutHome = () => {
     return (
         <div className="my-10 lg:my-20">
             <div className="lg:flex items-center gap-x-6 max-w-7xl lg:mx-auto mx-4">
@@ -59,4 +59,4 @@ const HomeAbout = () => {
     );
 };
 
-export default HomeAbout;
+export default AboutHome;
