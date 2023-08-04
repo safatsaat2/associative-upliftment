@@ -60,8 +60,8 @@ const CardCarro = () => {
   ];
   return (
     <>
-    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-10">Our Special Team</h1>
-      <div className="carousel w-full mt-20 hidden lg:inline-flex">
+    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-16">Our Special Team</h1>
+      <div className="carousel w-full mt-10 hidden lg:inline-flex">
       
         <div id="slide3" className="carousel-item relative w-full">
           {slide1.map((card) => (

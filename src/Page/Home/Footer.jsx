@@ -14,11 +14,11 @@ const Footer = ({child}) => {
           </p>
         </div>
         <div>
-          <h4 className="text-2xl font-bold">Others Page</h4>
+          <h4 className="text-2xl font-bold mt-5 lg:mt-0">About</h4>
           <div className="mt-6">
             <Link to="/about">
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                About
+                About us
               </div>
             </Link>
 
@@ -50,7 +50,7 @@ const Footer = ({child}) => {
           {/* </div> */}
         </div>
         <div>
-          <h4 className="text-2xl font-bold">Support Links</h4>
+          <h4 className="text-2xl font-bold mt-5 lg:mt-0">Support Links</h4>
           <div className="mt-6">
             <Link to="/privacy">
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
@@ -60,7 +60,7 @@ const Footer = ({child}) => {
 
             <Link to="/terms&conditions">
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
-                Terms of use
+                Terms & Condition
               </div>
             </Link>
 

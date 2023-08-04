@@ -3,31 +3,16 @@ const AboutHome = () => {
     return (
         <div className="my-10 lg:my-20">
             <div className="lg:flex items-center gap-x-6 max-w-7xl lg:mx-auto mx-4">
-                <img className="w-[628px] rounded-2xl" src="https://i.ibb.co/NTfW7sF/Whats-App-Image-2023-08-02-at-20-27-41.jpg" alt="" />
+                <img className="w-[628px] rounded-2xl hidden lg:block" src="https://i.ibb.co/NTfW7sF/Whats-App-Image-2023-08-02-at-20-27-41.jpg" alt="" />
                 <div className="mt-5">
                     <p className="pb-2">
-                        International Associative Upliftment {`(IAU)`} is a global Service Company.
-                        There is always a team working daily to grow your business.
+                    International Associative Upliftment (IAU) is a global Service Company. There is always a team working daily to grow your business.
                     </p>
                     <p className="pb-2">
-                        International Associative Upliftment {`(IAU)`} Company operates
-                        worldwide. We create good and successful businesses at a low cost.
-                        We have different professional team members for each company for
-                        each business. For your company, we have (Team Supervisor), Business
-                        Management Specialist Team, Digital Marketing Specialist Team, Web
-                        Developer Specialist Team, Graphic Designer Specialist Team, Email
-                        marketing specialist Team, Video Editor Specialist Team, a team of
-                        six people spends six hours per day. Everyone works 36 hours a day
-                        for your company. That works 216 hours per Week. That works out to
-                        1008 hours per month.
+                    International Associative Upliftment (IAU) Company operates worldwide. We create good and successful businesses at a low cost. We have different professional team members for each company for each business. For your company, we have (Team Supervisor), Strategy Stars Team, Dynamic Squad Team, Galaxy Gliders Team, Titans Alliance Team, Dragon Squad Team, and Galactic Guardians Team, a team of six people spends six hours per day. Everyone works 36 hours a day for your company. That works 216 hours per Week. That works out to 1008 hours per month.
                     </p>
                     <p>
-                        Large projects sometimes make a one-size-fits-all service
-                        impossible, which is why Associative Upliftment enables you to
-                        contact a large team of technical experts and request a custom order
-                        instead. If you still can`t find what you`re looking for, remember,
-                        Associative Upliftment`s Business Success Managers are here to guide
-                        and assist you
+                    Large projects sometimes make a one-size-fits-all service impossible, which is why Associative Upliftment enables you to contact a large team of technical experts and request a custom order instead. If you still can`t find what you`re looking for, remember, Associative Upliftment`s Business Success Managers are here to guide and assist you.
                     </p>
                 </div>
             </div>
@@ -53,7 +38,7 @@ const AboutHome = () => {
                         Plan.
                     </p>
                 </div>
-                <img className="w-[628px] rounded-2xl mt-5" src="https://i.ibb.co/JjV2Xmh/Whats-App-Image-2023-08-02-at-20-44-27.jpg" alt="" />
+                <img className="w-[628px] rounded-2xl mt-5 hidden lg:block" src="https://i.ibb.co/JjV2Xmh/Whats-App-Image-2023-08-02-at-20-44-27.jpg" alt="" />
             </div>
         </div>
     );

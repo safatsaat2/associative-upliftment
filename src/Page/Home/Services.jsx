@@ -83,14 +83,14 @@ const Services = ({ children }) => {
       <h1
         data-aos="zoom-in-up"
         data-aos-duration="1000"
-        className="text-[64px] font-semibold text-center leading-[135%]"
+        className="text-2xl lg:text-[64px] font-semibold text-center leading-[135%]"
       >
         Our Services
       </h1>
       <p
         data-aos="zoom-in-up"
         data-aos-duration="1000"
-        className="text-xl text-[#414141] leading-[145%] mt-4 mb-10 text-center"
+        className="text-md lg:text-xl text-[#414141] leading-[145%] mt-4 mb-10 text-center"
       >
         Delivering Exceptional Solutions
       </p>
@@ -101,18 +101,18 @@ const Services = ({ children }) => {
             to={children ? `${service.id}` : `services/${service.id}`}
           >
             <div
-              className="shadow h-[300px] flex flex-col justify-center items-center hover:-translate-y-2 duration-500 cursor-pointer"
+              className="shadow h-[250px] lg:h-[300px] flex flex-col justify-center items-center hover:-translate-y-2 duration-500 cursor-pointer mx-6"
               onClick={toTop}
             >
               <Icon
-                className="text-center text-[80px] mt-[34px] mb-2"
+                className="text-center text-6xl lg:text-[80px] mt-[34px] mb-2"
                 icon={service.icon}
               />
 
-              <h3 className="text-lg font-semibold text-center mb-4">
+              <h3 className="text-[12px] lg:text-lg font-semibold text-center mb-4">
                 {service.name}
               </h3>
-              <p className="text-center px-5 text-[#414141] mb-[34px]">
+              <p className="text-center text-[8px] lg:text-md px-5 text-[#414141] mb-[34px]">
                 {service.description}
               </p>
             </div>
