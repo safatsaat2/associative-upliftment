@@ -14,8 +14,9 @@ const Home = () => {
       <div className="max-w-7xl mx-auto">
 
         <AboutHome />
-        <Carro />
+
       </div>
+      <Carro />
       <Ad />
       <div className="max-w-7xl mx-auto">
         <CardCarro />
