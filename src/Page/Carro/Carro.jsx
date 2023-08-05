@@ -4,7 +4,7 @@ const Carro = () => {
   return (
     <>
       <div className="hidden lg:block">
-        <h1 className="text-5xl text-center font-bold pb-8">Our Shop</h1>
+        <h1 className="text-5xl text-center font-bold pb-8">Popular Services</h1>
         <div className="carousel w-full mb-20">
           <div id="slide1" className="carousel-item relative w-full">
             <Link to="/services/1" className="w-full ml-4">
