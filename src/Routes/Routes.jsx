@@ -15,6 +15,7 @@ import Privacy from "../Page/Privacy/Privacy";
 import Terms from "../Page/Terms/Terms";
 import Contact from "../Page/Contact/Contact";
 import Shop from "../Page/Shop/Shop";
+import Team from "../Page/Team/Team";
 
 export const router = createBrowserRouter([
   {
@@ -31,15 +32,21 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: 
+        element:
           <Services>
             <Footer child='ok' />
           </Services>
         ,
       },
       {
+        path: "/team/:id",
+        element: <Team>
+          <Footer child='ok' />
+        </Team>
+      },
+      {
         path: "/about",
-        element: 
+        element:
           <About>
             <Footer child='ok' />
           </About>
@@ -47,7 +54,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/privacy",
-        element: 
+        element:
           <Privacy>
             <Footer child='ok' />
           </Privacy>
@@ -55,7 +62,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/shop",
-        element: 
+        element:
           <Shop>
             <Footer child='ok' />
           </Shop>
@@ -63,11 +70,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/terms&conditions",
-        element: <Terms><Footer child='ok'/></Terms>
+        element: <Terms><Footer child='ok' /></Terms>
       },
       {
         path: "/contact",
-        element: <Contact><Footer child='ok'/></Contact>
+        element: <Contact><Footer child='ok' /></Contact>
       },
     ],
   },

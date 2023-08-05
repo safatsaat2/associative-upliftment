@@ -112,7 +112,7 @@ const Services = ({ children }) => {
               <h3 className="text-[12px] lg:text-lg font-semibold text-center mb-4">
                 {service.name}
               </h3>
-              <p className="text-center text-[8px] lg:text-md px-5 text-[#414141] mb-[34px]">
+              <p className="text-center text-[8px] lg:text-[16px] px-5 text-[#414141] mb-[34px]">
                 {service.description}
               </p>
             </div>

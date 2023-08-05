@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import ReactStars from "react-stars";
 
 const CardCarro = () => {
   const slide1 = [
     {
-      id: "3",
+      id: "1",
       img: "https://i.ibb.co/1KXd596/image.png",
       title: "Book Cover Design",
       user: "Strategy Stars Team",
@@ -22,7 +23,7 @@ const CardCarro = () => {
     },
 
     {
-      id: "1",
+      id: "3",
       img: "https://i.ibb.co/gZ3yvXX/Frame-4141.png",
       title: "UI/UX Design",
       user: "Galaxy Gliders Team",
@@ -33,7 +34,7 @@ const CardCarro = () => {
   ];
   const slide2 = [
     {
-      id: "3",
+      id: "4",
       img: "https://i.ibb.co/nRPh3Pm/image.png",
       title: "Illustration Design",
       user: "Titans Alliance Team",
@@ -42,7 +43,7 @@ const CardCarro = () => {
       star: 6,
     },
     {
-      id: "2",
+      id: "5",
       img: "https://i.ibb.co/nBG5sHm/image.png",
       title: "Full Stack Development",
       user: "Dragon Squad Team",
@@ -50,7 +51,7 @@ const CardCarro = () => {
       star: 7,
     },
     {
-      id: "1",
+      id: "6",
       img: "https://i.ibb.co/J3NdKz9/image.png",
       title: "Photography Product",
       user: "Galactic Guardians Team",
@@ -60,39 +61,41 @@ const CardCarro = () => {
   ];
   return (
     <>
-    <h1 className="text-3xl lg:text-5xl text-center font-bold pt-16">Our Special Team</h1>
+      <h1 className="text-3xl lg:text-5xl text-center font-bold pt-16">Our Special Team</h1>
       <div className="carousel w-full mt-10 hidden lg:inline-flex">
-      
+
         <div id="slide3" className="carousel-item relative w-full">
           {slide1.map((card) => (
-            <div
-              key={card.id}
-              className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
-            >
-              <img
-                className="w-[400px] h-[350px] rounded-t-xl"
-                src={card.img}
-                alt=""
-              />
-              <div className="flex items-center my-2">
+            <Link to={`/team/${card.id}`} key={card.id}>
+              <div
+                
+                className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+              >
                 <img
-                  className="w-16 h-16 ml-5  rounded-full"
-                  src={card.userPic}
+                  className="w-[400px] h-[350px] rounded-t-xl"
+                  src={card.img}
                   alt=""
                 />
-                <div className="ml-5">
-                  <p className="font-semibold text-lg">{card.title}</p>
-                  <p>By {card.user}</p>
-                  <ReactStars
-                    value={card.star}
-                    count={8}
-                    size={24}
-                    edit={false}
-                    color2={"#ffd700"}
+                <div className="flex items-center my-2">
+                  <img
+                    className="w-16 h-16 ml-5  rounded-full"
+                    src={card.userPic}
+                    alt=""
                   />
+                  <div className="ml-5">
+                    <p className="font-semibold text-lg">{card.title}</p>
+                    <p>By {card.user}</p>
+                    <ReactStars
+                      value={card.star}
+                      count={8}
+                      size={24}
+                      edit={false}
+                      color2={"#ffd700"}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
 
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
@@ -145,6 +148,8 @@ const CardCarro = () => {
           </div>
         </div>
       </div>
+
+      {/* MObile Responsive */}
       <div className="carousel w-full mt-10 mb-20 lg:hidden">
         <div id="slide16" className="carousel-item relative w-full">
 
