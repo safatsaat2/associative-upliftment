@@ -68,7 +68,7 @@ const CardCarro = () => {
           {slide1.map((card) => (
             <Link to={`/team/${card.id}`} key={card.id}>
               <div
-                
+
                 className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
               >
                 <img
@@ -109,34 +109,35 @@ const CardCarro = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           {slide2.map((card) => (
-            <div
-              key={card.id}
-              className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
-            >
-              <img
-                className="w-[400px] h-[350px] rounded-t-xl"
-                src={card.img}
-                alt=""
-              />
-              <div className="flex items-center my-2">
+            <Link to={`/team/${card.id}`} key={card.id}>
+              <div
+                className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+              >
                 <img
-                  className="w-16 h-16 ml-5 my-5 rounded-full"
-                  src={card.userPic}
+                  className="w-[400px] h-[350px] rounded-t-xl"
+                  src={card.img}
                   alt=""
                 />
-                <div className="ml-5">
-                  <p className="font-semibold text-lg">{card.title}</p>
-                  <p>By {card.user}</p>
-                  <ReactStars
-                    value={card.star}
-                    count={8}
-                    size={24}
-                    edit={false}
-                    color2={"#ffd700"}
+                <div className="flex items-center my-2">
+                  <img
+                    className="w-16 h-16 ml-5 my-5 rounded-full"
+                    src={card.userPic}
+                    alt=""
                   />
+                  <div className="ml-5">
+                    <p className="font-semibold text-lg">{card.title}</p>
+                    <p>By {card.user}</p>
+                    <ReactStars
+                      value={card.star}
+                      count={8}
+                      size={24}
+                      edit={false}
+                      color2={"#ffd700"}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide3" className="btn btn-circle">
@@ -153,33 +154,35 @@ const CardCarro = () => {
       <div className="carousel w-full mt-10 mb-20 lg:hidden">
         <div id="slide16" className="carousel-item relative w-full">
 
-          <div
-            className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
-          >
-            <img
-              className="w-[400px] h-[350px] rounded-t-xl"
-              src="https://i.ibb.co/1KXd596/image.png"
-              alt=""
-            />
-            <div className="flex items-center my-2">
+          <Link to="/team/1">
+            <div
+              className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
+            >
               <img
-                className="w-16 h-16 ml-5 my-5 rounded-full"
-                src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg"
+                className="w-[400px] h-[350px] rounded-t-xl"
+                src="https://i.ibb.co/1KXd596/image.png"
                 alt=""
               />
-              <div className="ml-5">
-                <p className="font-semibold text-lg">Book Cover Design</p>
-                <p>By Strategy Stars Team</p>
-                <ReactStars
-                  value={3}
-                  count={8}
-                  size={24}
-                  edit={false}
-                  color2={"#ffd700"}
+              <div className="flex items-center my-2">
+                <img
+                  className="w-16 h-16 ml-5 my-5 rounded-full"
+                  src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg"
+                  alt=""
                 />
+                <div className="ml-5">
+                  <p className="font-semibold text-lg">Book Cover Design</p>
+                  <p>By Strategy Stars Team</p>
+                  <ReactStars
+                    value={3}
+                    count={8}
+                    size={24}
+                    edit={false}
+                    color2={"#ffd700"}
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide21" className="btn btn-circle">
@@ -191,6 +194,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide17" className="carousel-item relative w-full">
+          <Link to="/team/2">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -218,6 +222,7 @@ const CardCarro = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide16" className="btn btn-circle">
               ❮
@@ -228,6 +233,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide18" className="carousel-item relative w-full">
+          <Link to="/team/3">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -255,6 +261,7 @@ const CardCarro = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide17" className="btn btn-circle">
               ❮
@@ -265,6 +272,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide19" className="carousel-item relative w-full">
+          <Link to="/team/4">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -292,6 +300,7 @@ const CardCarro = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide18" className="btn btn-circle">
               ❮
@@ -302,6 +311,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide20" className="carousel-item relative w-full">
+          <Link to="/team/5">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -329,6 +339,7 @@ const CardCarro = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide19" className="btn btn-circle">
               ❮
@@ -339,6 +350,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide21" className="carousel-item relative w-full">
+          <Link to="/team/6">
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -366,6 +378,7 @@ const CardCarro = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
             <a href="#slide20" className="btn btn-circle">
               ❮

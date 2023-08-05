@@ -29,10 +29,10 @@ const Team = ({ children }) => {
             <p className="mb-4">
                 {fillteredData?.info3}
             </p>
-            <div className="grid grid-cols-3 gap-x-8 my-10 mx-auto">
-            <img className="h-[300px] w-full"  src={fillteredData?.img2} alt="" />
-            <img className="h-[300px] w-full"  src={fillteredData?.img3} alt="" />
-            <img className="h-[300px] w-full"  src={fillteredData?.img1} alt="" />
+            <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 gap-x-8 my-10 mx-auto">
+            <img className="h-[300px] w-full rounded-md"  src={fillteredData?.img2} alt="" />
+            <img className="h-[300px] w-full rounded-md"  src={fillteredData?.img3} alt="" />
+            <img className="h-[300px] w-full rounded-md"  src={fillteredData?.img1} alt="" />
 
             </div>
             <p className="mb-4">
