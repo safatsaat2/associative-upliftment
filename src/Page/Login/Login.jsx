@@ -29,7 +29,11 @@ const Login = () => {
           navigate("/");
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err)
+        reset()
+      });
+      
   };
 
   const againVerify = () => {

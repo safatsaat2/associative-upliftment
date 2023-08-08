@@ -14,7 +14,7 @@ import DashLayout from "../Page/Dashboard/DashLayout";
 import Privacy from "../Page/Privacy/Privacy";
 import Terms from "../Page/Terms/Terms";
 import Contact from "../Page/Contact/Contact";
-import Shop from "../Page/Shop/Shop";
+// import Shop from "../Page/Shop/Shop";
 import Team from "../Page/Team/Team";
 
 export const router = createBrowserRouter([
