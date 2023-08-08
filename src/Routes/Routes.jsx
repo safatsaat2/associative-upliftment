@@ -16,6 +16,7 @@ import Terms from "../Page/Terms/Terms";
 import Contact from "../Page/Contact/Contact";
 // import Shop from "../Page/Shop/Shop";
 import Team from "../Page/Team/Team";
+import PopularDetails from "../Page/Service/PopularDetails";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,13 @@ export const router = createBrowserRouter([
       {
         path: "/services/:id",
         element: <Service />,
+      },
+      {
+        path: "/popularservice/:id",
+        element: <PopularDetails>
+          <Footer child='ok' />
+        </PopularDetails>
+        ,
       },
       {
         path: "/services",

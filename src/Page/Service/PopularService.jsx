@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const PopularService = () => {
     return (
@@ -17,7 +18,9 @@ const PopularService = () => {
                 Delivering Exceptional Solutions
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[92px] gap-y-[75px] place-items-center max-w-7xl mx-auto">
-                <img src="https://i.ibb.co/LtCNz8j/Group-1000003431-1.png" className="rounded-md" />
+                <Link to="/popularservice/1">
+                    <img src="https://i.ibb.co/LtCNz8j/Group-1000003431-1.png" className="rounded-md" />
+                </Link>
                 <img src="https://i.ibb.co/HN0n25v/Group-1000003432-2.png" className="rounded-md" />
                 <img src="https://i.ibb.co/6W6JfmM/Group-1000003433-1.png" className="rounded-md" />
                 <img src="https://i.ibb.co/m9cCsG9/Group-1000003434-1.png" className="rounded-md" />
