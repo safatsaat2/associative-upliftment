@@ -51,29 +51,30 @@ const SignUp = () => {
   {
     return (
       <div>
-        <div className="lg:bg-[url('https://i.ibb.co/N12vB7w/Vector-1.png')] bg-no-repeat bg-bottom  ">
-          <div className="bg-no-repeat bg-top bg-[url('https://i.ibb.co/FxPRyv5/au-logo-02-3.png')]">
-            <h1 className="text-center font-bold text-2xl leading-normal lg:text-[80px] my-10 lg:my-5">
-              International Associative Upliftment (IAU)
+        <div className="bg-[url('https://i.ibb.co/DY2ZQ1h/Rectangle-6401.png')] bg-cover bg-center lg:-mt-10 text-white">
+          <div className="">
+            <h1 className="text-center  font-bold text-2xl leading-normal lg:text-[60px] mt-10 lg: pt-20 hidden lg:block">
+              International Associative Upliftment <span className="text-[#FFE500]">(IAU)</span>
             </h1>
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-x-20 ">
+            <p className="text-lg lg:text-2xl text-center mb-10 hidden lg:block">Global Service Company</p>
+            <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto">
               <img
-                className="w-80 lg:w-[672.89px]"
-                src="https://i.ibb.co/qW3VMcL/bro.png"
+                className="w-80 lg:w-[671px] rounded-md mb-10 lg:my-0 hidden lg:block"
+                src="https://i.ibb.co/ydQThpd/rafiki.png"
                 alt=""
               />
-              <div>
-                <h3 className="text-5xl font-semibold">Register Now!!</h3>
-                <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="mt-20 lg:mt-0">
+                <h3 className="text-5xl font-semibold text-[#FFE500]">Register Now!!</h3>
+                <form className="text-white" onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-control my-10">
                     <p className="label mb-4">
-                      <span className="label-text">Name:</span>
+                      <span className="label-text text-white">Name:</span>
                     </p>
                     <input
                       type="text"
                       {...register("name", { required: true })}
                       placeholder="Provide Your Name"
-                      className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.email && (
                       <p className="text-red-500">Name is required</p>
@@ -81,7 +82,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-control my-10">
                     <p className="label mb-4">
-                      <span className="label-text">Phone:</span>
+                      <span className="label-text text-white">Phone:</span>
                     </p>
                     <PhoneInput
                       defaultCountry="US"
@@ -141,7 +142,7 @@ const SignUp = () => {
                         "CR",
                         "CA",
                       ]}
-                      className="border text-trans"
+                      className="w-full lg:w-[458px] h-[74px] rounded-xl border text-black bg-white px-2"
                     />
 
                     {errors.email && (
@@ -150,13 +151,13 @@ const SignUp = () => {
                   </div>
                   <div className="form-control my-10">
                     <p className="label mb-4">
-                      <span className="label-text">Email:</span>
+                      <span className="label-text text-white">Email:</span>
                     </p>
                     <input
                       type="email"
                       {...register("email", { required: true })}
                       placeholder="Provide Your Email"
-                      className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.email && (
                       <p className="text-red-500">Email is required</p>
@@ -164,7 +165,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-control">
                     <p className="label mb-4">
-                      <span className="label-text">Password</span>
+                      <span className="label-text text-white">Password</span>
                     </p>
                     <input
                       type="password"
@@ -176,7 +177,7 @@ const SignUp = () => {
                           /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                       })}
                       placeholder="Provide Your Password"
-                      className="input input-bordered w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.password?.type === "required" && (
                       <p className="text-red-600">Password is required</p>
@@ -200,7 +201,7 @@ const SignUp = () => {
                   </div>
                   <div className="form-control mt-6">
                     <input
-                      className="btn bg-black py-4 px-20 rounded-xl text-white hover:border-2 hover:border-black hover:text-black duration-500 hover:bg-transparent cursor-pointer "
+                      className="btn bg-black py-4 px-20 rounded-xl text-white hover:border-2 hover:border-[#FFE500] hover:text-[#FFE500] duration-500 hover:bg-transparent cursor-pointer "
                       type="submit"
                       value="Register"
                     />
@@ -208,19 +209,20 @@ const SignUp = () => {
                 </form>
                 <p className="font-medium pt-2 px-3 mt-6">
                   Already User?{" "}
-                  <Link to="/login" className="text-black font-bold">
+                  <Link to="/login" className="text-white hover:text-[#FFE500] duration-500 hover:bg-transparent cursor-pointer font-bold">
                     Log in
                   </Link>
                 </p>
               </div>
             </div>
+            <div className="py-20">
             <Link
-              className="font-bold text-xl border-b-2 grid justify-center text-center mx-auto border-black mt-20 w-[142px]"
+              className="font-bold text-xl border-b-2 grid justify-center text-center mx-auto border-white  w-[142px]"
               to="/"
             >
               Go to Home
             </Link>
-            <div className=" pb-20"></div>
+            </div>
           </div>
         </div>
       </div>

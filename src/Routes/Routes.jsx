@@ -60,14 +60,14 @@ export const router = createBrowserRouter([
           </Privacy>
         ,
       },
-      {
-        path: "/shop",
-        element:
-          <Shop>
-            <Footer child='ok' />
-          </Shop>
-        ,
-      },
+      // {
+      //   path: "/shop",
+      //   element:
+      //     <Shop>
+      //       <Footer child='ok' />
+      //     </Shop>
+      //   ,
+      // },
       {
         path: "/terms&conditions",
         element: <Terms><Footer child='ok' /></Terms>

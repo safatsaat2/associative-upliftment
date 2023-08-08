@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import PopularService from "../Service/PopularService";
 
 const Services = ({ children }) => {
   const toTop = () => {
@@ -119,6 +120,7 @@ const Services = ({ children }) => {
           </Link>
         ))}
       </div>
+      <PopularService/>
       <div className="mt-20">{children}</div>
     </div>
   );
