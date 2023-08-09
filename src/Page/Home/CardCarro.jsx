@@ -10,7 +10,7 @@ const CardCarro = () => {
       user: "Strategy Stars Team",
       userPic:
         "https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg",
-      star: 3,
+      star: 8,
     },
     {
       id: "2",
@@ -19,7 +19,7 @@ const CardCarro = () => {
       user: "Dynamic Squad Team",
       userPic:
         "https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg",
-      star: 4,
+      star: 8,
     },
 
     {
@@ -29,7 +29,7 @@ const CardCarro = () => {
       user: "Galaxy Gliders Team",
       userPic:
         "https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg",
-      star: 5,
+      star: 8,
     },
   ];
   const slide2 = [
@@ -40,7 +40,7 @@ const CardCarro = () => {
       user: "Titans Alliance Team",
       userPic:
         "https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg",
-      star: 6,
+      star: 8,
     },
     {
       id: "5",
@@ -48,7 +48,7 @@ const CardCarro = () => {
       title: "Full Stack Development",
       user: "Dragon Squad Team",
       userPic: "https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg",
-      star: 7,
+      star: 8,
     },
     {
       id: "6",
@@ -173,7 +173,7 @@ const CardCarro = () => {
                   <p className="font-semibold text-lg">Book Cover Design</p>
                   <p>By Strategy Stars Team</p>
                   <ReactStars
-                    value={3}
+                    value={8}
                     count={8}
                     size={24}
                     edit={false}
@@ -213,7 +213,7 @@ const CardCarro = () => {
                 <p className="font-semibold text-lg">Magazines Design</p>
                 <p>By Dynamic Squad Team</p>
                 <ReactStars
-                  value={4}
+                  value={8}
                   count={8}
                   size={24}
                   edit={false}
@@ -252,7 +252,7 @@ const CardCarro = () => {
                 <p className="font-semibold text-lg">UI/UX Design</p>
                 <p>By Galaxy Gliders Team</p>
                 <ReactStars
-                  value={5}
+                  value={8}
                   count={8}
                   size={24}
                   edit={false}
@@ -291,7 +291,7 @@ const CardCarro = () => {
                 <p className="font-semibold text-lg">Illustration Design</p>
                 <p>By Titans Alliance Team</p>
                 <ReactStars
-                  value={6}
+                  value={8}
                   count={8}
                   size={24}
                   edit={false}
@@ -330,7 +330,7 @@ const CardCarro = () => {
                 <p className="font-semibold text-lg">Full Stack Development</p>
                 <p>By Dragon Squad Team</p>
                 <ReactStars
-                  value={7}
+                  value={8}
                   count={8}
                   size={24}
                   edit={false}

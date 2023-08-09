@@ -13,20 +13,20 @@ const Team = ({ children }) => {
 
     return (
         <>
-            <div className="max-w-7xl mx-auto">
-                <h1 className="text-4xl lg:text-[64px] font-semibold font-sans text-center my-8">
+            <div className="max-w-7xl mx-2 lg:mx-auto">
+                <h1 className="text-2xl lg:text-4xl lg:text-[64px] font-semibold font-sans text-center my-4 lg:my-8">
                 {fillteredData?.teamName}
             </h1>
-            <h2 className="text-xl lg:text-4xl font-medium font-sans text-center mt-4 mb-6">
+            <h2 className="text-lg lg:text-4xl font-medium font-sans text-center mt-4 mb-6">
                 Speacialist At {fillteredData?.industry}
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info1}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info2}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info3}
             </p>
             <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 gap-x-8 my-10 mx-auto">
@@ -35,19 +35,19 @@ const Team = ({ children }) => {
             <img className="h-[300px] w-full rounded-md"  src={fillteredData?.img1} alt="" />
 
             </div>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info4}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info5}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info6}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info7}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-sm lg:text-base">
                 {fillteredData?.info8}
             </p>
             </div>

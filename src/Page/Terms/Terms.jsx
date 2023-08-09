@@ -1,32 +1,32 @@
 const Terms = ({ children }) => {
   return (
     <>
-      <div className="mt-10 max-w-7xl mx-auto">
+      <div className="mt-10 max-w-7xl mx-2 lg:mx-auto">
       <h2
         data-aos="zoom-in-up"
         data-aos-duration="1000"
-        className="text-[64px] font-semibold text-center leading-[135%]"
+        className="text-2xl lg:text-[64px]  font-semibold text-center leading-[135%]"
       >
         <strong>Terms and Conditions</strong>
-        <p className="mt-6  text-lg font-medium text-center">Welcome to International Associative Upliftment!</p>
+        <p className="mt-6 text-md lg:text-lg font-medium text-center">Welcome to International Associative Upliftment!</p>
       </h2>
 
       
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         These terms and conditions outline the rules and regulations for the use
         of International Associative Upliftments Website, located at
         http://associativeupliftment.com/.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         By accessing this website we assume you accept these terms and
         conditions. Do not continue to use International Associative Upliftment
         if you do not agree to take all of the terms and conditions stated on
         this page.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         The following terminology applies to these Terms and Conditions, Privacy
         Statement and Disclaimer Notice and all Agreements: Client, You and Your
         refers to you, the person log on this website and compliant to the
@@ -46,13 +46,13 @@ const Terms = ({ children }) => {
         <strong>Cookies</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We employ the use of cookies. By accessing International Associative
         Upliftment, you agreed to use cookies in agreement with the
         International Associative Upliftments Privacy Policy.{" "}
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         Most interactive websites use cookies to let us retrieve the users
         details for each visit. Cookies are used by our website to enable the
         functionality of certain areas to make it easier for people visiting our
@@ -64,7 +64,7 @@ const Terms = ({ children }) => {
         <strong>License</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         Unless otherwise stated, International Associative Upliftment and/or its
         licensors own the intellectual property rights for all material on
         International Associative Upliftment. All intellectual property rights
@@ -73,8 +73,8 @@ const Terms = ({ children }) => {
         these terms and conditions.
       </p>
 
-      <p className="mt-6">You must not:</p>
-      <ul>
+      <p className="mt-6 text-sm lg:text-base">You must not:</p>
+      <ul className=" text-sm lg:text-base">
         <li className="mt-6">Republish material from International Associative Upliftment</li>
         <li className="mt-6">
           Sell, rent or sub-license material from International Associative
@@ -87,7 +87,7 @@ const Terms = ({ children }) => {
         <li className="mt-6">Redistribute content from International Associative Upliftment</li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         This Agreement shall begin on the date hereof. Our Terms and Conditions
         were created with the help of the{" "}
         <a href="https://www.termsandconditionsgenerator.com/">
@@ -96,7 +96,7 @@ const Terms = ({ children }) => {
         .
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         Parts of this website offer an opportunity for users to post and
         exchange opinions and information in certain areas of the website.
         International Associative Upliftment does not filter, edit, publish or
@@ -110,15 +110,15 @@ const Terms = ({ children }) => {
         and/or appearance of the Comments on this website.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         International Associative Upliftment reserves the right to monitor all
         Comments and to remove any Comments which can be considered
         inappropriate, offensive or causes breach of these Terms and Conditions.
       </p>
 
-      <p className="mt-6">You warrant and represent that:</p>
+      <p className="mt-6 text-sm lg:text-base">You warrant and represent that:</p>
 
-      <ul>
+      <ul className=" text-sm lg:text-base">
         <li className="mt-6">
           You are entitled to post the Comments on our website and have all
           necessary licenses and consents to do so;
@@ -138,7 +138,7 @@ const Terms = ({ children }) => {
         </li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         You hereby grant International Associative Upliftment a non-exclusive
         license to use, reproduce, edit and authorize others to use, reproduce
         and edit any of your Comments in any and all forms, formats or media.
@@ -148,7 +148,7 @@ const Terms = ({ children }) => {
         <strong>Hyperlinking to our Content</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         The following organizations may link to our Website without prior
         written approval:
       </p>
@@ -169,7 +169,7 @@ const Terms = ({ children }) => {
         </li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         These organizations may link to our home page, to publications or to
         other Website information so long as the link: (a) is not in any way
         deceptive; (b) does not falsely imply sponsorship, endorsement or
@@ -177,12 +177,12 @@ const Terms = ({ children }) => {
         fits within the context of the linking partys site.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We may consider and approve other link requests from the following types
         of organizations:
       </p>
 
-      <ul>
+      <ul className=" text-sm lg:text-base">
         <li className="mt-6">commonly-known consumer and/or business information sources;</li>
         <li className="mt-6">dot.com community sites;</li>
         <li className="mt-6">associations or other groups representing charities;</li>
@@ -192,7 +192,7 @@ const Terms = ({ children }) => {
         <li className="mt-6">educational institutions and trade associations.</li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We will approve link requests from these organizations if we decide
         that: (a) the link would not make us look unfavorably to ourselves or to
         our accredited businesses; (b) the organization does not have any
@@ -202,14 +202,14 @@ const Terms = ({ children }) => {
         information.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         These organizations may link to our home page so long as the link: (a)
         is not in any way deceptive; (b) does not falsely imply sponsorship,
         endorsement or approval of the linking party and its products or
         services; and (c) fits within the context of the linking partys site.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         If you are one of the organizations listed in paragraph 2 above and are
         interested in linking to our website, you must inform us by sending an
         e-mail to International Associative Upliftment. Please include your
@@ -219,9 +219,9 @@ const Terms = ({ children }) => {
         link. Wait 2-3 weeks for a response.
       </p>
 
-      <p className="mt-6">Approved organizations may hyperlink to our Website as follows:</p>
+      <p className="mt-6 text-sm lg:text-base">Approved organizations may hyperlink to our Website as follows:</p>
 
-      <ul>
+      <ul className=" text-sm lg:text-base">
         <li className="mt-6">By use of our corporate name; or</li>
         <li className="mt-6">By use of the uniform resource locator being linked to; or</li>
         <li className="mt-6">
@@ -231,7 +231,7 @@ const Terms = ({ children }) => {
         </li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         No use of International Associative Upliftments logo or other artwork
         will be allowed for linking absent a trademark license agreement.
       </p>
@@ -240,7 +240,7 @@ const Terms = ({ children }) => {
         <strong>iFrames</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         Without prior approval and written permission, you may not create frames
         around our Webpages that alter in any way the visual presentation or
         appearance of our Website.
@@ -250,7 +250,7 @@ const Terms = ({ children }) => {
         <strong>Content Liability</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We shall not be hold responsible for any content that appears on your
         Website. You agree to protect and defend us against all claims that is
         rising on your Website. No link(s) should appear on any Website that may
@@ -263,7 +263,7 @@ const Terms = ({ children }) => {
         <strong>Reservation of Rights</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We reserve the right to request that you remove all links or any
         particular link to our Website. You approve to immediately remove all
         links to our Website upon request. We also reserve the right to amen
@@ -276,14 +276,14 @@ const Terms = ({ children }) => {
         <strong>Removal of links from our website</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         If you find any link on our Website that is offensive for any reason,
         you are free to contact and inform us any moment. We will consider
         requests to remove links but we are not obligated to or so or to respond
         to you directly.
       </p>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         We do not ensure that the information on this website is correct, we do
         not warrant its completeness or accuracy; nor do we promise to ensure
         that the website remains available or that the material on the website
@@ -294,7 +294,7 @@ const Terms = ({ children }) => {
         <strong>Disclaimer</strong>
       </h3>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         To the maximum extent permitted by applicable law, we exclude all
         representations, warranties and conditions relating to our website and
         the use of this website. Nothing in this disclaimer will:
@@ -318,7 +318,7 @@ const Terms = ({ children }) => {
         </li>
       </ul>
 
-      <p className="mt-6">
+      <p className="mt-6 text-sm lg:text-base">
         The limitations and prohibitions of liability set in this Section and
         elsewhere in this disclaimer: (a) are subject to the preceding
         paragraph; and (b) govern all liabilities arising under the disclaimer,
@@ -326,7 +326,7 @@ const Terms = ({ children }) => {
         statutory duty.
       </p>
 
-      <p className="mt-6 mb-10">
+      <p className="mt-6 mb-10 text-sm lg:text-base">
         As long as the website and the information and services on the website
         are provided free of charge, we will not be liable for any loss or
         damage of any nature.

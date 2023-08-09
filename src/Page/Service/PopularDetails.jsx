@@ -20,30 +20,30 @@ const PopularDetails = () => {
 
     return (
         <>
-      <div id="top" className="max-w-7xl mx-auto">
-        <h1 className="text-4xl lg:text-[64px] font-semibold font-sans text-center my-8">
+      <div id="top" className="max-w-7xl mx-2 lg:mx-auto">
+        <h1 className="text-2xl lg:text-[64px] font-semibold font-sans text-center my-8">
           {filteredData?.title}
         </h1>
-        <p className=" mt-6">{filteredData?.description}</p>
-        <p className=" mt-6 font-bold">{filteredData?.whyUsTitle}</p>
-        <p className=" mt-4">{filteredData?.whyUs1}</p>
-        <p className=" mt-4">{filteredData?.whyUs2}</p>
-        <p className=" mt-4">{filteredData?.whyUs3}</p>
-        <p className=" mt-4">{filteredData?.whyUs4}</p>
-        <p className=" mt-4">{filteredData?.whyUs5}</p>
-        <p className=" mt-4">{filteredData?.whyUs6}</p>
-        <p className=" mt-4">{filteredData?.whyUs7}</p>
-        <p className=" mt-4">{filteredData?.whyUs8}</p>
-        <p className=" mt-4">{filteredData?.whyUs9}</p>
-        <p className=" mt-4">{filteredData?.whyUs10}</p>
-        <p className=" mt-4">{filteredData?.whyUs11}</p>
-        <p className=" mt-4">{filteredData?.whyUs12}</p>
-        <p className=" mt-4">{filteredData?.whyUs13}</p>
-        <p className=" mt-4">{filteredData?.whyUs14}</p>
-        <p className=" mt-4">{filteredData?.whyUs15}</p>
-        <p className=" mt-4">{filteredData?.whyUs16}</p>
-        <p className=" mt-4">{filteredData?.whyUs17}</p>
-        <p className=" mt-4">{filteredData?.whyUs18}</p>
+        <p className=" mt-6 text-sm lg:text-base">{filteredData?.description}</p>
+        <p className=" mt-6 text-sm lg:text-base font-bold">{filteredData?.whyUsTitle}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs1}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs2}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs3}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs4}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs5}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs6}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs7}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs8}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs9}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs10}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs11}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs12}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs13}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs14}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs15}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs16}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs17}</p>
+        <p className=" mt-4 text-sm lg:text-base">{filteredData?.whyUs18}</p>
         <div className="flex justify-center my-8">
           <Link to='/signup'>
             <button
