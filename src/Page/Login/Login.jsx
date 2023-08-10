@@ -91,7 +91,7 @@ const Login = () => {
                       type="text"
                       {...register("email", { required: true })}
                       placeholder="Provide Your Email"
-                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input text-black input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.email && (
                       <span className="text-red-500">Email is required</span>
@@ -111,7 +111,7 @@ const Login = () => {
                         }
                       )}
                       placeholder="Provide Your Password"
-                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input text-black input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.password && (
                       <span className="text-red-500">Password is must</span>

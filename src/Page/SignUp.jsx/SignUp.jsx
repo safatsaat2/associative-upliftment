@@ -77,7 +77,7 @@ const SignUp = () => {
                       type="text"
                       {...register("name", { required: true })}
                       placeholder="Provide Your Name"
-                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered text-black w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.email && (
                       <p className="text-red-500">Name is required</p>
@@ -160,7 +160,7 @@ const SignUp = () => {
                       type="email"
                       {...register("email", { required: true })}
                       placeholder="Provide Your Email"
-                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered text-black w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.email && (
                       <p className="text-red-500">Email is required</p>
@@ -180,7 +180,7 @@ const SignUp = () => {
                           /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                       })}
                       placeholder="Provide Your Password"
-                      className="input input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      className="input input-bordered text-black w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
                     />
                     {errors.password?.type === "required" && (
                       <p className="text-red-600">Password is required</p>
