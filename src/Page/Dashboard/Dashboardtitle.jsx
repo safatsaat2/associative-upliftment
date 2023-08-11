@@ -3,22 +3,27 @@ import { Icon } from "@iconify/react";
 import { useContext } from "react";
 
 const Dashboardtitle = () => {
-    const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   return (
-    <div className="flex items-center justify-between mt-9">
-      <div></div>
-      <div>
-        <h1 className="text-6xl font-medium">Balance:</h1>
+    <div className="flex items-center justify-between mt-4 mx-4">
+      <div className="bg-white text-black text-3xl font-semibold py-4 pl-4 pr-16 rounded-xl dashShadow">
+        <p className="mb-2">ID:*************</p>
+        <p>Balance: $00</p>
       </div>
-      <div className="flex items-center">
-        <div>
-          <h1 className="text-[32px] mr-6">Hi {user?.displayName},</h1>
+      <div className="text-black">
+        <p className="text-2xl mb-2">Welcome, {user.displayName}</p>
+        <div className="flex">
+          <div className="flex gap-x-2 mr-4">
+            <p className="">Notification</p>
+            <div className="relative">
+            <Icon icon="ri:notification-line" className="text-2xl" />
+            <div className="px-[5px] py-[2px] bg-[#FFE500] rounded-full flex justify-center items-center absolute top-0 right-0">
+              <p className="text-[7px]">8</p>
+            </div>
+            </div>
+          </div>
+          <p>Report</p>
         </div>
-        {user?.photoURL === null ? (
-          <Icon className="text-[92px]" icon="radix-icons:avatar" />
-        ) : (
-          <img src="" alt="" />
-        )}
       </div>
     </div>
   );
