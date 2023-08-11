@@ -47,7 +47,7 @@ const Dashboard = () => {
     };
 
   return (
-    <div className="flex flex-col items-center justify-end lg:h-[250px]">
+    <div className="flex flex-col items-center justify-end">
       <h1 className="text-6xl font-medium">Welcome {user?.displayName},</h1>
       <>
         <form onSubmit={handlePayment} >

@@ -4,7 +4,7 @@ import Dashboardtitle from "./Dashboardtitle";
 
 const DashLayout = () => {
   return (
-    <div className="lg:flex">
+    <div className="lg:flex ">
       <DashNav />
       <div className="w-full bg-slate-100 ">
         <Dashboardtitle />
