@@ -132,11 +132,18 @@ function classNames(...classes) {
 const DashNewOrder = () => {
   const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
-  console.log(typeof (selectedCat.name))
+  const [team, setTeam] = useState('')
+
+  const handleChange = (e) => {
+    setTeam(e.target.value);
+  };
+  console.log(team)
   return (
-    <div className="my-10 mx-4">
+    <div className="my-10 ">
       <div className="grid grid-cols-3 gap-x-6">
         <div className="col-span-2">
+
+          {/* Category Field */}
           <div className="bg-white dashShadow rounded-[10px]">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
@@ -204,7 +211,7 @@ const DashNewOrder = () => {
           </div>
 
 
-
+          {/* Service Field */}
 
 
           <div className="bg-white mt-6 dashShadow rounded-[10px]">
@@ -266,195 +273,195 @@ const DashNewOrder = () => {
                               )}
                             </Listbox.Option>
                           )) :
-                           selectedCat.name === "Digital Marketing" ?
-                           marketingService.map((person) => (
-                            <Listbox.Option
-                              key={person.id}
-                              className={({ active }) =>
-                                classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
-                                )
-                              }
-                              value={person}
-                            >
-                              {({ selectedSer, active }) => (
-                                <>
-                                  <div className="flex items-center">
-                                    <span
-                                      className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                    >
-                                      {person.name}
-                                    </span>
-                                  </div>
+                            selectedCat.name === "Digital Marketing" ?
+                              marketingService.map((person) => (
+                                <Listbox.Option
+                                  key={person.id}
+                                  className={({ active }) =>
+                                    classNames(
+                                      active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                      'relative cursor-default select-none py-2 pl-3 pr-9'
+                                    )
+                                  }
+                                  value={person}
+                                >
+                                  {({ selectedSer, active }) => (
+                                    <>
+                                      <div className="flex items-center">
+                                        <span
+                                          className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                        >
+                                          {person.name}
+                                        </span>
+                                      </div>
 
-                                  {selectedCat ? (
-                                    <span
-                                      className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
-                                        'absolute inset-y-0 right-0 flex items-center pr-4'
+                                      {selectedCat ? (
+                                        <span
+                                          className={classNames(
+                                            active ? 'text-black' : 'text-[#FFE500]',
+                                            'absolute inset-y-0 right-0 flex items-center pr-4'
+                                          )}
+                                        >
+                                          <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                        </span>
+                                      ) : null}
+                                    </>
+                                  )}
+                                </Listbox.Option>
+                              ))
+                              :
+                              selectedCat.name === "Web Design and Develop" ?
+                                developService.map((person) => (
+                                  <Listbox.Option
+                                    key={person.id}
+                                    className={({ active }) =>
+                                      classNames(
+                                        active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                        'relative cursor-default select-none py-2 pl-3 pr-9'
+                                      )
+                                    }
+                                    value={person}
+                                  >
+                                    {({ selectedCat, active }) => (
+                                      <>
+                                        <div className="flex items-center">
+                                          <span
+                                            className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                          >
+                                            {person.name}
+                                          </span>
+                                        </div>
+
+                                        {selectedCat ? (
+                                          <span
+                                            className={classNames(
+                                              active ? 'text-black' : 'text-[#FFE500]',
+                                              'absolute inset-y-0 right-0 flex items-center pr-4'
+                                            )}
+                                          >
+                                            <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                          </span>
+                                        ) : null}
+                                      </>
+                                    )}
+                                  </Listbox.Option>
+                                ))
+                                :
+                                selectedCat.name === "Graphic design" ?
+                                  designService.map((person) => (
+                                    <Listbox.Option
+                                      key={person.id}
+                                      className={({ active }) =>
+                                        classNames(
+                                          active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                          'relative cursor-default select-none py-2 pl-3 pr-9'
+                                        )
+                                      }
+                                      value={person}
+                                    >
+                                      {({ selectedSer, active }) => (
+                                        <>
+                                          <div className="flex items-center">
+                                            <span
+                                              className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                            >
+                                              {person.name}
+                                            </span>
+                                          </div>
+
+                                          {selectedCat ? (
+                                            <span
+                                              className={classNames(
+                                                active ? 'text-black' : 'text-[#FFE500]',
+                                                'absolute inset-y-0 right-0 flex items-center pr-4'
+                                              )}
+                                            >
+                                              <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                            </span>
+                                          ) : null}
+                                        </>
                                       )}
-                                    >
-                                      <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                    </span>
-                                  ) : null}
-                                </>
-                              )}
-                            </Listbox.Option>
-                          ))
-                            :
-                            selectedCat.name === "Web Design and Develop" ?
-                           developService.map((person) => (
-                            <Listbox.Option
-                              key={person.id}
-                              className={({ active }) =>
-                                classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
-                                )
-                              }
-                              value={person}
-                            >
-                              {({ selectedSer, active }) => (
-                                <>
-                                  <div className="flex items-center">
-                                    <span
-                                      className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                    >
-                                      {person.name}
-                                    </span>
-                                  </div>
+                                    </Listbox.Option>
+                                  ))
+                                  :
+                                  selectedCat.name === "E-mail Marketing" ?
+                                    emailService.map((person) => (
+                                      <Listbox.Option
+                                        key={person.id}
+                                        className={({ active }) =>
+                                          classNames(
+                                            active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                            'relative cursor-default select-none py-2 pl-3 pr-9'
+                                          )
+                                        }
+                                        value={person}
+                                      >
+                                        {({ selectedSer, active }) => (
+                                          <>
+                                            <div className="flex items-center">
+                                              <span
+                                                className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                              >
+                                                {person.name}
+                                              </span>
+                                            </div>
 
-                                  {selectedCat ? (
-                                    <span
-                                      className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
-                                        'absolute inset-y-0 right-0 flex items-center pr-4'
-                                      )}
-                                    >
-                                      <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                    </span>
-                                  ) : null}
-                                </>
-                              )}
-                            </Listbox.Option>
-                          ))
-                          :
-                          selectedCat.name === "Graphic design" ?
-                           designService.map((person) => (
-                            <Listbox.Option
-                              key={person.id}
-                              className={({ active }) =>
-                                classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
-                                )
-                              }
-                              value={person}
-                            >
-                              {({ selectedSer, active }) => (
-                                <>
-                                  <div className="flex items-center">
-                                    <span
-                                      className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                    >
-                                      {person.name}
-                                    </span>
-                                  </div>
+                                            {selectedCat ? (
+                                              <span
+                                                className={classNames(
+                                                  active ? 'text-black' : 'text-[#FFE500]',
+                                                  'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                )}
+                                              >
+                                                <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                              </span>
+                                            ) : null}
+                                          </>
+                                        )}
+                                      </Listbox.Option>
+                                    ))
+                                    :
 
-                                  {selectedCat ? (
-                                    <span
-                                      className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
-                                        'absolute inset-y-0 right-0 flex items-center pr-4'
-                                      )}
-                                    >
-                                      <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                    </span>
-                                  ) : null}
-                                </>
-                              )}
-                            </Listbox.Option>
-                          ))
-                          :
-                          selectedCat.name === "E-mail Marketing" ?
-                           emailService.map((person) => (
-                            <Listbox.Option
-                              key={person.id}
-                              className={({ active }) =>
-                                classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
-                                )
-                              }
-                              value={person}
-                            >
-                              {({ selectedSer, active }) => (
-                                <>
-                                  <div className="flex items-center">
-                                    <span
-                                      className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                    >
-                                      {person.name}
-                                    </span>
-                                  </div>
+                                    selectedCat.name === "Video Editing" ?
+                                      videoService.map((person) => (
+                                        <Listbox.Option
+                                          key={person.id}
+                                          className={({ active }) =>
+                                            classNames(
+                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              'relative cursor-default select-none py-2 pl-3 pr-9'
+                                            )
+                                          }
+                                          value={person}
+                                        >
+                                          {({ selectedSer, active }) => (
+                                            <>
+                                              <div className="flex items-center">
+                                                <span
+                                                  className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                >
+                                                  {person.name}
+                                                </span>
+                                              </div>
 
-                                  {selectedCat ? (
-                                    <span
-                                      className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
-                                        'absolute inset-y-0 right-0 flex items-center pr-4'
-                                      )}
-                                    >
-                                      <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                    </span>
-                                  ) : null}
-                                </>
-                              )}
-                            </Listbox.Option>
-                          ))
-                          :
+                                              {selectedCat ? (
+                                                <span
+                                                  className={classNames(
+                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                  )}
+                                                >
+                                                  <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                </span>
+                                              ) : null}
+                                            </>
+                                          )}
+                                        </Listbox.Option>
+                                      ))
+                                      :
+                                      alert("Please Select")
 
-                          selectedCat.name === "Video Editing" ?
-                           videoService.map((person) => (
-                            <Listbox.Option
-                              key={person.id}
-                              className={({ active }) =>
-                                classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
-                                )
-                              }
-                              value={person}
-                            >
-                              {({ selectedSer, active }) => (
-                                <>
-                                  <div className="flex items-center">
-                                    <span
-                                      className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                    >
-                                      {person.name}
-                                    </span>
-                                  </div>
-
-                                  {selectedCat ? (
-                                    <span
-                                      className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
-                                        'absolute inset-y-0 right-0 flex items-center pr-4'
-                                      )}
-                                    >
-                                      <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                    </span>
-                                  ) : null}
-                                </>
-                              )}
-                            </Listbox.Option>
-                          ))
-                          :
-                          alert("Please Select")
-
-                      }
+                        }
                       </Listbox.Options>
                     </Transition>
                   </div>
@@ -464,19 +471,121 @@ const DashNewOrder = () => {
           </div>
 
 
+          {/* Description Field */}
+          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
+            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>
+              Description
+            </p>
 
+            <p className='pt-4 pb-2 pl-4'>
+              🔘 𝐒𝐭𝐚𝐫𝐭: 1-24 Hours
+            </p>
+            <p className='py-2 pl-4'>🔘 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞 𝐭𝐢𝐦𝐞: 24-48 Hours
 
+            </p>
+            <p className='py-2 pl-4'>
+              🔘 𝐐𝐮𝐚𝐥𝐢𝐭𝐲: High Quality
 
+            </p>
 
+            <p className='py-2 px-4'>🔔 Tell us a little about your order in the information box below and
+              Share some important links
 
+            </p>
+          </div>
+          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
+            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Information</p>
+            <textarea className="textarea textarea-ghost  h-64 mt-4 focus:border-none w-full" placeholder="Information"></textarea>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
+        {/* Team field */}
+        <div className='dashShadow rounded-[10px] bg-white'>
+          <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Select Team</p>
+          {/* 1st Team */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Strategy Stars Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Strategy Stars Team</p>
+            </div>
+          </div>
+          {/* 2nd Team */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Dynamic Squad Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Dynamic Squad Team</p>
+            </div>
+          </div>
+          {/* 3rd */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Galaxy Gliders Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Galaxy Gliders Team</p>
+            </div>
+          </div>
+          {/* 4th Team */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Titans Alliance Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Titans Alliance Team</p>
+            </div>
+          </div>
+          {/* 5th Team */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Dragon Squad Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Dragon Squad Team</p>
+            </div>
+          </div>
+          {/* 6th Team */}
+          <div className="form-control flex items-center flex-row mt-12 ml-4">
+            <div className="flex gap-x-4 justify-center items-center">
+              <input
+                type="radio"
+                name="radio-10"
+                value="Galactic Guardians Team"
+                className="radio checked:bg-black-500"
+                onChange={handleChange}
+              />
+              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg" alt="" />
+              <p className="label-text text-xl font-semibold">Galactic Guardians Team</p>
+            </div>
+          </div>
 
 
 
@@ -486,8 +595,25 @@ const DashNewOrder = () => {
 
 
         </div>
-        <div></div>
       </div>
+
+      {/* Quantity and Charge */}
+
+      <div className='grid grid-cols-2 mt-6 gap-x-6'>
+        <div className='flex justify-center items-center'>
+          <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
+          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+        </div>
+        <div className='flex justify-center items-center'>
+          <p className='text-xl font-semibold text-black mr-4'>Charge:</p>
+          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+        </div>
+        <div>
+        </div>
+      </div>
+
+      {/* Submit Button */}
+          <div className="text-2xl font-semibold bg-[#FFE500] rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
     </div>
   );
 };
