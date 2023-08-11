@@ -11,7 +11,7 @@ const Dashboardtitle = () => {
         <p>Balance: $00</p>
       </div>
       <div className="text-black">
-        <p className="text-2xl mb-2">Welcome, {user.displayName}</p>
+        <p className="text-2xl mb-2">Welcome, {user?.displayName}</p>
         <div className="flex">
           <div className="flex gap-x-2 mr-4">
             <p className="">Notification</p>

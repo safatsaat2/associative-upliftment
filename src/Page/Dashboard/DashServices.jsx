@@ -1,6 +1,30 @@
 import { Icon } from "@iconify/react";
+import axios from "axios";
 
 const DashServices = () => {
+  const submit = (event) => {
+    event.preventDefault();
+
+    const serviceName = filtered?.title;
+    const price = value;
+    const status = "";
+    const email = user?.email;
+    const date = moment().format("MMMM Do YYYY, h:mm:ss a");
+    const id = Math.floor(Math.random() * 100000);
+
+    const order = { serviceName, price, status, email, date, id };
+
+    axios
+      .post("https://associative-upliftment-server.vercel.app/orders", order)
+      .then((res) => {
+        console.log(res);
+      });
+  };
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setValue(value);
+  };
   const services = [
     {
       id: "1",

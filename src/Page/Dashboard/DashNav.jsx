@@ -17,21 +17,22 @@ const DashNav = () => {
           src="https://i.ibb.co/JB9x4Wx/Group-1000003448.png"
           alt="LOGO"
         />
-        <p className="text-white mt-4">{user.displayName}</p>
+        <p className="text-white mt-4">{user?.displayName}</p>
 
         <Link to="/dashboard" onClick={toTop}>
           <p className="mt-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Home
           </p>
         </Link>
+        <Link to="/dashboard/neworder" onClick={toTop}>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           New Order
         </p>
-        <Link to="/dashboard/neworder" onClick={toTop}>
+        </Link>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Custom Order
           </p>
-        </Link>
+        
         <Link to="order" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Orders
