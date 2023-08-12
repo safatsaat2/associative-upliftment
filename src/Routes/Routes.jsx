@@ -21,6 +21,7 @@ import DashCustom from "../Page/Dashboard/DashCustom";
 import DashComplainBox from "../Page/Dashboard/DashComplainBox";
 import DashEarnMoney from "../Page/Dashboard/DashEarnMoney";
 import DashOrders from "../Page/Dashboard/DashOrders";
+import DashOurTeam from "../Page/Dashboard/DashOurTeam";
 
 export const router = createBrowserRouter([
   {
@@ -129,6 +130,10 @@ export const router = createBrowserRouter([
       {
         path: "orders",
         element: <DashOrders/>
+      },
+      {
+        path: "ourteam",
+        element: <DashOurTeam/>
       }
     ],
   },
