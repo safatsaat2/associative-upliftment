@@ -29,7 +29,7 @@ const DashNav = () => {
             New Order
           </p>
         </Link>
-        <Link to="/dashboard/customorder">
+        <Link to="/dashboard/customorder" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Custom Order
           </p>
@@ -55,9 +55,12 @@ const DashNav = () => {
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Your Offer
         </p>
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Complaint Box
-        </p>
+        <Link to="/dashboard/complainbox" onClick={toTop}>
+          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+            Complaint Box
+          </p>
+        </Link>
+
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Contact
         </p>

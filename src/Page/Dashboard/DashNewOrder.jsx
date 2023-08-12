@@ -139,7 +139,7 @@ const DashNewOrder = () => {
   };
   console.log(team)
   return (
-    <div className="my-10 ">
+    <div className="my-4 ">
       <div className="grid grid-cols-3 gap-x-6">
         <div className="col-span-2">
 

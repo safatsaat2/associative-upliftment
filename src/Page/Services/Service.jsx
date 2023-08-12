@@ -2,13 +2,13 @@ import { useContext, useState } from "react";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Footer from "../Home/Footer";
-import axios from "axios";
+// import axios from "axios";
 import { AuthContext } from "../../Provider/AuthProvider";
-import moment from "moment/moment";
+// import moment from "moment/moment";
 
 const Service = () => {
   const { user } = useContext(AuthContext);
-  const [value, setValue] = useState("");
+  // const [value, setValue] = useState("");
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
 
@@ -51,7 +51,7 @@ const Service = () => {
         <p className=" mt-4 text-sm lg:text-base">{filtered?.whyUs17}</p>
         <p className=" mt-4 text-sm lg:text-base">{filtered?.whyUs18}</p>
         <div className="flex justify-center my-8">
-          <Link to='/signup'>
+          <Link to={user ? `/dashboard` : "/signup"}>
             <button
               className={`bg-black text-white px-10 py-4 rounded-xl`}
             >

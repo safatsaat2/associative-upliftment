@@ -8,7 +8,7 @@ const DashLayout = () => {
       <DashNav />
       <div className="w-full bg-[#FFFDEE]">
         <Dashboardtitle />
-        <div className="my-10 mx-4">
+        <div className="my-4 mx-4">
             <Outlet></Outlet>
         </div>
       </div>

@@ -18,6 +18,7 @@ import Contact from "../Page/Contact/Contact";
 import Team from "../Page/Team/Team";
 import PopularDetails from "../Page/Service/PopularDetails";
 import DashCustom from "../Page/Dashboard/DashCustom";
+import DashComplainBox from "../Page/Dashboard/DashComplainBox";
 
 export const router = createBrowserRouter([
   {
@@ -114,6 +115,10 @@ export const router = createBrowserRouter([
       {
         path: "customorder",
         element: <DashCustom/>
+      },
+      {
+        path: "complainbox",
+        element: <DashComplainBox/>
       }
     ],
   },

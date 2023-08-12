@@ -660,7 +660,7 @@ const DashCustom = () => {
     const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
     return (
-        <div className="my-10 ">
+        <div className="my-4 ">
       <div className="grid grid-cols-1 gap-x-6">
         <div>
 
