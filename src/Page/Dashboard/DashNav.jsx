@@ -25,14 +25,17 @@ const DashNav = () => {
           </p>
         </Link>
         <Link to="/dashboard/neworder" onClick={toTop}>
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          New Order
-        </p>
+          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+            New Order
+          </p>
         </Link>
+        <Link to="/dashboard/customorder">
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Custom Order
           </p>
-        
+        </Link>
+
+
         <Link to="order" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Orders
@@ -53,13 +56,13 @@ const DashNav = () => {
           Your Offer
         </p>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-        Complaint Box 
+          Complaint Box
         </p>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-        Contact
+          Contact
         </p>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-        Earn Money 
+          Earn Money
         </p>
         <Link to='/' onClick={toTop}>
           <p className="my-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
