@@ -193,34 +193,461 @@ const linkedinService = [
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
 ]
+const twitterService = [
+  {
+    id: 1,
+    name: 'Twitter Marketing = $40',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 2,
+    name: 'Twitter impressions = $450',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 2,
+    name: 'Twitter banner = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }
+]
+const pinterestService = [
+  {
+    id: 1,
+    name: 'Pinterest Marketing = $150',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 2,
+    name: 'Pinterest paid ads = $375',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 3,
+    name: 'Pinterest affiliate marketing = $320',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Pinterest virtual assistant = $40',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Pinterest pins = $40',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Pinterest pin creation =  $60',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+]
+
+const seoService = [
+  {
+    id: 1,
+    name: 'On page SEO = $255',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 2,
+    name: 'Google maps SEO = $220',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 3,
+    name: 'YouTube SEO = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Website SEO = $195',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Shopify SEO = $795',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Google SEO = $210',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 7,
+    name: 'SEO Audit = $255',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }]
+
+const designService = [
+  {
+    id: 1,
+    name: 'Logo Design = $25',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 2,
+    name: 'Branding = $19',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 3,
+    name: 'T-shirt Design = $22',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Brochure Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Business Cards = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Flyer Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 7,
+    name: 'Letterheads = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 8,
+    name: 'Leaflets = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 9,
+    name: 'Banner Design = $30',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 10,
+    name: 'Digital Painting = $25',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 11,
+    name: 'Poster Design = $19',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 12,
+    name: 'Icon Design = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 13,
+    name: 'Illustration = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 14,
+    name: 'CV Design = $22',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 15,
+    name: 'ID Card Design = $13',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 16,
+    name: 'Postcard Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 17,
+    name: 'Catalog Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 18,
+    name: 'Social Media Ads = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 19,
+    name: 'Book Cover Design = $22',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 20,
+    name: 'Invoice Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 21,
+    name: 'Capability Statement Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 22,
+    name: 'Stationery Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 23,
+    name: 'Door Hanger Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 24,
+    name: 'Email Signature Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 25,
+    name: 'Architecture Design  = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 26,
+    name: 'Menu Design = $25',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 27,
+    name: 'Vector Work = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 28,
+    name: 'Fashion Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 29,
+    name: 'Package Design = $19',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 30,
+    name: 'Blog Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 31,
+    name: 'Typography Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 32,
+    name: 'Phone Cover Case Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 33,
+    name: 'Youtube Thumbnail = $7',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 34,
+    name: 'Clipping Path = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 35,
+    name: 'Background Removes = $8',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 36,
+    name: 'photo retouching = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 37,
+    name: 'Photo Manipulation = $12',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 38,
+    name: 'Beauty retouching = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 39,
+    name: 'Facebook cover = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 40,
+    name: 'web banner = $35',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 41,
+    name: 'Roll-up Banner = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 42,
+    name: 'Bill Board Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 43,
+    name: 'Social Media Posts = $7',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 44,
+    name: 'Pattern Design = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 45,
+    name: 'Fluid Background = $$',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+]
 const emailService = [
   {
     id: 1,
-    name: 'A team management your e-mail marketing for $350 a week',
+    name: 'Email marketing = $100',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your e-mail marketing for $1400 a month',
+    name: 'Malichimp email template design = $55',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
-]
-const videoService = [
+  },
+  {
+    id: 3,
+    name: 'Send bulk emails = $45',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Bulk email collection = $55',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Bulk email list = $55',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Email template design = $55',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Mailchimp email campaign = $55',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }]
+const dataService = [
   {
     id: 1,
-    name: 'A team management your all social media ads video editing for $350 a week',
+    name: 'Data entry = $82',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your all social media ads video editing for $1400 a month',
+    name: 'Email collect = $150',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
-]
+  },
+  {
+    id: 3,
+    name: 'Data entry copy past = $115',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Data scraping = $85',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Excel data cleaning = $115',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Data analyst =  $115',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }]
 
 
 
@@ -479,7 +906,7 @@ const DashCustom = () => {
                                   ))
                                   :
                                   selectedCat.name === "Twitter" ?
-                                    emailService.map((person) => (
+                                  twitterService.map((person) => (
                                       <Listbox.Option
                                         key={person.id}
                                         className={({ active }) =>
@@ -517,7 +944,7 @@ const DashCustom = () => {
                                     :
 
                                     selectedCat.name === "Pinterest" ?
-                                      videoService.map((person) => (
+                                    pinterestService.map((person) => (
                                         <Listbox.Option
                                           key={person.id}
                                           className={({ active }) =>
@@ -553,8 +980,155 @@ const DashCustom = () => {
                                         </Listbox.Option>
                                       ))
                                       :
-                                      alert("Please Select")
+                                      selectedCat.name === "Online SEO" ?
+                                      seoService.map((person) => (
+                                        <Listbox.Option
+                                          key={person.id}
+                                          className={({ active }) =>
+                                            classNames(
+                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              'relative cursor-default select-none py-2 pl-3 pr-9'
+                                            )
+                                          }
+                                          value={person}
+                                        >
+                                          {({ selectedSer, active }) => (
+                                            <>
+                                              <div className="flex items-center">
+                                                <span
+                                                  className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                >
+                                                  {person.name}
+                                                </span>
+                                              </div>
 
+                                              {selectedCat ? (
+                                                <span
+                                                  className={classNames(
+                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                  )}
+                                                >
+                                                  <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                </span>
+                                              ) : null}
+                                            </>
+                                          )}
+                                        </Listbox.Option>
+                                      ))
+                                      :
+                                      selectedCat.name === "Design" ?
+                                      designService.map((person) => (
+                                        <Listbox.Option
+                                          key={person.id}
+                                          className={({ active }) =>
+                                            classNames(
+                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              'relative cursor-default select-none py-2 pl-3 pr-9'
+                                            )
+                                          }
+                                          value={person}
+                                        >
+                                          {({ selectedSer, active }) => (
+                                            <>
+                                              <div className="flex items-center">
+                                                <span
+                                                  className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                >
+                                                  {person.name}
+                                                </span>
+                                              </div>
+
+                                              {selectedCat ? (
+                                                <span
+                                                  className={classNames(
+                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                  )}
+                                                >
+                                                  <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                </span>
+                                              ) : null}
+                                            </>
+                                          )}
+                                        </Listbox.Option>
+                                      ))
+                                      :
+                                      selectedCat.name === "Data" ?
+                                      dataService.map((person) => (
+                                        <Listbox.Option
+                                          key={person.id}
+                                          className={({ active }) =>
+                                            classNames(
+                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              'relative cursor-default select-none py-2 pl-3 pr-9'
+                                            )
+                                          }
+                                          value={person}
+                                        >
+                                          {({ selectedSer, active }) => (
+                                            <>
+                                              <div className="flex items-center">
+                                                <span
+                                                  className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                >
+                                                  {person.name}
+                                                </span>
+                                              </div>
+
+                                              {selectedCat ? (
+                                                <span
+                                                  className={classNames(
+                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                  )}
+                                                >
+                                                  <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                </span>
+                                              ) : null}
+                                            </>
+                                          )}
+                                        </Listbox.Option>
+                                      ))
+                                      :
+                                      selectedCat.name === "E-mail" ?
+                                      emailService.map((person) => (
+                                        <Listbox.Option
+                                          key={person.id}
+                                          className={({ active }) =>
+                                            classNames(
+                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              'relative cursor-default select-none py-2 pl-3 pr-9'
+                                            )
+                                          }
+                                          value={person}
+                                        >
+                                          {({ selectedSer, active }) => (
+                                            <>
+                                              <div className="flex items-center">
+                                                <span
+                                                  className={classNames(selectedSer ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                >
+                                                  {person.name}
+                                                </span>
+                                              </div>
+
+                                              {selectedCat ? (
+                                                <span
+                                                  className={classNames(
+                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    'absolute inset-y-0 right-0 flex items-center pr-4'
+                                                  )}
+                                                >
+                                                  <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                </span>
+                                              ) : null}
+                                            </>
+                                          )}
+                                        </Listbox.Option>
+                                      ))
+                                      :
+                                    alert('hi')
                         }
                       </Listbox.Options>
                     </Transition>
