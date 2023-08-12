@@ -5,96 +5,193 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 const category = [
   {
     id: 1,
-    name: 'Business Management',
+    name: 'Facebook',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Digital Marketing',
+    name: 'Instagram',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Web Design and Develop',
+    name: 'YouTube',
     avatar:
       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Graphic design',
+    name: 'Linkedin',
     avatar:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'E-mail Marketing',
+    name: 'Twitter',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Video Editing',
+    name: 'Pinterest',
     avatar:
       'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
+  },
+  {
+    id: 7,
+    name: 'Online SEO',
+    avatar:
+      'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 8,
+    name: 'Design',
+    avatar:
+      'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 9,
+    name: 'E-mail',
+    avatar:
+      'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 10,
+    name: 'Data',
+    avatar:
+      'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
 ]
-const manageService = [
+const facebookService = [
   {
     id: 1,
-    name: 'A team management your business for $750 a week',
+    name: 'Facebook Business page create and Professionally Set-up = $30',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your business for $2650 a month',
+    name: 'Facebook page monetization = $250',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 3,
+    name: 'Facebook post design = $7',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Facebook banner design = $15',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'facebook ads design = $25',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 6,
+    name: 'Facebook Marketing = $40',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 7,
+    name: 'Facebook Ads Campaign = $100',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }
 ]
-const marketingService = [
+
+const instagramService = [
   {
     id: 1,
-    name: 'A team management your All Social Media for $350 a week',
+    name: 'Instagram Hashtags Research = $25',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your business for $1400 a month',
+    name: 'Instagram Influencer Research = $35',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
+  },
+  {
+    id: 3,
+    name: 'Instagram post design = $7',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
 ]
-const developService = [
+const youtubeService = [
   {
     id: 1,
-    name: 'A team management your business website for $350 a week',
+    name: 'YouTube Thumbnail = $7',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your business website for $1400 a month',
+    name: 'YouTube Banner = $15',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
+  },
+  {
+    id: 3,
+    name: 'YouTube SEO = $10',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'YouTube Channel Create and Professionally Set-up = $30',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'YouTube Monetization = $450',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
 ]
-const designService = [
+const linkedinService = [
   {
     id: 1,
-    name: 'A team management your all business design for $350 a week',
+    name: 'Linkedin Connections = $55',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'A team management your business design for $1400 a month',
+    name: 'Linkedin Business page Creation and Set-up = $65',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  }
+  },
+  {
+    id: 3,
+    name: 'Linkedin optimization = $155',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 4,
+    name: 'Linkedin ads = $260',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    id: 5,
+    name: 'Linkedin Post = $7',
+    avatar:
+      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
 ]
 const emailService = [
   {
@@ -235,7 +332,7 @@ const DashCustom = () => {
                     >
                       <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {
-                          selectedCat.name === "Business Management" ? manageService.map((person) => (
+                          selectedCat.name === "Facebook" ? facebookService.map((person) => (
                             <Listbox.Option
                               key={person.id}
                               className={({ active }) =>
@@ -270,8 +367,8 @@ const DashCustom = () => {
                               )}
                             </Listbox.Option>
                           )) :
-                            selectedCat.name === "Digital Marketing" ?
-                              marketingService.map((person) => (
+                            selectedCat.name === "Instagram" ?
+                              instagramService.map((person) => (
                                 <Listbox.Option
                                   key={person.id}
                                   className={({ active }) =>
@@ -307,8 +404,8 @@ const DashCustom = () => {
                                 </Listbox.Option>
                               ))
                               :
-                              selectedCat.name === "Web Design and Develop" ?
-                                developService.map((person) => (
+                              selectedCat.name === "YouTube" ?
+                              youtubeService.map((person) => (
                                   <Listbox.Option
                                     key={person.id}
                                     className={({ active }) =>
@@ -344,8 +441,8 @@ const DashCustom = () => {
                                   </Listbox.Option>
                                 ))
                                 :
-                                selectedCat.name === "Graphic design" ?
-                                  designService.map((person) => (
+                                selectedCat.name === "Linkedin" ?
+                                linkedinService.map((person) => (
                                     <Listbox.Option
                                       key={person.id}
                                       className={({ active }) =>
@@ -381,7 +478,7 @@ const DashCustom = () => {
                                     </Listbox.Option>
                                   ))
                                   :
-                                  selectedCat.name === "E-mail Marketing" ?
+                                  selectedCat.name === "Twitter" ?
                                     emailService.map((person) => (
                                       <Listbox.Option
                                         key={person.id}
@@ -419,7 +516,7 @@ const DashCustom = () => {
                                     ))
                                     :
 
-                                    selectedCat.name === "Video Editing" ?
+                                    selectedCat.name === "Pinterest" ?
                                       videoService.map((person) => (
                                         <Listbox.Option
                                           key={person.id}
