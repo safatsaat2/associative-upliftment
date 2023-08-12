@@ -6,7 +6,7 @@ const DashEarnMoney = () => {
             How to Get Free Service?
             </h1>
             <p className="text-xl text-black leading-[185%]" >
-            Just share our website with your friends and you will get free service. When your friend signs up and uses your unique ID as their reference code, you`ll be on your way to earning rewards!
+            Just share our website with your friends and you will get free service. When your friend signs up and uses your unique ID as their reference code, you`ll be on your way to earning rewards!
             </p>
             <div className='w-full flex justify-between items-center dashShadow rounded-[10px] mt-6 bg-white'>
                 <div>

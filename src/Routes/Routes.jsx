@@ -20,6 +20,7 @@ import PopularDetails from "../Page/Service/PopularDetails";
 import DashCustom from "../Page/Dashboard/DashCustom";
 import DashComplainBox from "../Page/Dashboard/DashComplainBox";
 import DashEarnMoney from "../Page/Dashboard/DashEarnMoney";
+import DashOrders from "../Page/Dashboard/DashOrders";
 
 export const router = createBrowserRouter([
   {
@@ -124,6 +125,10 @@ export const router = createBrowserRouter([
       {
         path: "earnmoney",
         element: <DashEarnMoney/>
+      },
+      {
+        path: "orders",
+        element: <DashOrders/>
       }
     ],
   },

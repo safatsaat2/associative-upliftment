@@ -140,7 +140,7 @@ const DashNewOrder = () => {
   console.log(team)
   return (
     <div className="my-4 ">
-      <div className="grid grid-cols-3 gap-x-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
         <div className="col-span-2">
 
           {/* Category Field */}
@@ -500,7 +500,7 @@ const DashNewOrder = () => {
         </div>
 
         {/* Team field */}
-        <div className='dashShadow rounded-[10px] bg-white'>
+        <div className='dashShadow rounded-[10px] mt-6 lg:mt-0 bg-white'>
           <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Select Team</p>
           {/* 1st Team */}
           <div className="form-control flex items-center flex-row mt-12 ml-4">
@@ -573,7 +573,7 @@ const DashNewOrder = () => {
             </div>
           </div>
           {/* 6th Team */}
-          <div className="form-control flex items-center flex-row mt-12 ml-4">
+          <div className="form-control flex items-center flex-row mt-12 ml-4 pb-4">
             <div className="flex gap-x-4 justify-center items-center">
               <input
                 type="radio"
@@ -582,7 +582,7 @@ const DashNewOrder = () => {
                 className="radio checked:bg-black-500"
                 onChange={handleChange}
               />
-              <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg" alt="" />
+              <img className='w-14  object-cover rounded-full' src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg" alt="" />
               <p className="label-text text-xl font-semibold">Galactic Guardians Team</p>
             </div>
           </div>
@@ -599,7 +599,7 @@ const DashNewOrder = () => {
 
       {/* Quantity and Charge */}
 
-      <div className='grid grid-cols-2 mt-6 gap-x-6'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
         <div className='flex justify-center items-center'>
           <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
           <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />

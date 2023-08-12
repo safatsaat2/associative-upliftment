@@ -8,7 +8,7 @@ const Ad = () => {
     <>
       <div className="bg-[url('https://i.ibb.co/5jLnNKk/business-concept-with-graphic-holography-1.png')] bg-blend-overlay  bg-cover bg-center lg:bg-black py-[54px] relative">
         <div className="flex mx-4 max-w-7xl lg:mx-auto justify-between items-center gap-x-8">
-          <div className="text-center">
+          <div className="text-center lg:text-left">
             <div className="flex justify-center items-start gap-x-3">
               {/* <img className="-ml-8" src="https://i.ibb.co/0md3Wy5/Star-41.png" alt="" /> */}
               <h3 className="text-4xl lg:text-7xl font-bold text-white mb-6">

@@ -36,7 +36,7 @@ const DashNav = () => {
         </Link>
 
 
-        <Link to="order" onClick={toTop}>
+        <Link to="/dashboard/orders" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Orders
           </p>
