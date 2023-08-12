@@ -46,7 +46,7 @@ const DashNav = () => {
           Our Team
         </p>
         </Link>
-        <Link to="/dashboard/services" onClick={toTop}>
+        <Link to="/dashboard/addfunds" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Add Funds
           </p>
