@@ -4,10 +4,10 @@ const DashComplainBox = () => {
         <>
             <h1 className="text-xl font-bold text-black mb-4">Must Read Before Creating Tickets!</h1>
             <div className="mb-6">
-                <p className="mb-2 text-black"><span className="font-semibold">Speedy Response Time:</span> Expect to hear from our dedicated support team within just 1 to 24 hours max! We're committed to resolving your query swiftly.</p>
+                <p className="mb-2 text-black"><span className="font-semibold">Speedy Response Time:</span> Expect to hear from our dedicated support team within just 1 to 24 hours max! We`re committed to resolving your query swiftly.</p>
                 <p className="mb-2 text-black"><span className="font-semibold">Patience is Key:</span> After creating your ticket, simply sit back and relax. Our experts are working diligently to provide you with the assistance you need.</p>
                 <p className="mb-2 text-black"><span className="font-semibold">One Ticket, One Solution:</span> To ensure efficient handling of your concern, please avoid creating multiple tickets for the same issue. Our team is here to streamline the process for you.</p>
-                <p className="mb-2 text-black font-semibold">We're here to make your experience smooth and hassle-free. Your satisfaction is our priority! 🌟</p>
+                <p className="mb-2 text-black font-semibold">We`re here to make your experience smooth and hassle-free. Your satisfaction is our priority! 🌟</p>
             </div>
             <form className="flex flex-col justify-center items-center w-full">
                 <div className="w-full">
@@ -20,6 +20,9 @@ const DashComplainBox = () => {
                 </div>
                 <input type="submit" value="Submit" className="text-2xl font-semibold bg-[#FFE500] rounded-[10px] text-center py-4 w-[230px] mx-auto my-6" />
             </form>
+            <div className="bg-white col-span-2 dashShadow rounded-[10px] py-10">
+                <h4 className="ml-4 text-2xl font-bold">TRANSACTION</h4>
+            </div>
         </>
     );
 };

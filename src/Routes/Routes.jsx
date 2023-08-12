@@ -19,6 +19,7 @@ import Team from "../Page/Team/Team";
 import PopularDetails from "../Page/Service/PopularDetails";
 import DashCustom from "../Page/Dashboard/DashCustom";
 import DashComplainBox from "../Page/Dashboard/DashComplainBox";
+import DashEarnMoney from "../Page/Dashboard/DashEarnMoney";
 
 export const router = createBrowserRouter([
   {
@@ -119,6 +120,10 @@ export const router = createBrowserRouter([
       {
         path: "complainbox",
         element: <DashComplainBox/>
+      },
+      {
+        path: "earnmoney",
+        element: <DashEarnMoney/>
       }
     ],
   },

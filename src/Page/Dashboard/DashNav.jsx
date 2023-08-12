@@ -64,9 +64,12 @@ const DashNav = () => {
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Contact
         </p>
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Earn Money
-        </p>
+        <Link to="/dashboard/earnmoney" onClick={toTop}>
+          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+            Earn Money
+          </p>
+        </Link>
+
         <Link to='/' onClick={toTop}>
           <p className="my-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
             Go to Home
