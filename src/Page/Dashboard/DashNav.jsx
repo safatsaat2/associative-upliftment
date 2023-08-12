@@ -51,18 +51,15 @@ const DashNav = () => {
             Add Funds
           </p>
         </Link>
+        <Link to="/dashboard/complainbox" onClick={toTop}>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Ticket
         </p>
+        </Link>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Your Offer
         </p>
-        <Link to="/dashboard/complainbox" onClick={toTop}>
-          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Complaint Box
-          </p>
-        </Link>
-
+        
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
           Contact
         </p>
