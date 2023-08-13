@@ -10,14 +10,14 @@ const DashNav = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="w-[328px] hidden lg:flex flex-col items-center rounded-none  top-0 bg-black shadowDash">
+    <div className="lg:w-[328px] lg:flex flex-col justify-center items-center rounded-none  top-0 bg-black shadowDash">
       <div className="sticky top-0">
         <img
-          className="mt-14"
+          className="pt-4 mt-2 lg:mt-14 mx-auto"
           src="https://i.ibb.co/JB9x4Wx/Group-1000003448.png"
           alt="LOGO"
         />
-        <p className="text-white mt-4">{user?.displayName}</p>
+        <p className="text-white mt-4 text-center">{user?.displayName}</p>
 
         <Link to="/dashboard" onClick={toTop}>
           <p className="mt-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">

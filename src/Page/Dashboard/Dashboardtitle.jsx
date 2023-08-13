@@ -5,7 +5,7 @@ import { useContext } from "react";
 const Dashboardtitle = () => {
   const { user } = useContext(AuthContext);
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between mt-4 mx-4">
+    <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-4 mx-4">
       <div className="bg-white text-black text-3xl font-semibold py-4 pl-4 pr-20 rounded-xl dashShadow">
         <p className="mb-2">ID:*************</p>
         <p>Balance: $00</p>
