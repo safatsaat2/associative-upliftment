@@ -1,16 +1,16 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
-const DashNav = () => {
-  const { user } = useContext(AuthContext)
+const AdminNav = () => {
+    const { user } = useContext(AuthContext)
 
 
   const toTop = () => {
     window.scrollTo(0, 0);
   };
-  return (
-    <div className="lg:w-[328px] lg:flex flex-col justify-center items-center rounded-none sticky top-0 bg-black shadowDash">
+    return (
+        <div className="lg:w-[328px] lg:flex flex-col justify-center items-center rounded-none sticky top-0 bg-black shadowDash">
       <div className="sticky top-0">
         <img
           className="pt-4 mt-2 lg:mt-14 mx-auto"
@@ -19,55 +19,39 @@ const DashNav = () => {
         />
         <p className="text-white mt-4 text-center">{user?.displayName}</p>
 
-        <Link to="/dashboard" onClick={toTop}>
+        <Link to="/dashboard/adminorderpage" onClick={toTop}>
           <p className="mt-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Home
+          Order receive
           </p>
         </Link>
         <Link to="/dashboard/neworder" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            New Order
+          Refer codes
           </p>
         </Link>
         <Link to="/dashboard/customorder" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Custom Order
+          Payment Received
           </p>
         </Link>
 
 
         <Link to="/dashboard/orders" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Orders
+          Notification
           </p>
         </Link>
         <Link to="/dashboard/ourteam" onClick={toTop}>
         <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Our Team
+        UserList
         </p>
         </Link>
         <Link to="/dashboard/addfunds" onClick={toTop}>
           <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Add Funds
+          Ticket Receive
           </p>
         </Link>
-        <Link to="/dashboard/complainbox" onClick={toTop}>
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Ticket
-        </p>
-        </Link>
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Your Offer
-        </p>
         
-        <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-          Contact
-        </p>
-        <Link to="/dashboard/earnmoney" onClick={toTop}>
-          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Earn Money
-          </p>
-        </Link>
 
         <Link to='/' onClick={toTop}>
           <p className="my-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
@@ -76,7 +60,7 @@ const DashNav = () => {
         </Link>
       </div>
     </div>
-  );
+    );
 };
 
-export default DashNav;
+export default AdminNav;

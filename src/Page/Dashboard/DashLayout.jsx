@@ -5,6 +5,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Icon } from "@iconify/react";
+import AdminNav from "./AdminDashBoard/AdminNav";
 
 const DashLayout = () => {
   const [data, setData] = useState([])
@@ -27,11 +28,11 @@ const DashLayout = () => {
           <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
       }
       <div className={menu === false ? "hidden lg:block duration-300" : "lg:block"}>
-        <DashNav />
+        {type === "admin" ? <AdminNav/> : <DashNav />}
       </div>
       <div className="w-full bg-[#FFFDEE]">
         <Dashboardtitle />
-        <div className="my-4 mx-4">
+        <div className="py-4 mx-4">
           <Outlet></Outlet>
         </div>
       </div>

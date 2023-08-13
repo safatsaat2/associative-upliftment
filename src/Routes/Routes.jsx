@@ -23,6 +23,7 @@ import DashEarnMoney from "../Page/Dashboard/DashEarnMoney";
 import DashOrders from "../Page/Dashboard/DashOrders";
 import DashOurTeam from "../Page/Dashboard/DashOurTeam";
 import DashAddFunds from "../Page/Dashboard/DashAddFunds";
+import AdminOrderPage from "../Page/Dashboard/AdminDashBoard/AdminOrderPage";
 
 export const router = createBrowserRouter([
   {
@@ -139,6 +140,10 @@ export const router = createBrowserRouter([
       {
         path: "addfunds",
         element: <DashAddFunds/>
+      },
+      {
+        path:"adminorderpage",
+        element: <AdminOrderPage/>
       }
     ],
   },

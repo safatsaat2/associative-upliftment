@@ -660,7 +660,7 @@ const DashCustom = () => {
     const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
     return (
-        <div className="my-4 ">
+        <div className="my-4 pb-4">
       <div className="grid grid-cols-1 gap-x-6">
         <div>
 
@@ -1172,7 +1172,7 @@ const DashCustom = () => {
       {/* Quantity and Charge */}
 
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6'>
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mb-6'>
           <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
           <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
