@@ -15,7 +15,7 @@ const DashLayout = () => {
   const email = user?.email;
 
   useEffect(() => {
-    axios.get(`http://localhost:7000/users/${email}`)
+    axios.get(`https://associative-upliftment-server.vercel.app/users/${email}`)
       .then(res => {
         setData(res.data)
       })

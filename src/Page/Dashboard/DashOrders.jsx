@@ -6,7 +6,7 @@ const DashOrders = () => {
 
     const { user } = useContext(AuthContext)
     const [orders, setOrders] = useState([])
-    axios.get(`http://localhost:7000/orders/${user?.email}`)
+    axios.get(`https://associative-upliftment-server.vercel.app/orders/${user?.email}`)
         .then(res => {
             const data = res.data
             setOrders(data)
