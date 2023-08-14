@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 const category = [
   {
     id: 1,
+    price: 350,
     name: 'Business Management',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -43,6 +44,7 @@ const category = [
 const manageService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your business for $750 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -57,6 +59,7 @@ const manageService = [
 const marketingService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your All Social Media for $350 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -71,6 +74,7 @@ const marketingService = [
 const developService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your business website for $350 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -85,6 +89,7 @@ const developService = [
 const designService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your all business design for $350 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -99,6 +104,7 @@ const designService = [
 const emailService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your e-mail marketing for $350 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -113,6 +119,7 @@ const emailService = [
 const videoService = [
   {
     id: 1,
+    price: 350,
     name: 'A team management your all social media ads video editing for $350 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -133,11 +140,16 @@ const DashNewOrder = () => {
   const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
   const [team, setTeam] = useState('')
+  const [quantity, setQuantity] = useState(0)
 
   const handleChange = (e) => {
     setTeam(e.target.value);
   };
-  console.log(team)
+
+  const handleQuantity =(e) =>{
+    setQuantity(e.target.value);
+  }
+const charge = quantity * selectedSer?.price; 
   return (
     <div className="my-4 ">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
@@ -602,10 +614,10 @@ const DashNewOrder = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
         <div className='flex justify-center items-center'>
           <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
-          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+          <input onChange={handleQuantity} className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
         <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold text-black mr-4'>Charge:</p>
+          <p className='text-xl font-semibold text-black mr-4'>Charge: ${charge}</p>
           <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
         <div>

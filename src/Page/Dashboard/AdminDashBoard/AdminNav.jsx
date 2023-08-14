@@ -17,7 +17,7 @@ const AdminNav = () => {
           :
           <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
       }
-        <div className={menu === true ? "w-1/2 lg:w-[328px] lg:flex flex-col items-center rounded-none bg-black shadowDash h-full" : "w-1/2 lg:w-[328px] lg:flex flex-col  items-center rounded-none bg-black shadowDash h-full hidden"}>
+        <div className={menu === true ? "w-1/2 lg:w-[328px] lg:flex flex-col items-center rounded-none bg-black shadowDash h-full" : "w-1/2 lg:w-[328px] lg:flex flex-col items-center rounded-none bg-black shadowDash h-full hidden"}>
           
       <div className="sticky top-0">
         <img
