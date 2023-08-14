@@ -12,7 +12,6 @@ const Service = () => {
   const [servicesData, setServicesData] = useState([]);
   const { id } = useParams();
 
-  console.log();
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())

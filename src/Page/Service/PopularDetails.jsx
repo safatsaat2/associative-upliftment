@@ -16,7 +16,6 @@ const PopularDetails = () => {
     },[])
 
   const [filteredData] = datas.filter(data => data.id === id)
-  console.log(filteredData)
 
     return (
         <>
