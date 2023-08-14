@@ -26,6 +26,7 @@ import DashAddFunds from "../Page/Dashboard/DashAddFunds";
 import AdminOrderPage from "../Page/Dashboard/AdminDashBoard/AdminOrderPage";
 import AdminReferCode from "../Page/Dashboard/AdminDashBoard/AdminReferCode";
 import AdminPayment from "../Page/Dashboard/AdminDashBoard/AdminPayment";
+import AdminUserList from "../Page/Dashboard/AdminDashBoard/AdminUserList";
 
 export const router = createBrowserRouter([
   {
@@ -154,6 +155,10 @@ export const router = createBrowserRouter([
       {
         path: "adminpayment",
         element: <AdminPayment/>
+      },
+      {
+        path: "userlist",
+        element: <AdminUserList/>
       }
     ],
   },

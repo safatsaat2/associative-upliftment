@@ -49,7 +49,7 @@ const AdminNav = () => {
           Notification
           </p>
         </Link>
-        <Link to="/dashboard/ourteam" onClick={toTop} >
+        <Link to="/dashboard/userlist" onClick={toTop} >
         <p onClick={() => setMenu(!menu)} className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
         User List
         </p>
