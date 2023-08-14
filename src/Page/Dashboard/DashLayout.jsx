@@ -9,7 +9,8 @@ import AdminNav from "./AdminDashBoard/AdminNav";
 
 const DashLayout = () => {
   const [data, setData] = useState([])
-  const [menu, setMenu] = useState(false)
+
+
   const { user } = useContext(AuthContext)
   const { type } = data
   const email = user?.email;
@@ -22,13 +23,9 @@ const DashLayout = () => {
   }, [email])
   return (
     <div className="lg:flex bg-[#FFFDEE] ">
-      {
-        menu === false ? <Icon onClick={() => setMenu(!menu)} icon="material-symbols:menu" className="lg:hidden text-4xl ml-2 pt-2" />
-          :
-          <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
-      }
-      <div className={menu === false ? "hidden lg:block duration-300" : "lg:block"}>
-        {type === "admin" ? <AdminNav/> : <DashNav />}
+      
+      <div >
+        {type === "admin" ? <AdminNav /> : <DashNav />}
       </div>
       <div className="w-full bg-[#FFFDEE]">
         <Dashboardtitle />

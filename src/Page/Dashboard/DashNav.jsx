@@ -1,16 +1,25 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 const DashNav = () => {
   const { user } = useContext(AuthContext)
+  const [menu, setMenu] = useState(false)
 
 
   const toTop = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="lg:w-[328px] lg:flex flex-col justify-center items-center rounded-none sticky top-0 bg-black shadowDash">
+    <>
+    {
+        menu === false ? <Icon onClick={() => setMenu(!menu)} icon="material-symbols:menu" className="lg:hidden text-4xl ml-2 pt-2" />
+          :
+          <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
+      }
+    <div className="w-1/2 lg:w-[328px] lg:flex flex-col justify-center items-center rounded-none sticky top-0 bg-black shadowDash h-full">
       <div className="sticky top-0">
         <img
           className="pt-4 mt-2 lg:mt-14 mx-auto"
@@ -76,6 +85,7 @@ const DashNav = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

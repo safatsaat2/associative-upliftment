@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { useState } from "react";
 import axios from "axios";
@@ -6,13 +6,15 @@ import axios from "axios";
 const AdminOrderPage = () => {
     const { user } = useContext(AuthContext)
     const [orders, setOrders] = useState([])
-    axios.get(`https://associative-upliftment-server.vercel.app/orders/${user?.email}`)
+    useEffect(()=>{
+        axios.get(`https://associative-upliftment-server.vercel.app/orders/${user?.email}`)
         .then(res => {
             const data = res.data
             setOrders(data)
         })
+    }, [])
     return (
-        <div className="my-20 mx-4">
+        <div className="my-20 mx-4 h-screen">
                     <div className="overflow-x-auto">
                         <table className="table">
                             {/* head */}
@@ -41,7 +43,7 @@ const AdminOrderPage = () => {
                         </table>
                     </div>
 
-                </div>
+        </div>
     );
 };
 
