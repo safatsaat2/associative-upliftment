@@ -5,24 +5,19 @@ import { useContext } from "react";
 const Dashboardtitle = () => {
   const { user } = useContext(AuthContext);
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-4 mx-4">
-      <div className="bg-white text-black text-3xl font-semibold py-4 pl-4 pr-20 rounded-xl dashShadow">
-        <p className="mb-2">ID:*************</p>
-        <p>Balance: $00</p>
+    <div className="bg-white flex flex-col-reverse lg:flex-row lg:items-center justify-between pt-4 py-7">
+      <div className=" text-black text-3xl font-semibold ">
+
+        <p className="text-4xl text-[#3186EC] ml-5 font-red">Associative Upliftment</p>
+
       </div>
-      <div className="text-black mb-6 lg:mb-0 ">
-        <p className="text-2xl mb-2">Welcome, {user?.displayName}</p>
-        <div className="flex">
-          <div className="flex gap-x-2 mr-4">
-            <p className="">Notification</p>
-            <div className="relative">
-            <Icon icon="ri:notification-line" className="text-2xl" />
-            <div className="px-[5px] py-[2px] bg-[#FFE500] rounded-full flex justify-center items-center absolute top-0 right-0">
-              <p className="text-[7px]">8</p>
-            </div>
-            </div>
-          </div>
-          <p>Report</p>
+      <div className="text-black mb-6 lg:mb-0 mr-5">
+        <div className="flex gap-x-7">
+
+          <img src="https://i.ibb.co/KWcFbYM/User-cicrle-duotone-line.png" alt="" />
+          <img src="https://i.ibb.co/cDbVJgc/Bell-pin.png" alt="" />
+          <img src="https://i.ibb.co/zf6d9wG/comment.png" alt="" />
+
         </div>
       </div>
     </div>

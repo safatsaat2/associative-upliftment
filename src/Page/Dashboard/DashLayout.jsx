@@ -22,12 +22,12 @@ const DashLayout = () => {
       })
   }, [email])
   return (
-    <div className="lg:flex bg-[#FFFDEE] ">
+    <div className="lg:flex bg-[#E9F7FF] ">
       
       <div >
         {type === "admin" ? <AdminNav /> : <DashNav />}
       </div>
-      <div className="w-full bg-[#FFFDEE]">
+      <div className="w-full bg-[#E9F7FF]">
         <Dashboardtitle />
         <div className="py-4 mx-4">
           <Outlet></Outlet>

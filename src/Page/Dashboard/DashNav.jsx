@@ -19,70 +19,69 @@ const DashNav = () => {
           :
           <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
       }
-    <div className="w-1/2 lg:w-[328px] lg:flex flex-col items-center rounded-none sticky top-0 bg-black shadowDash h-full">
-      <div className="sticky top-0">
+    <div className={menu === true ? "w-1/2 lg:w-[110px] font-red lg:flex flex-col  rounded-none bg-white h-full" : "w-1/2 lg:w-[110px] font-red lg:flex flex-col  rounded-none sticky top-0 bg-white h-full hidden"}>
+    <Icon icon="material-symbols:menu" className="hidden lg:block text-4xl ml-2 mt-12" />
+      <div className="sticky top-0 ">
         <img
-          className="pt-4 mt-2 lg:mt-14 mx-auto"
+          className="pt-4 mt-2 w-[75px] lg:mt-14 ml-3"
           src="https://i.ibb.co/JB9x4Wx/Group-1000003448.png"
           alt="LOGO"
         />
-        <p className="text-white mt-4 text-center">{user?.displayName}</p>
+        <p className="text-black mt-4 mx-3 text-[14px] font-red">{user?.displayName}</p>
+
+
+        <div className="w-12 mt-6 mb-5 ml-4 border-b-2 border-black"></div>
 
         <Link to="/dashboard" onClick={toTop}>
-          <p className="mt-10 text-white text-center cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-10 text-black text-[10px] cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
             Home
           </p>
         </Link>
         <Link to="/dashboard/neworder" onClick={toTop}>
-          <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
             New Order
           </p>
         </Link>
         <Link to="/dashboard/customorder" onClick={toTop}>
-          <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
             Custom Order
           </p>
         </Link>
 
 
         <Link to="/dashboard/orders" onClick={toTop}>
-          <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
             Orders
           </p>
         </Link>
         <Link to="/dashboard/ourteam" onClick={toTop}>
-        <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+        <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
           Our Team
         </p>
         </Link>
         <Link to="/dashboard/addfunds" onClick={toTop}>
-          <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
             Add Funds
           </p>
         </Link>
         <Link to="/dashboard/complainbox" onClick={toTop}>
-        <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+        <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
           Ticket
         </p>
         </Link>
-        <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+        <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
           Your Offer
         </p>
         
-        <p className="mt-1 text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+        <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
           Contact
         </p>
         <Link to="/dashboard/earnmoney" onClick={toTop}>
-          <p className="mt-1  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
+          <p onClick={() => setMenu(!menu)} className="mt-1  text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 pt-2 mb-10">
             Earn Money
           </p>
         </Link>
 
-        <Link to='/' onClick={toTop}>
-          <p className="my-10  text-white text-center   cursor-pointer hover:bg-[#FFE600] hover:text-black mr-4 rounded-md px-3 py-2">
-            Go to Home
-          </p>
-        </Link>
       </div>
     </div>
     </>

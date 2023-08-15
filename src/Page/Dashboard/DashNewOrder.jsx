@@ -44,13 +44,14 @@ const category = [
 const manageService = [
   {
     id: 1,
-    price: 350,
+    price: 750,
     name: 'A team management your business for $750 a week',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
+    price: 2650,
     name: 'A team management your business for $2650 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -66,6 +67,7 @@ const marketingService = [
   },
   {
     id: 2,
+    price: 1400,
     name: 'A team management your business for $1400 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -81,6 +83,7 @@ const developService = [
   },
   {
     id: 2,
+    price: 1400,
     name: 'A team management your business website for $1400 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -96,6 +99,7 @@ const designService = [
   },
   {
     id: 2,
+    price: 1400,
     name: 'A team management your business design for $1400 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -111,6 +115,7 @@ const emailService = [
   },
   {
     id: 2,
+    price: 1400,
     name: 'A team management your e-mail marketing for $1400 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -126,6 +131,7 @@ const videoService = [
   },
   {
     id: 2,
+    price: 1400,
     name: 'A team management your all social media ads video editing for $1400 a month',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -146,29 +152,37 @@ const DashNewOrder = () => {
     setTeam(e.target.value);
   };
 
-  const handleQuantity =(e) =>{
+  const handleQuantity = (e) => {
     setQuantity(e.target.value);
   }
-const charge = quantity * selectedSer?.price; 
+  const charge = quantity * selectedSer?.price;
+  console.log(typeof (charge))
   return (
     <div className="my-4 ">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
-        <div className="col-span-2">
+      <div className='grid grid-cols-1 lg:grid-cols-3  gap-x-6'>
+        <div className="col-span-1 bg-white text-black font-red text-3xl font-semibold py-4 pl-4 pr-20 mb-6 rounded-xl dashShadow">
+          <p className="mb-2 font-red">ID:*************</p>
+          <p className='font-red'>Balance: $00</p>
+        </div>
+      </div>
 
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
+
+
+        <div className="col-span-2">
+        <p className="block font-bold leading-6 text-black text-2xl my-4 pl-4 font-red">Category</p>
           {/* Category Field */}
-          <div className="bg-white dashShadow rounded-[10px]">
+          <div className="bg-white dashShadow rounded-[10px] py-4">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
                 <>
-                  <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Category</Listbox.Label>
+                  {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Category</Listbox.Label> */}
                   <div className="relative mt-2 rounded-[10px]">
                     <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block truncate">{selectedCat.name}</span>
+                        <span className="ml-3 block font-red truncate">{selectedCat.name}</span>
                       </span>
-                      <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                      </span>
+                      
                     </Listbox.Button>
 
                     <Transition
@@ -178,14 +192,14 @@ const charge = quantity * selectedSer?.price;
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {category.map((person) => (
                           <Listbox.Option
                             key={person.id}
                             className={({ active }) =>
                               classNames(
-                                active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                'relative cursor-default select-none py-2 pl-3 pr-9'
+                                active ? 'bg-[#3186EC] text-black font-red' : 'text-gray-900 font-red',
+                                'relative cursor-default select-none font-red py-2 pl-3 pr-9'
                               )
                             }
                             value={person}
@@ -194,7 +208,7 @@ const charge = quantity * selectedSer?.price;
                               <>
                                 <div className="flex items-center">
                                   <span
-                                    className={classNames(selectedCat ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                    className={classNames(selectedCat ? 'font-semibold font-red' : 'font-normal', 'ml-3 block truncate')}
                                   >
                                     {person.name}
                                   </span>
@@ -203,8 +217,8 @@ const charge = quantity * selectedSer?.price;
                                 {selectedCat ? (
                                   <span
                                     className={classNames(
-                                      active ? 'text-black' : 'text-[#FFE500]',
-                                      'absolute inset-y-0 right-0 flex items-center pr-4'
+                                      active ? 'text-black' : 'text-[#3186EC] font-red',
+                                      'absolute inset-y-0 right-0 font-red flex items-center pr-4'
                                     )}
                                   >
                                     <CheckIcon className="h-5 w-5" aria-hidden="true" />
@@ -225,20 +239,18 @@ const charge = quantity * selectedSer?.price;
 
           {/* Service Field */}
 
-
+          <p className="block font-bold leading-6 text-black text-2xl my-4 pl-4 font-red">Service</p>
           <div className="bg-white mt-6 dashShadow rounded-[10px]">
             <Listbox value={selectedSer} onChange={setSelectedSer}>
               {({ open }) => (
                 <>
-                  <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label>
-                  <div className="relative mt-2 rounded-[10px]">
-                    <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
+                  {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label> */}
+                  <div className="relative mt-2 rounded-[10px] py-4">
+                    <Listbox.Button className="relative w-full cursor-default font-red  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
+                        <span className="ml-3 block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
                       </span>
-                      <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                      </span>
+                      
                     </Listbox.Button>
 
                     <Transition
@@ -255,7 +267,7 @@ const charge = quantity * selectedSer?.price;
                               key={person.id}
                               className={({ active }) =>
                                 classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                  active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                   'relative cursor-default select-none py-2 pl-3 pr-9'
                                 )
                               }
@@ -274,7 +286,7 @@ const charge = quantity * selectedSer?.price;
                                   {selectedCat ? (
                                     <span
                                       className={classNames(
-                                        active ? 'text-black' : 'text-[#FFE500]',
+                                        active ? 'text-black' : 'text-[#3186EC]',
                                         'absolute inset-y-0 right-0 flex items-center pr-4'
                                       )}
                                     >
@@ -291,7 +303,7 @@ const charge = quantity * selectedSer?.price;
                                   key={person.id}
                                   className={({ active }) =>
                                     classNames(
-                                      active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                      active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                       'relative cursor-default select-none py-2 pl-3 pr-9'
                                     )
                                   }
@@ -310,11 +322,10 @@ const charge = quantity * selectedSer?.price;
                                       {selectedCat ? (
                                         <span
                                           className={classNames(
-                                            active ? 'text-black' : 'text-[#FFE500]',
+                                            active ? 'text-black' : 'text-[#3186EC]',
                                             'absolute inset-y-0 right-0 flex items-center pr-4'
                                           )}
                                         >
-                                          <CheckIcon className="h-5 w-5" aria-hidden="true" />
                                         </span>
                                       ) : null}
                                     </>
@@ -328,7 +339,7 @@ const charge = quantity * selectedSer?.price;
                                     key={person.id}
                                     className={({ active }) =>
                                       classNames(
-                                        active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                        active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                         'relative cursor-default select-none py-2 pl-3 pr-9'
                                       )
                                     }
@@ -347,7 +358,7 @@ const charge = quantity * selectedSer?.price;
                                         {selectedCat ? (
                                           <span
                                             className={classNames(
-                                              active ? 'text-black' : 'text-[#FFE500]',
+                                              active ? 'text-black' : 'text-[#3186EC]',
                                               'absolute inset-y-0 right-0 flex items-center pr-4'
                                             )}
                                           >
@@ -365,7 +376,7 @@ const charge = quantity * selectedSer?.price;
                                       key={person.id}
                                       className={({ active }) =>
                                         classNames(
-                                          active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                          active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                           'relative cursor-default select-none py-2 pl-3 pr-9'
                                         )
                                       }
@@ -384,7 +395,7 @@ const charge = quantity * selectedSer?.price;
                                           {selectedCat ? (
                                             <span
                                               className={classNames(
-                                                active ? 'text-black' : 'text-[#FFE500]',
+                                                active ? 'text-black' : 'text-[#3186EC]',
                                                 'absolute inset-y-0 right-0 flex items-center pr-4'
                                               )}
                                             >
@@ -402,7 +413,7 @@ const charge = quantity * selectedSer?.price;
                                         key={person.id}
                                         className={({ active }) =>
                                           classNames(
-                                            active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                            active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                             'relative cursor-default select-none py-2 pl-3 pr-9'
                                           )
                                         }
@@ -421,7 +432,7 @@ const charge = quantity * selectedSer?.price;
                                             {selectedCat ? (
                                               <span
                                                 className={classNames(
-                                                  active ? 'text-black' : 'text-[#FFE500]',
+                                                  active ? 'text-black' : 'text-[#3186EC]',
                                                   'absolute inset-y-0 right-0 flex items-center pr-4'
                                                 )}
                                               >
@@ -440,7 +451,7 @@ const charge = quantity * selectedSer?.price;
                                           key={person.id}
                                           className={({ active }) =>
                                             classNames(
-                                              active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
+                                              active ? 'bg-[#3186EC] text-black' : 'text-gray-900',
                                               'relative cursor-default select-none py-2 pl-3 pr-9'
                                             )
                                           }
@@ -459,7 +470,7 @@ const charge = quantity * selectedSer?.price;
                                               {selectedCat ? (
                                                 <span
                                                   className={classNames(
-                                                    active ? 'text-black' : 'text-[#FFE500]',
+                                                    active ? 'text-black' : 'text-[#3186EC]',
                                                     'absolute inset-y-0 right-0 flex items-center pr-4'
                                                   )}
                                                 >
@@ -484,10 +495,11 @@ const charge = quantity * selectedSer?.price;
 
 
           {/* Description Field */}
-          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
-            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black text-2xl pt-4 pl-4'>
               Description
-            </p>
+          </p>
+          <div className='bg-white font-red mt-6 dashShadow rounded-[10px]'>
+            
 
             <p className='pt-4 pb-2 pl-4'>
               🔘 𝐒𝐭𝐚𝐫𝐭: 1-24 Hours
@@ -505,17 +517,22 @@ const charge = quantity * selectedSer?.price;
 
             </p>
           </div>
+          <p className='font-bold leading-6 font-red text-black text-2xl pt-4 pl-4'>
+              Information
+          </p>
           <div className='bg-white mt-6 dashShadow rounded-[10px]'>
-            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Information</p>
-            <textarea className="textarea textarea-ghost  h-64 mt-4 focus:border-none w-full" placeholder="Information"></textarea>
+            <textarea className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
           </div>
         </div>
 
         {/* Team field */}
+        
+        <div>
+        <p className='font-bold mt-2 text-black text-[32px] font-red'>Select Team</p>
         <div className='dashShadow rounded-[10px] mt-6 lg:mt-0 bg-white'>
-          <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Select Team</p>
+          
           {/* 1st Team */}
-          <div className="form-control flex items-center flex-row mt-12 ml-4">
+          <div className="form-control flex items-center flex-row pt-8 ml-4">
             <div className="flex gap-x-4 justify-center items-center">
               <input
                 type="radio"
@@ -525,7 +542,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Strategy Stars Team</p>
+              <p className="label-text text-xl font-red font-semibold">Strategy Stars Team</p>
             </div>
           </div>
           {/* 2nd Team */}
@@ -539,7 +556,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Dynamic Squad Team</p>
+              <p className="label-text text-xl font-red font-semibold">Dynamic Squad Team</p>
             </div>
           </div>
           {/* 3rd */}
@@ -553,7 +570,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Galaxy Gliders Team</p>
+              <p className="label-text text-xl font-red font-semibold">Galaxy Gliders Team</p>
             </div>
           </div>
           {/* 4th Team */}
@@ -567,7 +584,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Titans Alliance Team</p>
+              <p className="label-text text-xl font-red font-semibold">Titans Alliance Team</p>
             </div>
           </div>
           {/* 5th Team */}
@@ -581,7 +598,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Dragon Squad Team</p>
+              <p className="label-text text-xl font-red font-semibold">Dragon Squad Team</p>
             </div>
           </div>
           {/* 6th Team */}
@@ -595,7 +612,7 @@ const charge = quantity * selectedSer?.price;
                 onChange={handleChange}
               />
               <img className='w-14  object-cover rounded-full' src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg" alt="" />
-              <p className="label-text text-xl font-semibold">Galactic Guardians Team</p>
+              <p className="label-text text-xl font-red font-semibold">Galactic Guardians Team</p>
             </div>
           </div>
 
@@ -607,25 +624,30 @@ const charge = quantity * selectedSer?.price;
 
 
         </div>
+        </div>
       </div>
 
       {/* Quantity and Charge */}
 
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
         <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
-          <input onChange={handleQuantity} className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+          <p className='text-xl font-semibold font-red text-black mr-4'>Quantity:</p>
+          <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
         <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold text-black mr-4'>Charge: ${charge}</p>
-          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+          <p className='text-xl font-semibold text-black mr-4 font-red'>Charge: </p>
+          <div className='h-14 w-full dashShadow rounded-[10px] font-red bg-white flex items-center' >
+            <p className='pl-4'>
+              ${isNaN(charge) ? 0 : charge}
+            </p>
+          </div>
         </div>
         <div>
         </div>
       </div>
 
       {/* Submit Button */}
-          <div className="text-2xl font-semibold bg-[#FFE500] rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
+      <div className="text-2xl font-semibold bg-[#FFE500] font-red rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
     </div>
   );
 };
