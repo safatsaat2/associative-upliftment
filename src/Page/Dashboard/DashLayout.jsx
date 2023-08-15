@@ -22,18 +22,36 @@ const DashLayout = () => {
       })
   }, [email])
   return (
-    <div className="lg:flex bg-[#E9F7FF] ">
-      
-      <div >
-        {type === "admin" ? <AdminNav /> : <DashNav />}
-      </div>
-      <div className="w-full bg-[#E9F7FF]">
-        <Dashboardtitle />
-        <div className="py-4 mx-4">
-          <Outlet></Outlet>
+    <>
+      <div className="hidden lg:flex bg-[#E9F7FF] ">
+
+        <div className="flex lg: bg-white">
+          {type === "admin" ? <AdminNav /> : <DashNav />}
+
+        </div>
+
+        <div className="w-full bg-[#E9F7FF]">
+          <Dashboardtitle />
+          <div className="py-4 mx-4">
+            <Outlet></Outlet>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div className=" lg:hidden bg-[#E9F7FF] ">
+
+
+          {type === "admin" ? <AdminNav /> : <DashNav />}
+          
+
+
+        <div className="w-full bg-[#E9F7FF]">
+
+          <div className="py-4 mx-4">
+            <Outlet></Outlet>
+          </div>
+        </div>
+      </div></>
   );
 };
 
