@@ -14,7 +14,7 @@ const DashNav = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="flex items-center bg-white">
+    <div className="flex items-center lg:items-start bg-white">
 
       <div>
         {

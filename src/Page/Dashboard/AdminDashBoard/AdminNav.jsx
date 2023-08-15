@@ -12,7 +12,7 @@ const AdminNav = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="flex bg-white">
+    <div className="flex  items-center lg:items-start bg-white">
       <div>
         <div>
           {

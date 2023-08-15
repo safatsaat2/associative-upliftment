@@ -159,8 +159,8 @@ const DashNewOrder = () => {
   console.log(typeof (charge))
   return (
     <div className="my-4 ">
-      <div className='grid grid-cols-1 lg:grid-cols-3  gap-x-6'>
-        <div className="col-span-1 bg-white text-black font-red text-3xl font-semibold py-4 pl-4 pr-20 mb-6 rounded-xl dashShadow">
+      <div className='grid grid-cols-1 lg:grid-cols-3  lg:gap-x-6'>
+        <div className="col-span-1 bg-white text-black font-red w-[204px] lg:w-full lg:text-3xl font-semibold py-4 pl-4 pr-20 mb-6 rounded-xl dashShadow">
           <p className="mb-2 font-red">ID:*************</p>
           <p className='font-red'>Balance: $00</p>
         </div>
@@ -170,9 +170,9 @@ const DashNewOrder = () => {
 
 
         <div className="col-span-2">
-        <p className="block font-bold leading-6 text-black text-2xl my-4 pl-4 font-red">Category</p>
+        <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
           {/* Category Field */}
-          <div className="bg-white dashShadow rounded-[10px] py-4">
+          <div className="bg-white dashShadow rounded-[10px] py-2 lg:py-4">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
                 <>
@@ -180,7 +180,7 @@ const DashNewOrder = () => {
                   <div className="relative mt-2 rounded-[10px]">
                     <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block font-red truncate">{selectedCat.name}</span>
+                        <span className="ml-3 text-[10px] block font-red truncate">{selectedCat.name}</span>
                       </span>
                       
                     </Listbox.Button>
@@ -239,8 +239,8 @@ const DashNewOrder = () => {
 
           {/* Service Field */}
 
-          <p className="block font-bold leading-6 text-black text-2xl my-4 pl-4 font-red">Service</p>
-          <div className="bg-white mt-6 dashShadow rounded-[10px]">
+          <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Service</p>
+          <div className="bg-white dashShadow rounded-[10px] lg:py-4">
             <Listbox value={selectedSer} onChange={setSelectedSer}>
               {({ open }) => (
                 <>
@@ -248,7 +248,7 @@ const DashNewOrder = () => {
                   <div className="relative mt-2 rounded-[10px] py-4">
                     <Listbox.Button className="relative w-full cursor-default font-red  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
+                        <span className="ml-3 text-[10px] block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
                       </span>
                       
                     </Listbox.Button>
@@ -495,10 +495,10 @@ const DashNewOrder = () => {
 
 
           {/* Description Field */}
-          <p className='font-bold leading-6 font-red text-black text-2xl pt-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
               Description
           </p>
-          <div className='bg-white font-red mt-6 dashShadow rounded-[10px]'>
+          <div className='bg-white font-red lg:mt-6 dashShadow rounded-[10px]'>
             
 
             <p className='pt-4 pb-2 pl-4'>
@@ -517,10 +517,10 @@ const DashNewOrder = () => {
 
             </p>
           </div>
-          <p className='font-bold leading-6 font-red text-black text-2xl pt-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
               Information
           </p>
-          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
+          <div className='bg-white lg:mt-6 dashShadow rounded-[10px]'>
             <textarea className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
           </div>
         </div>
@@ -528,8 +528,8 @@ const DashNewOrder = () => {
         {/* Team field */}
         
         <div>
-        <p className='font-bold mt-2 text-black text-[32px] font-red'>Select Team</p>
-        <div className='dashShadow rounded-[10px] mt-6 lg:mt-0 bg-white'>
+        <p className='font-bold ml-4 my-2 lg:mt-2 text-black lg:text-[32px] font-red'>Select Team</p>
+        <div className='dashShadow rounded-[10px] lg:mt-0 bg-white w-full'>
           
           {/* 1st Team */}
           <div className="form-control flex items-center flex-row pt-8 ml-4">
@@ -542,7 +542,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Strategy Stars Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Strategy Stars Team</p>
             </div>
           </div>
           {/* 2nd Team */}
@@ -556,7 +556,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Dynamic Squad Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Dynamic Squad Team</p>
             </div>
           </div>
           {/* 3rd */}
@@ -570,7 +570,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Galaxy Gliders Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Galaxy Gliders Team</p>
             </div>
           </div>
           {/* 4th Team */}
@@ -584,7 +584,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Titans Alliance Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Titans Alliance Team</p>
             </div>
           </div>
           {/* 5th Team */}
@@ -598,7 +598,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14 object-cover rounded-full' src="https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Dragon Squad Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Dragon Squad Team</p>
             </div>
           </div>
           {/* 6th Team */}
@@ -612,7 +612,7 @@ const DashNewOrder = () => {
                 onChange={handleChange}
               />
               <img className='w-14  object-cover rounded-full' src="https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg" alt="" />
-              <p className="label-text text-xl font-red font-semibold">Galactic Guardians Team</p>
+              <p className="label-text text-[10px] lg:text-xl font-red font-semibold">Galactic Guardians Team</p>
             </div>
           </div>
 
@@ -630,12 +630,12 @@ const DashNewOrder = () => {
       {/* Quantity and Charge */}
 
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
-        <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold font-red text-black mr-4'>Quantity:</p>
+        <div className='lg:flex justify-center items-center'>
+          <p className='text-xl font-semibold font-red text-black lg:mb-0 mb-2 mr-4'>Quantity:</p>
           <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
-        <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold text-black mr-4 font-red'>Charge: </p>
+        <div className='lg:flex justify-center items-center'>
+          <p className='text-xl font-semibold text-black mr-4 lg:mb-0 mb-2 font-red'>Charge: </p>
           <div className='h-14 w-full dashShadow rounded-[10px] font-red bg-white flex items-center' >
             <p className='pl-4'>
               ${isNaN(charge) ? 0 : charge}
@@ -647,7 +647,7 @@ const DashNewOrder = () => {
       </div>
 
       {/* Submit Button */}
-      <div className="text-2xl font-semibold bg-[#FFE500] font-red rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
+      <div className="text-2xl font-semibold bg-[#3186EC] text-white font-red rounded-[10px] text-center py-4  lg:w-[230px] mx-auto lg:my-6">Submit</div>
     </div>
   );
 };
