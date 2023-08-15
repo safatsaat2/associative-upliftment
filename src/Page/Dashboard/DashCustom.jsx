@@ -4,6 +4,13 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
 const category = [
   {
+    id: 0,
+    price: 350,
+    name: 'Please Select',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
     id: 1,
     name: 'Facebook',
     avatar:
@@ -67,43 +74,50 @@ const category = [
 const facebookService = [
   {
     id: 1,
-    name: 'Facebook Business page create and Professionally Set-up = $30',
+    price: 30,
+    name: 'Facebook Business page create and Professionally Set-up',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Facebook page monetization = $250',
+    price: 250,
+    name: 'Facebook page monetization',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Facebook post design = $7',
+    price: 7,
+    name: 'Facebook post design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Facebook banner design = $15',
+    price: 15,
+    name: 'Facebook banner design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'facebook ads design = $25',
+    price: 25,
+    name: 'facebook ads design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Facebook Marketing = $40',
+    price: 40,
+    name: 'Facebook Marketing',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 7,
-    name: 'Facebook Ads Campaign = $100',
+    price: 100,
+    name: 'Facebook Ads Campaign',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }
@@ -112,19 +126,22 @@ const facebookService = [
 const instagramService = [
   {
     id: 1,
-    name: 'Instagram Hashtags Research = $25',
+    price: 35,
+    name: 'Instagram Hashtags Research',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Instagram Influencer Research = $35',
+    price: 35,
+    name: 'Instagram Influencer Research',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Instagram post design = $7',
+    price: 7,
+    name: 'Instagram post design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
@@ -132,31 +149,36 @@ const instagramService = [
 const youtubeService = [
   {
     id: 1,
-    name: 'YouTube Thumbnail = $7',
+    price: 7,
+    name: 'YouTube Thumbnail ',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'YouTube Banner = $15',
+    price: 15,
+    name: 'YouTube Banner ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'YouTube SEO = $10',
+    price: 10,
+    name: 'YouTube SEO ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'YouTube Channel Create and Professionally Set-up = $30',
+    price: 30,
+    name: 'YouTube Channel Create and Professionally Set-up ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'YouTube Monetization = $450',
+    price: 450,
+    name: 'YouTube Monetization ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
@@ -164,31 +186,36 @@ const youtubeService = [
 const linkedinService = [
   {
     id: 1,
-    name: 'Linkedin Connections = $55',
+    price: 55,
+    name: 'Linkedin Connections ',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Linkedin Business page Creation and Set-up = $65',
+    price: 65,
+    name: 'Linkedin Business page Creation and Set-up ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Linkedin optimization = $155',
+    price: 155,
+    name: 'Linkedin optimization ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Linkedin ads = $260',
+    price: 260,
+    name: 'Linkedin ads 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Linkedin Post = $7',
+    price: 7,
+    name: 'Linkedin Post ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
@@ -196,19 +223,22 @@ const linkedinService = [
 const twitterService = [
   {
     id: 1,
-    name: 'Twitter Marketing = $40',
+    price: 40,
+    name: 'Twitter Marketing ',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Twitter impressions = $450',
+    price: 450,
+    name: 'Twitter impressions 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Twitter banner = $15',
+    price: 15,
+    name: 'Twitter banner ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }
@@ -216,36 +246,42 @@ const twitterService = [
 const pinterestService = [
   {
     id: 1,
-    name: 'Pinterest Marketing = $150',
+    price: 150,
+    name: 'Pinterest Marketing 0',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Pinterest paid ads = $375',
+    price: 375,
+    name: 'Pinterest paid ads 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Pinterest affiliate marketing = $320',
+    price: 320,
+    name: 'Pinterest affiliate marketing 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Pinterest virtual assistant = $40',
+    price: 40,
+    name: 'Pinterest virtual assistant ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Pinterest pins = $40',
+    price: 40,
+    name: 'Pinterest pins ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
+    price: 60,
     name: 'Pinterest pin creation =  $60',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -255,43 +291,50 @@ const pinterestService = [
 const seoService = [
   {
     id: 1,
-    name: 'On page SEO = $255',
+    price: 255,
+    name: 'On page SEO 5',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Google maps SEO = $220',
+    price: 220,
+    name: 'Google maps SEO 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'YouTube SEO = $15',
+    price: 15,
+    name: 'YouTube SEO ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Website SEO = $195',
+    price: 195,
+    name: 'Website SEO 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Shopify SEO = $795',
+    price: 795,
+    name: 'Shopify SEO 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Google SEO = $210',
+    price: 210,
+    name: 'Google SEO 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 7,
-    name: 'SEO Audit = $255',
+    price: 255,
+    name: 'SEO Audit 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }]
@@ -299,271 +342,316 @@ const seoService = [
 const designService = [
   {
     id: 1,
-    name: 'Logo Design = $25',
+    price: 25,
+    name: 'Logo Design ',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Branding = $19',
+    price: 19,
+    name: 'Branding ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'T-shirt Design = $22',
+    price: 22,
+    name: 'T-shirt Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Brochure Design = $$',
+    price: 20,
+    name: 'Brochure Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Business Cards = $15',
+    price: 15,
+    name: 'Business Cards ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Flyer Design = $$',
+    price: 20,
+    name: 'Flyer Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 7,
-    name: 'Letterheads = $$',
+    price: 20,
+    name: 'Letterheads',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 8,
-    name: 'Leaflets = $$',
+    price: 20,
+    name: 'Leaflets',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 9,
-    name: 'Banner Design = $30',
+    price: 30,
+    name: 'Banner Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 10,
-    name: 'Digital Painting = $25',
+    price: 25,
+    name: 'Digital Painting ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 11,
-    name: 'Poster Design = $19',
+    price: 19,
+    name: 'Poster Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 12,
-    name: 'Icon Design = $15',
+    price: 15,
+    name: 'Icon Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 13,
-    name: 'Illustration = $$',
+    price: 20,
+    name: 'Illustration',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 14,
-    name: 'CV Design = $22',
+    price: 22,
+    name: 'CV Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 15,
-    name: 'ID Card Design = $13',
+    price: 13,
+    name: 'ID Card Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 16,
-    name: 'Postcard Design = $$',
+    price: 20,
+    name: 'Postcard Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 17,
-    name: 'Catalog Design = $$',
+    price: 20,
+    name: 'Catalog Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 18,
-    name: 'Social Media Ads = $15',
+    price: 15,
+    name: 'Social Media Ads ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 19,
-    name: 'Book Cover Design = $22',
+    price: 22,
+    name: 'Book Cover Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 20,
-    name: 'Invoice Design = $$',
+    price: 20,
+    name: 'Invoice Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 21,
-    name: 'Capability Statement Design = $$',
+    price: 20,
+    name: 'Capability Statement Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 22,
-    name: 'Stationery Design = $$',
+    price: 20,
+    name: 'Stationery Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 23,
-    name: 'Door Hanger Design = $$',
+    price: 20,
+    name: 'Door Hanger Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 24,
-    name: 'Email Signature Design = $$',
+    price: 20,
+    name: 'Email Signature Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 25,
-    name: 'Architecture Design  = $$',
+    price: 20,
+    name: 'Architecture Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 26,
-    name: 'Menu Design = $25',
+    price: 25,
+    name: 'Menu Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 27,
-    name: 'Vector Work = $$',
+    price: 20,
+    name: 'Vector Work',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 28,
-    name: 'Fashion Design = $$',
+    price: 20,
+    name: 'Fashion Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 29,
-    name: 'Package Design = $19',
+    price: 19,
+    name: 'Package Design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 30,
-    name: 'Blog Design = $$',
+    price: 20,
+    name: 'Blog Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 31,
-    name: 'Typography Design = $$',
+    price: 20,
+    name: 'Typography Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 32,
-    name: 'Phone Cover Case Design = $$',
+    price: 20,
+    name: 'Phone Cover Case Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 33,
-    name: 'Youtube Thumbnail = $7',
+    price: 7,
+    name: 'Youtube Thumbnail',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 34,
-    name: 'Clipping Path = $$',
+    price: 20,
+    name: 'Clipping Path',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 35,
-    name: 'Background Removes = $8',
+    price: 8,
+    name: 'Background Removes',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 36,
-    name: 'photo retouching = $$',
+    price: 20,
+    name: 'photo retouching',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 37,
-    name: 'Photo Manipulation = $12',
+    price: 12,
+    name: 'Photo Manipulation ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 38,
-    name: 'Beauty retouching = $$',
+    price: 20,
+    name: 'Beauty retouching',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 39,
-    name: 'Facebook cover = $15',
+    price: 15,
+    name: 'Facebook cover ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 40,
-    name: 'web banner = $35',
+    price: 35,
+    name: 'web banner ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 41,
-    name: 'Roll-up Banner = $$',
+    price: 20,
+    name: 'Roll-up Banner',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 42,
-    name: 'Bill Board Design = $$',
+    price: 20,
+    name: 'Bill Board Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 43,
-    name: 'Social Media Posts = $7',
+    price: 7,
+    name: 'Social Media Posts',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 44,
-    name: 'Pattern Design = $$',
+    price: 20,
+    name: 'Pattern Design',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 45,
-    name: 'Fluid Background = $$',
+    price: 20,
+    name: 'Fluid Background',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
@@ -571,79 +659,92 @@ const designService = [
 const emailService = [
   {
     id: 1,
-    name: 'Email marketing = $100',
+    price: 100,
+    name: 'Email marketing 0',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Malichimp email template design = $55',
+    price: 55,
+    name: 'Malichimp email template design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Send bulk emails = $45',
+    price: 45,
+    name: 'Send bulk emails ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Bulk email collection = $55',
+    price: 55,
+    name: 'Bulk email collection ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Bulk email list = $55',
+    price: 55,
+    name: 'Bulk email list ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Email template design = $55',
+    price: 55,
+    name: 'Email template design ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
-    name: 'Mailchimp email campaign = $55',
+    price: 55,
+    name: 'Mailchimp email campaign ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   }]
 const dataService = [
   {
     id: 1,
-    name: 'Data entry = $82',
+    price: 82,
+    name: 'Data entry ',
     avatar:
       'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 2,
-    name: 'Email collect = $150',
+    price: 150,
+    name: 'Email collect 0',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 3,
-    name: 'Data entry copy past = $115',
+    price: 115,
+    name: 'Data entry copy past 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 4,
-    name: 'Data scraping = $85',
+    price: 85,
+    name: 'Data scraping ',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 5,
-    name: 'Excel data cleaning = $115',
+    price: 115,
+    name: 'Excel data cleaning 5',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
     id: 6,
+    price: 115,
     name: 'Data analyst =  $115',
     avatar:
       'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -659,25 +760,29 @@ function classNames(...classes) {
 const DashCustom = () => {
     const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
+  const [quantity, setQuantity] = useState(0)
+  const handleQuantity = (e) => {
+    setQuantity(e.target.value);
+  }
+  const charge = quantity * selectedSer?.price;
     return (
-        <div className="my-4 pb-4">
+        <div className="my-4 ">
       <div className="grid grid-cols-1 gap-x-6">
         <div>
-
           {/* Category Field */}
-          <div className="bg-white dashShadow rounded-[10px]">
+          <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
+          
+          <div className="bg-white dashShadow rounded-[10px] py-2">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
                 <>
-                  <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Category</Listbox.Label>
+                  {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Category</Listbox.Label> */}
                   <div className="relative mt-2 rounded-[10px]">
                     <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block truncate">{selectedCat.name}</span>
+                        <span className="ml-3 lg:text-[10px] text-[12px] block font-red truncate">{selectedCat?.name ? selectedCat?.name : "Please Select"}</span>
                       </span>
-                      <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                      </span>
+                      
                     </Listbox.Button>
 
                     <Transition
@@ -687,14 +792,14 @@ const DashCustom = () => {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {category.map((person) => (
                           <Listbox.Option
                             key={person.id}
                             className={({ active }) =>
                               classNames(
-                                active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                'relative cursor-default select-none py-2 pl-3 pr-9'
+                                active ? 'bg-[#3186EC] text-black font-red' : 'text-gray-900 font-red',
+                                'relative cursor-default select-none font-red py-2 pl-3 pr-9'
                               )
                             }
                             value={person}
@@ -703,7 +808,7 @@ const DashCustom = () => {
                               <>
                                 <div className="flex items-center">
                                   <span
-                                    className={classNames(selectedCat ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                    className={classNames(selectedCat ? 'font-semibold font-red' : 'font-normal', 'ml-3 block truncate')}
                                   >
                                     {person.name}
                                   </span>
@@ -712,8 +817,8 @@ const DashCustom = () => {
                                 {selectedCat ? (
                                   <span
                                     className={classNames(
-                                      active ? 'text-black' : 'text-[#FFE500]',
-                                      'absolute inset-y-0 right-0 flex items-center pr-4'
+                                      active ? 'text-black' : 'text-[#3186EC] font-red',
+                                      'absolute inset-y-0 right-0 font-red flex items-center pr-4'
                                     )}
                                   >
                                     <CheckIcon className="h-5 w-5" aria-hidden="true" />
@@ -734,20 +839,18 @@ const DashCustom = () => {
 
           {/* Service Field */}
 
-
-          <div className="bg-white mt-6 dashShadow rounded-[10px]">
+          <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Service</p>
+          <div className="bg-white dashShadow rounded-[10px] py-2">
             <Listbox value={selectedSer} onChange={setSelectedSer}>
               {({ open }) => (
                 <>
-                  <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label>
+                  {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label> */}
                   <div className="relative mt-2 rounded-[10px]">
-                    <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
+                    <Listbox.Button className="relative w-full cursor-default font-red  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 block truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
+                        <span className="ml-3 lg:text-[10px] text-[12px] block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
                       </span>
-                      <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                      </span>
+                      
                     </Listbox.Button>
 
                     <Transition
@@ -757,15 +860,15 @@ const DashCustom = () => {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {
                           selectedCat.name === "Facebook" ? facebookService.map((person) => (
                             <Listbox.Option
                               key={person.id}
                               className={({ active }) =>
                                 classNames(
-                                  active ? 'bg-[#FFE500] text-black' : 'text-gray-900',
-                                  'relative cursor-default select-none py-2 pl-3 pr-9'
+                                  active ? 'bg-[#3186EC] text-black font-red' : 'text-gray-900 font-red',
+                                  'relative cursor-default select-none font-red py-2 pl-3 pr-9'
                                 )
                               }
                               value={person}
@@ -1128,7 +1231,7 @@ const DashCustom = () => {
                                         </Listbox.Option>
                                       ))
                                       :
-                                    alert('hi')
+                                    <>Please Select Category</>
                         }
                       </Listbox.Options>
                     </Transition>
@@ -1140,10 +1243,11 @@ const DashCustom = () => {
 
 
           {/* Description Field */}
-          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
-            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
               Description
-            </p>
+          </p>
+          <div className='bg-white font-red lg:mt-6 dashShadow rounded-[10px]'>
+            
 
             <p className='pt-4 pb-2 pl-4'>
               🔘 𝐒𝐭𝐚𝐫𝐭: 1-24 Hours
@@ -1161,9 +1265,11 @@ const DashCustom = () => {
 
             </p>
           </div>
-          <div className='bg-white mt-6 dashShadow rounded-[10px]'>
-            <p className='font-bold leading-6 text-black text-2xl pt-4 pl-4'>Information</p>
-            <textarea className="textarea textarea-ghost  h-64 mt-4 focus:border-none w-full" placeholder="Information"></textarea>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
+              Information
+          </p>
+          <div className='bg-white lg:mt-6 dashShadow rounded-[10px]'>
+            <textarea className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
           </div>
         </div>
 
@@ -1171,14 +1277,18 @@ const DashCustom = () => {
 
       {/* Quantity and Charge */}
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6'>
-        <div className='flex justify-center items-center mb-6'>
-          <p className='text-xl font-semibold text-black mr-4'>Quantity:</p>
-          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+      <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
+        <div className='lg:flex justify-center items-center'>
+          <p className='text-xl font-semibold font-red text-black lg:mb-0 mb-2 mr-4'>Quantity:</p>
+          <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
         </div>
-        <div className='flex justify-center items-center'>
-          <p className='text-xl font-semibold text-black mr-4'>Charge:</p>
-          <input className='h-14 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+        <div className='lg:flex justify-center items-center'>
+          <p className='text-xl font-semibold text-black mr-4 lg:mb-0 mb-2 font-red'>Charge: </p>
+          <div className='h-14 w-full dashShadow rounded-[10px] font-red bg-white flex items-center' >
+            <p className='pl-4'>
+              ${isNaN(charge) ? 0 : charge}
+            </p>
+          </div>
         </div>
         <div>
         </div>

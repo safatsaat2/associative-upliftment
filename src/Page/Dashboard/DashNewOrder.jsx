@@ -4,6 +4,13 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
 const category = [
   {
+    id: 0,
+    price: 350,
+    name: 'Please Select',
+    avatar:
+      'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
     id: 1,
     price: 350,
     name: 'Business Management',
@@ -170,8 +177,9 @@ const DashNewOrder = () => {
 
 
         <div className="col-span-2">
-        <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
           {/* Category Field */}
+        <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
+          
           <div className="bg-white dashShadow rounded-[10px] py-2 lg:py-4">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
@@ -180,7 +188,7 @@ const DashNewOrder = () => {
                   <div className="relative mt-2 rounded-[10px]">
                     <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 text-[10px] block font-red truncate">{selectedCat.name}</span>
+                        <span className="ml-3 text-[10px] lg:text-[12px] block font-red truncate">{selectedCat.name}</span>
                       </span>
                       
                     </Listbox.Button>
@@ -245,10 +253,10 @@ const DashNewOrder = () => {
               {({ open }) => (
                 <>
                   {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label> */}
-                  <div className="relative mt-2 rounded-[10px] py-4">
+                  <div className="relative mt-2 rounded-[10px]">
                     <Listbox.Button className="relative w-full cursor-default font-red  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
-                        <span className="ml-3 text-[10px] block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
+                        <span className="ml-3 text-[10px] lg:text-[12px] block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
                       </span>
                       
                     </Listbox.Button>
@@ -482,7 +490,7 @@ const DashNewOrder = () => {
                                         </Listbox.Option>
                                       ))
                                       :
-                                      alert("Please Select")
+                                      <>Please Select Category</>
 
                         }
                       </Listbox.Options>
