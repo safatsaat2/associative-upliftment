@@ -41,7 +41,7 @@ const AdminNav = () => {
               </p>
             </Link>
             <Link to="/dashboard/adminrefercode" onClick={toTop} >
-              <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2 font-red">
+              <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
                 Refer codes
               </p>
             </Link>

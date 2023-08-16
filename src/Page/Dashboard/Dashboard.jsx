@@ -5,27 +5,103 @@ const Dashboard = () => {
   return (
     <div className="">
       {/* First line of dashboard */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="py-20 px-14 bg-white dashShadow rounded-[10px]">
-          <p className="text-center text-[96px] leading-[116px]">$00</p>
-          <p className="text-center text-2xl leading-[29px]">Balance</p>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-12">
+        <div className="py-4 px-12 col-span-2 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center">
+          <div>
+            <h3 className="text-3xl font-red">Growth</h3>
+            <img className="mx-2" src="https://i.ibb.co/6mg8NyK/Group-1000003452.png" alt="" />
+          </div>
         </div>
-        <div className="bg-white dashShadow rounded-[10px] hidden lg:block"></div>
-        <div className="bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center">
-          <p className="text-center py-4 font-semibold text-xl">ACTIVATE YOUR ACCOUNT</p>
-          <button className="text-2xl font-semibold bg-[#FFE500] rounded-[10px] px-14 py-4 mb-4">ACTIVE</button>
+        <div className="bg-white pt-4 w-full lg:px-11 dashShadow rounded-[10px] flex flex-col justify-center items-center">
+          <div className="">
+            <h3 className="lg:text-3xl font-red">Balance</h3>
+            <div className="flex gap-x-20">
+              <h1 className="text-[36px] lg:text-[80px] font-red">$</h1>
+              <h1 className="text-[36px] lg:text-[80px] font-red">1500</h1>
+            </div>
+            <div className="text-white text-[10px] lg:text-base text-center p-2 ml-[98px] bg-[#1475EA] lg:p-4 w-[85px] lg:w-[143px] rounded-[10px] lg:ml-[160px] mb-6">SEE HISTORY</div>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] ">
+          <div className="lg:ml-8">
+            <h3 className="lg:text-3xl font-red">Free Services</h3>
+            <div className="grid grid-cols-2 justify-center mt-3 font-red">
+              <p className="text-[8px] lg:text-base">Service 1</p>
+              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+            </div>
+            <div className="grid grid-cols-2 justify-center mt-3 font-red">
+              <p className="text-[8px] lg:text-base">Service 1</p>
+              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+            </div>
+            <div className="grid grid-cols-2 justify-center mt-3 font-red">
+              <p className="text-[8px] lg:text-base">Service 1</p>
+              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+            </div>
+            <div className="grid grid-cols-2 justify-center mt-3 font-red">
+              <p className="text-[8px] lg:text-base">Service 1</p>
+              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center ">
+          <div className="lg:ml-8">
+            <h3 className="lg:text-3xl font-red">Offers</h3>
+            <img className="mx-2" src="https://i.ibb.co/JpfphYj/cards-1.png" alt="" />
+          </div>
+        </div>
+        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] ">
+          <div className="lg:ml-8">
+            <h3 className="lg:text-3xl font-red">Transaction</h3>
+
+
+          </div>
+        </div>
+        <div className="py-4 px-8 bg-white dashShadow rounded-[10px] ">
+          <div className="lg:ml-8">
+            <h3 className="lg:text-3xl font-red">Message</h3>
+            <div className="flex gap-x-5 lg:gap-x-8 mt-3 font-red">
+              <div>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Johhsan, Marks </p>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Adelia, Nadis</p>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Amelia, Laura </p>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Johhsan, Marks </p>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Adelia, Nadis </p>
+                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Amelia, Laura </p>
+              </div>
+              <div>
+                <p className="text-[8px] mt-1 lg:text-base">( Invoice Nomvember )</p>
+                <p className="text-[8px] mt-1 lg:text-base">( Projact Assigment )</p>
+                <p className="text-[8px] mt-1 lg:text-base">( Meeting Schedule )</p>
+                <p className="text-[8px] mt-1 lg:text-base">( Invoice Nomvember )</p>
+                <p className="text-[8px] mt-1 lg:text-base">( Projact Assigment )</p>
+                <p className="text-[8px] mt-1 lg:text-base">( Meeting Schedule )</p>
+              </div>
+              <div>
+                <p className="text-[8px] mt-1 lg:text-base">Status Update : Success</p>
+                <p className="text-[8px] mt-1 lg:text-base">Presentation Material</p>
+                <p className="text-[8px] mt-1 lg:text-base">Projact : Interoir Design</p>
+                <p className="text-[8px] mt-1 lg:text-base">Projact : Interoir Design</p>
+                <p className="text-[8px] mt-1 lg:text-base">Presentation Material</p>
+                <p className="text-[8px] mt-1 lg:text-base">Status Update : Success</p>
+              </div>
+
+
+
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Second line of dashboard */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-        <div className="bg-white col-span-2 dashShadow rounded-[10px] py-10">
-          <h4 className="ml-4 text-2xl font-bold">TRANSACTION</h4>
-        </div>
-        <div className="bg-white dashShadow rounded-[10px] py-10">
-          <h4 className="ml-4 text-2xl font-bold">OUR CLIENTS</h4>
-        </div>
-      </div>
     </div>
   );
 };
