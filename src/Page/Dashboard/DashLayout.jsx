@@ -32,7 +32,7 @@ const DashLayout = () => {
 
         <div className="w-full bg-[#E9F7FF]">
           <Dashboardtitle />
-          <div className="py-4 mx-4">
+          <div className="py-4 lg:mx-4">
             <Outlet></Outlet>
           </div>
         </div>

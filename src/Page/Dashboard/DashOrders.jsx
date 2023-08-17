@@ -12,8 +12,7 @@ const DashOrders = () => {
             setOrders(data)
         })
     return (
-
-        <div className="my-5 lg:my-20 mx-4 h-screen">
+        <div className="my-5 lg:my-20 lg:mx-4 h-screen">
             <div className="lg:flex grid grid-cols-2 gap-y-2">
                 <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">All</div>
                 <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Pending</div>

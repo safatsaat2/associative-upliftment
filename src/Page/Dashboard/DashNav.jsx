@@ -22,8 +22,7 @@ const DashNav = () => {
             :
             <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
         }
-        <div className={menu === true ? "w-full lg:w-[110px] font-red lg:flex flex-col  rounded-none bg-white h-full" : "w-1/2 lg:w-[110px] font-red lg:flex flex-col  rounded-none sticky top-0 bg-white h-full hidden"}>
-          <Icon icon="material-symbols:menu" className="hidden lg:block text-4xl ml-2 mt-12" />
+        <div className={menu === true ? "w-full lg:w-[160px] font-red lg:flex flex-col  rounded-none bg-white h-full" : "w-1/2 lg:w-[110px] font-red lg:flex flex-col  rounded-none sticky top-0 bg-white h-full hidden"}>
           <div className="sticky top-0 ">
             <img
               className="pt-4 mt-2 w-[75px] lg:mt-14 ml-3"

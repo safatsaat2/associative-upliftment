@@ -11,7 +11,7 @@ const Ad = () => {
           <div className="text-center lg:text-left">
             <div className="flex justify-center items-start gap-x-3">
               {/* <img className="-ml-8" src="https://i.ibb.co/0md3Wy5/Star-41.png" alt="" /> */}
-              <h3 className="text-4xl lg:text-7xl font-bold text-white mb-6">
+              <h3 className="text-4xl lg:text-6xl font-red font-bold text-white mb-6">
                 Six specialists will work for your project
               </h3>
             </div>

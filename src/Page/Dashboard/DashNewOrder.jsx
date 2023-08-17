@@ -248,7 +248,7 @@ const DashNewOrder = () => {
           {/* Service Field */}
 
           <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Service</p>
-          <div className="bg-white dashShadow rounded-[10px] lg:py-4">
+          <div className="bg-white dashShadow rounded-[10px] py-2 lg:py-4">
             <Listbox value={selectedSer} onChange={setSelectedSer}>
               {({ open }) => (
                 <>

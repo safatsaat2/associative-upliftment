@@ -1295,7 +1295,7 @@ const DashCustom = () => {
       </div>
 
       {/* Submit Button */}
-          <div className="text-2xl font-semibold bg-[#FFE500] rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
+          <div className="text-2xl font-semibold bg-[#3186EC] text-white rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
     </div>
     );
 };
