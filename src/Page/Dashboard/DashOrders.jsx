@@ -13,17 +13,17 @@ const DashOrders = () => {
         })
     return (
 
-        <div className="my-20 mx-4">
-            <div className="flex">
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">All</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Pending</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Progress</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Complete</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Partial</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Processing</div>
-                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] px-4 py-2 text-white">Canceled</div>
+        <div className="my-5 lg:my-20 mx-4 h-screen">
+            <div className="lg:flex grid grid-cols-2 gap-y-2">
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">All</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Pending</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Progress</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Complete</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Partial</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Processing</div>
+                <div className="bg-[#1C7EAD] rounded-xl ml-[30px] py-1 text-center lg:px-4 lg:py-2 text-white">Canceled</div>
             </div>
-            <div className="overflow-x-auto mt-10 rounded-[30px]">
+            <div className="overflow-x-auto mt-10 rounded-lg lg:rounded-[30px]">
                 <table className="table">
                     {/* head */}
                     <thead>

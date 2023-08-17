@@ -1,14 +1,14 @@
 
 const DashAddFunds = () => {
     return (
-        <div>
+        <div className="h-screen mt-5">
             <form className="flex flex-col w-full bg-white rounded-[10px]">
                 <div className="w-full">
                     
-                    <div className="mx-14 mt-12">
-                        <p className='text-xl font-semibold text-black mr-4 mb-2 font-red '>Amount</p>
-                        <input className='h-14 px-4 dashShadow rounded-[10px] w-full bg-[#E5E5EF] focus:border-0 active:border-0' type="number" name='amount' />
-                        <input type="submit" value="PAY" className="text-2xl w-full font-semibold bg-[#3186EC] rounded-[10px] text-center  py-2 mt-12 text-white my-6 cursor-pointer" />
+                    <div className="mx-5 lg:mx-14 mt-12">
+                        <p className='lg:text-xl font-semibold text-black ml-10 lg:ml-0 lg:mr-4 mb-2 font-red '>Amount</p>
+                        <input className='h-14 mx-5 lg:mx-0 px-4 dashShadow rounded-[10px] lg:w-full bg-[#E5E5EF] focus:border-0 active:border-0' type="number" name='amount' />
+                        <input type="submit" value="PAY" className="lg:text-2xl w-full lg:font-semibold bg-[#3186EC] rounded-[10px] text-center py-2 mt-6 lg:mt-12 text-white my-6 cursor-pointer" />
                     </div>
                 </div>
                 

@@ -26,7 +26,7 @@ const Login = () => {
           setModal(true);
           logOut()
         } else {
-          navigate("/");
+          navigate("/dashboard");
         }
       })
       .catch((err) => {
