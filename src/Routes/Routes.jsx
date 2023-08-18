@@ -28,6 +28,7 @@ import AdminReferCode from "../Page/Dashboard/AdminDashBoard/AdminReferCode";
 import AdminPayment from "../Page/Dashboard/AdminDashBoard/AdminPayment";
 import AdminUserList from "../Page/Dashboard/AdminDashBoard/AdminUserList";
 import DashWelcome from "../Page/Dashboard/DashWelcome";
+import DashYourOffer from "../Page/Dashboard/DashYourOffer";
 
 export const router = createBrowserRouter([
   {
@@ -164,6 +165,10 @@ export const router = createBrowserRouter([
       {
         path: "userlist",
         element: <AdminUserList/>
+      },
+      {
+        path: "youroffer",
+        element: <DashYourOffer/>
       }
     ],
   },
