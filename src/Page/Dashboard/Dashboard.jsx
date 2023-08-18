@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Dashboard = () => {
@@ -29,27 +30,36 @@ const Dashboard = () => {
             <h3 className="lg:text-3xl font-red">Free Services</h3>
             <div className="grid grid-cols-2 justify-center mt-3 font-red">
               <p className="text-[8px] lg:text-base">Service 1</p>
-              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
+              <Link to="/dashboard/earnmoney">
+                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                  FREE
+                </button>
+              </Link>
+
             </div>
             <div className="grid grid-cols-2 justify-center mt-3 font-red">
               <p className="text-[8px] lg:text-base">Service 1</p>
-              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
+              <Link to="/dashboard/earnmoney">
+                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                  FREE
+                </button>
+              </Link>
             </div>
             <div className="grid grid-cols-2 justify-center mt-3 font-red">
               <p className="text-[8px] lg:text-base">Service 1</p>
-              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
+              <Link to="/dashboard/earnmoney">
+                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                  FREE
+                </button>
+              </Link>
             </div>
             <div className="grid grid-cols-2 justify-center mt-3 font-red">
               <p className="text-[8px] lg:text-base">Service 1</p>
-              <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
+              <Link to="/dashboard/earnmoney">
+                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                  FREE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
