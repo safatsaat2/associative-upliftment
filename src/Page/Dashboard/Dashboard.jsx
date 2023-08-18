@@ -25,37 +25,38 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] ">
+        <div className="py-4 px-6 lg:px-2 bg-white dashShadow rounded-[10px] ">
           <div className="lg:ml-8">
             <h3 className="lg:text-3xl font-red">Free Services</h3>
-            <div className="grid grid-cols-2 justify-center mt-3 font-red">
-              <p className="text-[8px] lg:text-base">Service 1</p>
-              <Link to="/dashboard/earnmoney">
+            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
+              <p className="text-[8px] lg:text-[16px]">Service 1</p>
+              <Link to="/dashboard/service/1">
                 <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
                   FREE
                 </button>
               </Link>
 
             </div>
-            <div className="grid grid-cols-2 justify-center mt-3 font-red">
-              <p className="text-[8px] lg:text-base">Service 1</p>
-              <Link to="/dashboard/earnmoney">
+            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
+              <p className="text-[8px] lg:text-[16px]">Service 2</p>
+              <Link to="/dashboard/service/2">
                 <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
                   FREE
                 </button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 justify-center mt-3 font-red">
-              <p className="text-[8px] lg:text-base">Service 1</p>
-              <Link to="/dashboard/earnmoney">
+            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
+              <p className="text-[8px] lg:text-[16px]">Service 3
+</p>
+              <Link to="/dashboard/service/3">
                 <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
                   FREE
                 </button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 justify-center mt-3 font-red">
-              <p className="text-[8px] lg:text-base">Service 1</p>
-              <Link to="/dashboard/earnmoney">
+            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
+              <p className="text-[8px] lg:text-[16px]">Service 4</p>
+              <Link to="/dashboard/service/4">
                 <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
                   FREE
                 </button>

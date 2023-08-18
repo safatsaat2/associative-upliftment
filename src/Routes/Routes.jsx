@@ -29,6 +29,7 @@ import AdminPayment from "../Page/Dashboard/AdminDashBoard/AdminPayment";
 import AdminUserList from "../Page/Dashboard/AdminDashBoard/AdminUserList";
 import DashWelcome from "../Page/Dashboard/DashWelcome";
 import DashYourOffer from "../Page/Dashboard/DashYourOffer";
+import DashService from "../Page/Dashboard/DashService";
 
 export const router = createBrowserRouter([
   {
@@ -169,7 +170,11 @@ export const router = createBrowserRouter([
       {
         path: "youroffer",
         element: <DashYourOffer/>
-      }
+      },
+      {
+        path: "service/:id",
+        element: <DashService/>
+      },
     ],
   },
 ]);
