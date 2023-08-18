@@ -34,7 +34,7 @@ const DashNav = () => {
 
             <div className="w-12 mt-6 mb-5 ml-4 border-b-2 border-black"></div>
 
-            <Link to="/dashboard" onClick={toTop}>
+            <Link to="/dashboard/home" onClick={toTop}>
               <p onClick={() => setMenu(!menu)} className="mt-10 text-black text-[10px] cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
                 Home
               </p>

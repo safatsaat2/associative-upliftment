@@ -27,6 +27,7 @@ import AdminOrderPage from "../Page/Dashboard/AdminDashBoard/AdminOrderPage";
 import AdminReferCode from "../Page/Dashboard/AdminDashBoard/AdminReferCode";
 import AdminPayment from "../Page/Dashboard/AdminDashBoard/AdminPayment";
 import AdminUserList from "../Page/Dashboard/AdminDashBoard/AdminUserList";
+import DashWelcome from "../Page/Dashboard/DashWelcome";
 
 export const router = createBrowserRouter([
   {
@@ -110,6 +111,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "",
+        element: <DashWelcome/>,
+      },
+      {
+        path: "home",
         element: <Dashboard />,
       },
       {
