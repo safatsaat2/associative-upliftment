@@ -20,3 +20,17 @@
     background: linear-gradient(180deg, #9DC3EF 0%, #F9B7DE 100%) !important;
 
 }
+.radio{
+    flex-shrink: 0;
+    --chkbg: var(--bc);
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 9999px;
+    border-width: 1px !important;
+    border-color: black !important;
+    --tw-border-opacity: 0.2;
+}

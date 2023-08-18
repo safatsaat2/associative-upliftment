@@ -2,6 +2,9 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
 const Footer = ({child}) => {
+  const toTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="border-t-2 w-full border-black">
       <div className={child !== " " ? 'my-16 grid grid-cols-1 lg:max-w-[1076px] mx-2 lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center' : 'mt-16 lg:mt-[167px] mb-4 grid grid-cols-1 lg:max-w-[1076px] mx-2 gap-y-4 lg:mx-auto lg:grid-cols-3 gap-x-[95px]   items-center'}>
@@ -16,7 +19,7 @@ const Footer = ({child}) => {
         <div>
           <h4 className="text-2xl font-bold mt-5 lg:mt-0">About</h4>
           <div className="mt-6">
-            <Link to="/about">
+            <Link to="/about" onClick={toTop}>
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 About us
               </div>
@@ -52,19 +55,19 @@ const Footer = ({child}) => {
         <div>
           <h4 className="text-2xl font-bold mt-5 lg:mt-0">Support Links</h4>
           <div className="mt-6">
-            <Link to="/privacy">
+            <Link to="/privacy" onClick={toTop}>
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Privacy Policy
               </div>
             </Link>
 
-            <Link to="/terms&conditions">
+            <Link to="/terms&conditions" onClick={toTop}>
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Terms & Condition
               </div>
             </Link>
 
-            <Link to="/about">
+            <Link to="/about" onClick={toTop}>
               <div className="mt-5 text-lg font-medium hover:bg-black hover:text-white hover:px-2 duration-1000 hover:text-center hover:py-2 rounded-md">
                 Our Team
               </div>

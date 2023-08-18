@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import ReactStars from "react-stars";
 
 const CardCarro = () => {
+  const toTop = () => {
+    window.scrollTo(0, 0);
+  };
   const slide1 = [
     {
       id: "1",
@@ -66,7 +69,7 @@ const CardCarro = () => {
 
         <div id="slide3" className="carousel-item relative w-full">
           {slide1.map((card) => (
-            <Link to={`/team/${card.id}`} key={card.id}>
+            <Link to={`/team/${card.id}`} key={card.id} onClick={toTop}>
               <div
 
                 className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
@@ -109,7 +112,7 @@ const CardCarro = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           {slide2.map((card) => (
-            <Link to={`/team/${card.id}`} key={card.id}>
+            <Link to={`/team/${card.id}`} key={card.id} onClick={toTop}>
               <div
                 className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
               >
@@ -154,7 +157,7 @@ const CardCarro = () => {
       <div className="carousel w-full mt-10 mb-20 lg:hidden">
         <div id="slide16" className="carousel-item relative w-full">
 
-          <Link to="/team/1">
+          <Link to="/team/1" onClick={toTop}>
             <div
               className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
             >
@@ -194,7 +197,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide17" className="carousel-item relative w-full">
-          <Link to="/team/2">
+          <Link to="/team/2" onClick={toTop}>
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -233,7 +236,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide18" className="carousel-item relative w-full">
-          <Link to="/team/3">
+          <Link to="/team/3" onClick={toTop}>
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -272,7 +275,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide19" className="carousel-item relative w-full">
-          <Link to="/team/4">
+          <Link to="/team/4" onClick={toTop}>
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -311,7 +314,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide20" className="carousel-item relative w-full">
-          <Link to="/team/5">
+          <Link to="/team/5" onClick={toTop}>
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
@@ -350,7 +353,7 @@ const CardCarro = () => {
           </div>
         </div>
         <div id="slide21" className="carousel-item relative w-full">
-          <Link to="/team/6">
+          <Link to="/team/6" onClick={toTop}>
           <div
             className="mx-5 shadow-lg rounded-xl bg-slate-50 hover:translate-y-2 duration-300"
           >
