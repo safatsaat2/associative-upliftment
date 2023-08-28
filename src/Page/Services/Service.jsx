@@ -26,7 +26,7 @@ const Service = () => {
   return (
     <>
       <div id="top" className="max-w-7xl mx-2 lg:mx-auto">
-        <h1 className="text-2xl lg:text-[64px] font-semibold font-sans text-center my-8">
+        <h1 className="text-2xl lg:text-[64px] font-semibold font-sans text-center my-8 lg:my-20">
           {filtered?.title}
         </h1>
         <p className=" mt-6 text-sm lg:text-base">{filtered?.description}</p>

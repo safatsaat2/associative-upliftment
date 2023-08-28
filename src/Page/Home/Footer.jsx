@@ -103,33 +103,49 @@ const Footer = ({ child }) => {
             <h4 className="text-xl font-bold mt-5 lg:mt-0">Categories</h4>
             <div className="mt-10">
 
+              <Link to="/services/1" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Business Management
               </div>
+              </Link>
+              <Link to="/services/2" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Digital Marketing
               </div>
+              </Link>
+              <Link to="/services/3" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Web Development
               </div>
+              </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 App Development
               </div>
+              <Link to="/services/4" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Graphic Design
               </div>
+              </Link>
+              <Link to="/services/5" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Email marketing
               </div>
+              </Link>
+              <Link to="/services/6" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Video Editor
               </div>
+              </Link>
+              <Link to="/services/8" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Data entry
               </div>
+              </Link>
+              <Link to="/services/9" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Music & Audio
               </div>
+              </Link>
             </div>
           </div>
 
@@ -137,18 +153,24 @@ const Footer = ({ child }) => {
             <h4 className="text-xl font-bold mt-5 lg:mt-0">About</h4>
             <div className="mt-10">
 
+              <Link to="/about" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 About us
               </div>
+              </Link>
+              <Link to="/privacy" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Privacy Policy
               </div>
+              </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Careers
               </div>
+              <Link to="/terms&conditions" onClick={toTop}>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Terms and Conditions
               </div>
+              </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Team
               </div>
