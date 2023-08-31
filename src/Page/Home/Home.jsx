@@ -16,11 +16,12 @@ const Home = () => {
         <AboutHome />
 
       </div>
-      <Carro />
+      
       <Ad />
       <div className="max-w-7xl mx-auto">
         <CardCarro />
       </div>
+      <Carro />
       <div className="relative lg:mt-[370px]">
         <div className="">
           <Footer child={" "} />

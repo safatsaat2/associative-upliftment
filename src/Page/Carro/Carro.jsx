@@ -6,8 +6,8 @@ const Carro = () => {
   };
   return (
     <>
-      <div className="hidden lg:block max-w-7xl relative mx-auto">
-        <h1 className="text-5xl text-center font-bold pb-8">Popular Services</h1>
+      <div className="hidden lg:block max-w-7xl relative mx-auto mt-10">
+      <h1 className="text-3xl lg:text-7xl font-red font-bold pt-16 mb-20">Popular Services</h1>
         <div className="carousel w-full mb-20">
           <div id="slide1" className="carousel-item w-full">
             <Link to="/popularservice/1" onClick={toTop} className="w-full ml-4">
