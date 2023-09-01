@@ -33,8 +33,8 @@ const CardCarro = () => {
 
   return (
     <>
-      <h1 className="text-3xl lg:text-7xl font-bold pt-16">Our Special Team</h1>
-      <div className="mt-20">
+      <h1 className="text-3xl lg:text-4xl font-bold pt-16">Our Special Team</h1>
+      <div className="mt-10">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
