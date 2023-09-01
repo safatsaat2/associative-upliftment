@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Pagination } from 'swiper/modules';
 
 const Carro = () => {
   const toTop = () => {
@@ -9,7 +12,7 @@ const Carro = () => {
       <div className="hidden lg:block max-w-7xl relative mx-auto mt-10">
       <h1 className="text-3xl lg:text-7xl font-red font-bold pt-16 mb-20">Popular Services</h1>
         <div className="carousel w-full mb-20">
-          <div id="slide1" className="carousel-item w-full">
+          <div id="slide1" className="carousel-item relative w-full">
             <Link to="/popularservice/1" onClick={toTop} className="w-full ml-4">
               <img src="https://i.ibb.co/gwF0fFx/1-3.png" className="rounded-md" />
             </Link>
