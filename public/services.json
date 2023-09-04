@@ -2,6 +2,7 @@
   {
     "id": "1",
     "title": "Business Management Specialist Team",
+    "banner":"https://i.ibb.co/5LfPWJh/b-1.png",
     "description": "Business management refers to the process of planning, organizing, coordinating, and controlling the activities and resources of a business organization to achieve its objectives effectively and efficiently. It involves overseeing various aspects of a business, such as strategy development, operations, finance, marketing, human resources, and decision-making. Business management also encompasses other important activities such as decision-making, problem-solving, resource allocation, risk management, and strategic thinking. It requires a combination of analytical skills, interpersonal skills, leadership abilities, and a strong understanding of business principles and practices.",
     "whyUsTitle": "As a Business Management Specialist, Our role involves providing expertise and guidance in various aspects of managing and operating a business. We are responsible for analyzing organizational processes, identifying areas for improvement, and implementing strategies to enhance efficiency and productivity.Here are some key areas of focus and responsibilities for our Business Management Specialist:",
     "whyUs1": "Strategic Planning: Collaborating with top-level executives to develop and implement strategic plans that align with the organization's goals and objectives. This includes conducting market research, analyzing industry trends, and identifying opportunities for growth.",
@@ -19,6 +20,7 @@
   {
     "id": "2",
     "title": "Digital Marketing Specialist Team",
+    "banner":"https://i.ibb.co/p0nVLNR/B-2.png",
     "description": "Digital marketing is a broad term that encompasses various online strategies and channels to promote and advertise products, services, or brands. It leverages digital technologies and the internet to reach and engage with a target audience. Digital marketing includes a wide range of tactics, such as search engine optimization (SEO), social media marketing, content marketing, email marketing, pay-per-click (PPC) advertising, and more. Its goal is to drive website traffic, increase brand awareness, generate leads, and ultimately boost conversions and sales.",
     "whyUsTitle": "As Digital Marketing Specialists, Our role involves developing and implementing online marketing strategies to promote products, services, or brands. We leverage various digital channels and tactics to reach and engage with your target audience. Here are some key responsibilities and skills associated with the role:",
     "whyUs1": "Strategy Development: We create digital marketing plans aligned with overall business objectives. This involves conducting market research, identifying target audiences, and defining marketing goals and KPIs.",
@@ -36,6 +38,7 @@
   {
     "id": "3",
     "title": "Web Development Specialist Team",
+    "banner":"https://i.ibb.co/5LfPWJh/b-1.png",
     "description": "Web development refers to the process of designing, creating, and maintaining websites and web applications. It involves a combination of front-end development, which focuses on the visual and interactive aspects of a website, and back-end development, which handles server-side functionality and databases. Web developers use programming languages like HTML, CSS, JavaScript, and frameworks like React, Angular, or Django to build responsive and functional websites that deliver a seamless user experience.",
     "whyUsTitle": "Designing and developing websites and web applications according to client requirements.",
     "whyUs1": "Collaborating with clients, designers, and other team members to gather requirements and develop project plans. Writing clean, efficient, and maintainable code using HTML, CSS, JavaScript, and other programming languages. Implementing responsive web design techniques to ensure websites work seamlessly across different devices and screen sizes. Integrating third-party APIs and services into web applications. Performing website optimization for improved performance and scalability. Conduct thorough testing and debugging to ensure the functionality and integrity of web applications. Keeping up to date with the latest web development trends, tools, and technologies.",
@@ -54,6 +57,7 @@
   {
     "id": "4",
     "title": "Graphic Design Specialist Team",
+    "banner":"https://i.ibb.co/SwwC9Zt/B-3.png",
     "description": "Graphic design is an art form that involves creating visual content to communicate messages, ideas, and information. It encompasses various mediums, including digital and print, and is used in marketing, branding, advertising, and other creative industries. Graphic designers use tools like Adobe Photoshop, Illustrator, and InDesign to create visually compelling designs such as logos, posters, brochures, infographics, social media graphics, and more.",
     "whyUsTitle": "As our Graphic Design Specialist, Our role involves creating visual concepts and designs for various mediums such as print, digital platforms, advertising campaigns, and more. You'll use your creative skills and expertise in design software to develop visually appealing and effective communication materials. Responsibilities of Our Graphic Design Specialist include:",
     "whyUs1": "Designing marketing collateral: Creating brochures, flyers, posters, banners, and other promotional materials that convey key messages and attract the target audience.",
@@ -71,6 +75,7 @@
   {
     "id": "5",
     "title": "Email marketing Specialist Team",
+    "banner":"https://i.ibb.co/71FcwvL/B-4.png",
     "description": "Email marketing is a digital marketing strategy that involves sending targeted emails to a group of individuals or subscribers to promote products, services, or engage with an audience. Email campaigns can be used for various purposes, such as promoting new products, delivering personalized offers, sharing valuable content, nurturing leads, and building strong customer relationships. Successful email marketing relies on delivering relevant and valuable content to the right audience at the right time.",
     "whyUsTitle": "As an Email Marketing Specialists, Our role involves creating and implementing effective email marketing campaigns to engage and convert subscribers. We will work with a team to develop strategies, design email templates, write compelling content, and analyze campaign performance to optimize results.",
     "whyUs1": "Here are some key responsibilities and skills typically associated with the role of an Email Marketing Specialist Responsibilities:",
@@ -95,12 +100,14 @@
   {
     "id": "6",
     "title": "Video Editor Specialist Team",
+    "banner":"https://i.ibb.co/pffq2r8/B-5.png",
     "description": "Video editing is the process of manipulating and arranging video footage, audio, and other multimedia elements to create a cohesive and visually appealing video presentation. Video editors work with raw footage to craft engaging stories, add visual effects, transitions, music, and sound effects. They play a crucial role in post-production, transforming raw content into a polished and professional video product.",
     "whyUsTitle": "As a video editor specialist, We have a deep understanding of the art and craft of video editing. We possess technical expertise in using video editing software and have a keen eye for visual storytelling. Our role involves transforming raw footage into polished and engaging videos by applying various editing techniques, such as trimming, cutting, sequencing, adding effects, transitions, and audio enhancements. We also collaborate with directors, producers, and other creative professionals to bring their vision to life and ensure the final product meets their requirements and objectives. Additionally, We have knowledge of color grading, motion graphics, and other advanced editing techniques to elevate the quality and impact of our work. Continuous learning and staying up to date with the latest industry trends and software advancements are crucial for our professional growth as video editor specialists."
   },
   {
     "id": "7",
-    "title": " Writing & translation Specialist Team    ",
+    "title": " Writing & translation Specialist Team",
+    "banner":"https://i.ibb.co/5LfPWJh/b-1.png",
     "description": "Writing & translation services encompass a broad range of skills that involve creating written content and translating it from one language to another. These services are crucial in various industries and for individuals who require accurate and engaging communication across language barriers. Writing involves crafting original and compelling content, while translation requires the ability to accurately convey the meaning of the source text in a different language.",
     "whyUsTitle": "As experts in Writing & Translation, we offer a range of services tailored to meet the unique needs of our clients. Here's why you should choose our services:",
     "whyUs1": "Language Expertise: Our team of skilled writers and translators are fluent in multiple languages and have a deep understanding of linguistic and cultural nuances.",
@@ -113,6 +120,7 @@
   {
     "id": "8",
     "title": " Data Specialist Team    ",
+    "banner":"https://i.ibb.co/njfbw75/B-6.png",
     "description": "A Data Specialist is a professional who possesses expertise in handling, analyzing, and interpreting large datasets. Data Specialists play a crucial role in various industries, utilizing their skills to extract valuable insights, make data-driven decisions, and improve overall business performance. They are proficient in data management, data analysis, data visualization, and often have knowledge of programming languages and statistical tools.",
     "whyUsTitle": "Our Data Specialists are equipped with the skills and expertise to handle a wide range of data-related tasks and challenges. Here's why you should choose our Data Specialist services:",
     "whyUs1": "Data Expertise: Our team of Data Specialists possesses in-depth knowledge and experience in data management, analysis, and visualization.",
@@ -126,6 +134,7 @@
   {
     "id": "9",
     "title": " Music & Audio Specialist Team    ",
+    "banner":"https://i.ibb.co/r0BCkHD/B-7.png",
     "description": "Our Music & Audio Specialist Team is a group of talented professionals who are passionate about creating exceptional audio experiences. With diverse skills and expertise in music production, audio engineering, sound design, and composition, our team is dedicated to delivering high-quality and immersive audio content across various industries and projects.",
     "whyUsTitle": "Why Choose Our Music & Audio Specialist Team?",
     "whyUs1": "Language Expertise: Our team of skilled writers and translators are fluent in multiple languages and have a deep understanding of linguistic and cultural nuances.",
@@ -139,6 +148,7 @@
   {
     "id": "10",
     "title": " Photography Specialist Team    ",
+    "banner":"https://i.ibb.co/5LfPWJh/b-1.png",
     "description": "Our Photography Specialist Team is a group of highly skilled professionals who are passionate about capturing moments and creating visual stories through the art of photography. With extensive experience and expertise in various photography styles and techniques, our team is dedicated to delivering stunning and impactful images that leave a lasting impression.",
     "whyUsTitle": "Why Choose Our Photography Specialist Team?",
     "whyUs1": "Artistic Vision: Our photographers possess a strong artistic vision and creativity that shines through in their work, delivering visually compelling images.",

@@ -66,7 +66,7 @@ const CardCarro = () => {
             <Link to={`/team/2`} onClick={toTop}>
               <div
 
-                className="  mb-10 hover:translate-y-2 duration-300"
+                className=" mb-10 hover:translate-y-2 duration-300"
               >
                 <img
                   className="w-[370px] h-[250px]"

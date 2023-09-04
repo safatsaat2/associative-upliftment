@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
-{/* <div className="carousel w-full mb-20">
+{/* <div className="carousel w-[370px] mx-auto mb-20">
           <div id="slide1" className="carousel-item relative w-full">
             
             
@@ -79,51 +79,51 @@ const Carro = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Link to="/popularservice/1" onClick={toTop} className="w-full ml-4 ">
-              <img src="https://i.ibb.co/gwF0fFx/1-3.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/1" onClick={toTop} className="w-[370px] mx-auto ml-4 ">
+              <img src="https://i.ibb.co/gwF0fFx/1-3.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/2" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/b5V5mfR/2-1.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/2" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/b5V5mfR/2-1.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/4" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/g915hv3/3.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/4" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/g915hv3/3.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/6" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/r436jpc/4.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/6" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/r436jpc/4.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/5" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/3rXxLtt/5.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/5" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/3rXxLtt/5.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
-          <SwiperSlide><Link to="/popularservice/8" onClick={toTop} className="w-full ml-4">
-            <img src="https://i.ibb.co/Gtwq3VK/1-4.png" className="rounded-md w-full h-full" />
+          <SwiperSlide><Link to="/popularservice/8" onClick={toTop} className="w-[370px] mx-auto ml-4">
+            <img src="https://i.ibb.co/Gtwq3VK/1-4.png" className="rounded-md w-[370px] mx-auto h-full" />
           </Link></SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/7" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/6t9C7dz/2-2.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/7" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/6t9C7dz/2-2.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/5" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/NV6cFkL/3-2.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/5" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/NV6cFkL/3-2.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/9" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/j4Sb3LC/4-1.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/9" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/j4Sb3LC/4-1.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to="/popularservice/10" onClick={toTop} className="w-full ml-4">
-              <img src="https://i.ibb.co/KFL38df/5-2.png" className="rounded-md w-full h-full" />
+            <Link to="/popularservice/10" onClick={toTop} className="w-[370px] mx-auto ml-4">
+              <img src="https://i.ibb.co/KFL38df/5-2.png" className="rounded-md w-[370px] mx-auto h-full" />
             </Link>
           </SwiperSlide>
         </Swiper>
