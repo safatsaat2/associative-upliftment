@@ -13,7 +13,7 @@ const Banner = () => {
 
                     </div>
 
-                    <img className=" w-[870px] h-[580px] -mt-48 ml-[370px] " src="https://i.ibb.co/0nf5c23/replicate-prediction-bj5i6vbbl4pp36opxbqxpws5ce.png" alt="" />
+                    <img className=" w-[870px] -mt-48 ml-[370px] " src="https://i.ibb.co/0nf5c23/replicate-prediction-bj5i6vbbl4pp36opxbqxpws5ce.png" alt="" />
                     <img className=" absolute -mt-20 -right-[20px] " src="https://i.ibb.co/0md3Wy5/Star-41.png" alt="" />
                     <img className=" absolute -mt-[293px]  " src="https://i.ibb.co/JykYwB5/image-807.png" alt="" />
 

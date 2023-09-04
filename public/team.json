@@ -2,6 +2,8 @@
   {
     "id": "1",
     "img": "https://i.ibb.co/Hr8wSJK/Whats-App-Image-2023-07-31-at-00-26-32.jpg",
+    "banner": "https://i.ibb.co/vBKbKNX/1-5.png",
+    "mobileBanner":"https://i.ibb.co/bXgVLCG/i-Phone-8-4.png",
     "teamName" : "Strategy Stars Team",
     "industry": "Creative Design and Marketing",
     "info1": "The Strategy Stars Team is renowned within the creative design and marketing industry for their exceptional talent, innovation, and strategic approach to projects. They have consistently received high praise and recognition from clients and peers alike for their outstanding work.",
@@ -19,6 +21,8 @@
   {
     "id": "2",
     "img": "https://i.ibb.co/z4SKbDZ/Whats-App-Image-2023-07-31-at-00-21-00.jpg",
+    "banner":"https://i.ibb.co/gRYhRKP/1-6.png",
+    "mobileBanner":"https://i.ibb.co/Gt4m4Bt/i-Phone-8-2.png",
     "teamName" : "Dynamic Squad Team",
     "industry": "Creative Design and Technology Solutions",
     "info1": "The Dynamic Squad Team is an elite group of designers and technology experts, highly sought after in the creative design and tech industry. They have earned a stellar reputation for their exceptional skills, cutting-edge ideas, and flawless execution of projects.",
@@ -37,7 +41,8 @@
     "id": "3",
 
     "img": "https://i.ibb.co/kcH9ntK/Whats-App-Image-2023-07-31-at-00-28-59.jpg",
-
+    "banner":"https://i.ibb.co/qNb1HKN/1-9.png",
+    "mobileBanner":"https://i.ibb.co/gJcBLN4/i-Phone-8-5.png",
     "teamName" : "Galaxy Gliders Team",
 
     "industry": "Futuristic UI/UX Design and Innovation",
@@ -64,6 +69,8 @@
   {
     "id": "4",
     "img": "https://i.ibb.co/0cJwXHp/Whats-App-Image-2023-07-31-at-00-23-41.jpg",
+    "banner": "https://i.ibb.co/VpYBGBT/1-8.png",
+    "mobileBanner":"https://i.ibb.co/5YcFmSJ/i-Phone-8-3.png",
     "teamName" : "Titans Alliance Team",
 
     "industry": "Illustration and Visual Arts",
@@ -87,6 +94,8 @@
   {
     "id": "5",
     "img": "https://i.ibb.co/svJgchW/Whats-App-Image-2023-07-31-at-00-33-33.jpg",
+    "banner":"https://i.ibb.co/9vxTZy3/1-7.png",
+    "mobileBanner":"https://i.ibb.co/5FQtGrQ/i-Phone-8-1.png",
     "teamName" : "Dragon Squad Team",
 
     "industry": "Full Stack Development",
@@ -110,6 +119,8 @@
   {
     "id": "6",
     "img": "https://i.ibb.co/sKMJXX4/Whats-App-Image-2023-07-31-at-00-35-34.jpg",
+    "banner":"https://i.ibb.co/CWXwDVt/1-10.png",
+    "mobileBanner":"https://i.ibb.co/F8sQh5W/i-Phone-8-6.png",
     "teamName" : "Galactic Guardians Team",
 
     "industry": "Expert of Photograph",
