@@ -7,8 +7,16 @@ const UpperNav = () => {
     const { user, logOut } = useContext(AuthContext);
     return (
         <>
-            <div className='flex justify-between my-7 items-center w-[1280px]'>
-                <img src="https://i.ibb.co/CvqH8QY/LOGO.png" alt="" />
+            <div className='lg:flex justify-between py-2 hidden items-center w-[1280px]'>
+                <div className='flex gap-x-5 items-center'>
+                <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
+                <p className='text-xl font-bold'>Associative Upliftment</p>
+                <div className='flex gap-x-8 ml-10'>
+                  <p className='font-medium cursor-pointer'>Business</p>
+                  <p className='font-medium cursor-pointer'>Success</p>
+                </div>
+                </div>
+                
                 <div>
                   {user ? (
                     <>
@@ -23,15 +31,15 @@ const UpperNav = () => {
                   ) : (
                     <>
                       
-                      <div className="flex gap-x-9">
+                      <div className="flex gap-x-7">
                     
                     <Link to="/login">
-                    <div className='border border-black py-3 px-10 rounded-xl text-xl cursor-pointer hover:bg-black hover:text-white'>
+                    <div className='border border-black py-1 px-5 rounded-md text-md cursor-pointer hover:bg-black hover:text-white'>
                         Log in
                     </div>
                     </Link>
                     <Link to="/signup">
-                    <div className='border border-black py-3 px-10 rounded-xl text-xl cursor-pointer hover:bg-black hover:text-white'>
+                    <div className='border border-black py-1 px-5 rounded-md text-md cursor-pointer hover:bg-black hover:text-white'>
                         Join
                     </div>
                     </Link>
