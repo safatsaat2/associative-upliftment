@@ -25,7 +25,7 @@ const Service = () => {
 
   return (
     <>
-      <img src={filtered?.banner} alt="" className="my-4" />
+      <img src={filtered?.banner} alt="" className="mb-4 w-full" />
       <div id="top" className="max-w-7xl mx-2 lg:mx-auto">
         {/* <h1 className="text-2xl lg:text-[64px] font-semibold font-sans text-center my-8 lg:my-20">
           {filtered?.title}

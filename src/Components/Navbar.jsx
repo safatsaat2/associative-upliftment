@@ -6,10 +6,10 @@ import { useContext } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Service", href: "/services" },
-  // { name: "Shop", href: "/shop" },
+  { name: "Team", href: "/services" },
+  { name: "Strategy", href: "/shop" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Telent", href: "/contact" },
 ];
 
 function classNames(...classes) {
@@ -26,11 +26,11 @@ const Navbar = () => {
   };
 
   return (
-    <Disclosure as="nav" className="pt-6">
+    <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="lg:mx-[78px] max-w-7xl px-2 sm:px-2 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className=" px-2 sm:px-2 lg:px-0">
+            <div className="relative flex h-12 items-center justify-between">
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -42,21 +42,21 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex w-full items-center justify-between">
-                <div className="flex  items-center">
+              <div className="flex items-center justify-between bg-black w-full">
+                <div className="flex items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
                     src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
                     alt="Your Company"
                   />
-                  <img
+                  {/* <img
                     className="hidden w-auto lg:block"
                     src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
                     alt="Your Company"
-                  />
+                  /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 mr-10">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
@@ -64,8 +64,8 @@ const Navbar = () => {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-[#414141] hover:bg-black hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                            : " text-white",
+                          "rounded-md px-3 py-4 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -74,32 +74,12 @@ const Navbar = () => {
                     ))}
                   </div>
                 </div>
-                <div>
-                  {user ? (
-                    <>
-                     <Link to='dashboard' className="text-[#414141] hover:bg-black hover:text-white mr-4 rounded-md px-3 py-2 text-sm font-medium">Dashboard</Link>
-                      <button
-                        onClick={signOut}
-                        className="bg-black text-white rounded-lg p-2 lg:w-[217px] lg:h-[48px]"
-                      >
-                        Logout
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <Link to="/signup">
-                        <button className="bg-black text-white rounded-lg p-2 lg:w-[217px] lg:h-[48px]">
-                          Get Started
-                        </button>
-                      </Link>
-                    </>
-                  )}
-                </div>
+                
               </div>
             </div>
           </div>
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 bg-black ">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

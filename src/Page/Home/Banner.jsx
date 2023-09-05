@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     return (
         <>
-            <div className="mt-5 bg-[url('https://i.ibb.co/qmWssp7/replicate-prediction-b57ayjbb5bd6h5hc4cj7juqc3i.jpg')] bg-cover bg-center hidden lg:block">
+            <div className="bg-[url('https://i.ibb.co/qmWssp7/replicate-prediction-b57ayjbb5bd6h5hc4cj7juqc3i.jpg')] bg-cover bg-center hidden lg:block">
                 <div className="max-w-7xl mx-auto relative">
                     <div className="pt-[40px]">
                         <h1 className="text-[80px] leading-[90px] text-white w-[812px]">Grow Your Business By Joining Us</h1>
