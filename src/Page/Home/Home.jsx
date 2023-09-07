@@ -6,6 +6,7 @@ import Banner from "./Banner";
 import CardCarro from "./CardCarro";
 import Footer from "./Footer";
 import SignUpNow from "./SignUpNow";
+import VideoSection from "./VideoSection";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <AboutHome />
 
       </div>
-      
+      <VideoSection/>
       <Ad />
       <div className="max-w-7xl mx-auto">
         <CardCarro />
