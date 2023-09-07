@@ -17,11 +17,12 @@ const Home = () => {
         <AboutHome />
 
       </div>
-      <VideoSection/>
-      <Ad />
       <div className="max-w-7xl mx-auto">
         <CardCarro />
       </div>
+      <VideoSection/>
+      <Ad />
+      
       <Carro />
       <div className="relative lg:mt-[370px]">
         <div className="">

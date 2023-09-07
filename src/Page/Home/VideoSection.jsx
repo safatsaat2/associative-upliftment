@@ -2,7 +2,7 @@ import React from 'react';
 import AutoPlayVideos from '../../Components/AutoPlayVideos';
 
 const VideoSection = () => {
-    const video = "/public/video.mp4"
+    const video = "video.mp4"
     return (
         <>
            <div className='max-w-7xl mx-auto gap-x-6 lg:flex items-center justify-center'>
