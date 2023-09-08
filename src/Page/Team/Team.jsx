@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import BeInContact from "../../Components/BeInContact";
+import HowItWorks from "../../Components/HowItWorks";
 
 const Team = ({ children }) => {
 
@@ -31,6 +32,7 @@ const Team = ({ children }) => {
                     <BeInContact title="Safe and Hire" image="https://i.ibb.co/N9BXNzs/Rectangle-6489-1.png" description="Associative Upliftment is a community that values your trust and safety as our number one priority. Our representatives are available to assist you with any issues." firstBoxIcon="https://i.ibb.co/rf7ywWm/Rectangle-6490-1.png" firstBoxTitle="Hire with confidence" firstBoxDescription="Hire safely through our system. Only hold on to the team when you are satisfied with the work." secondBoxIcon="https://i.ibb.co/0rYG56M/Rectangle-6491-1.png" secondBoxTitle="Support team" secondBoxDescription="Support team
                     We're always here to help. Our representatives are available to assist you with any issues." />
 
+                    <HowItWorks/>
 
                     <p className="mb-4 text-sm lg:text-base">
                         {fillteredData?.info1}
