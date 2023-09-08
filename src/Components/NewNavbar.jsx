@@ -77,6 +77,7 @@ const NewNavbar = () => {
         { name: "Strategy", href: "/shop", onHover: "test" },
         { name: "About", href: "/about", onHover: "test" },
         { name: "Talent", href: "/contact", onHover: "test" },
+        { name: "Category", href: "/contact", onHover: "test" },
     ];
     return (
         <>

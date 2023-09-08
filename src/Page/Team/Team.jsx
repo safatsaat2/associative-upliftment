@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import BeInContact from "../../Components/BeInContact";
 
 const Team = ({ children }) => {
 
@@ -20,10 +21,17 @@ const Team = ({ children }) => {
             <h2 className="text-lg lg:text-4xl font-medium font-sans text-center mt-4 mb-6">
                 Speacialist At {fillteredData?.industry}
             </h2> */}
-                
+                <img src={fillteredData?.banner} alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
                 <img src={fillteredData?.mobileBanner} alt="" className="my-4 lg:hidden" />
                 <div className="max-w-7xl mx-auto">
-                <img src={fillteredData?.banner} alt="" className="mb-4 w-3/4 mx-auto my-4 rounded-md hidden lg:block" />
+
+
+                    <BeInContact title="Be in control. Keep in contact." image="https://i.ibb.co/Mfhytjc/Rectangle-6489.png" description="Use our collaboration tools to work efficiently with your team. Share files, chat in real time, monitor progress, and so much more." firstBoxIcon="https://i.ibb.co/fqCst7B/Rectangle-6490.png" firstBoxTitle="Group Chat" firstBoxDescription="You can group chat with your team to ask questions, share feedback, and get constant updates on the progress of your work." secondBoxIcon="https://i.ibb.co/LdJyCfW/Rectangle-6491.png" secondBoxTitle="Companion team" secondBoxDescription="Manage your project with the team. The Associative Upliftment team makes on-the-go collaboration a breeze." />
+
+                    <BeInContact title="Safe and Hire" image="https://i.ibb.co/N9BXNzs/Rectangle-6489-1.png" description="Associative Upliftment is a community that values your trust and safety as our number one priority. Our representatives are available to assist you with any issues." firstBoxIcon="https://i.ibb.co/rf7ywWm/Rectangle-6490-1.png" firstBoxTitle="Hire with confidence" firstBoxDescription="Hire safely through our system. Only hold on to the team when you are satisfied with the work." secondBoxIcon="https://i.ibb.co/0rYG56M/Rectangle-6491-1.png" secondBoxTitle="Support team" secondBoxDescription="Support team
+                    We're always here to help. Our representatives are available to assist you with any issues." />
+
+
                     <p className="mb-4 text-sm lg:text-base">
                         {fillteredData?.info1}
                     </p>
