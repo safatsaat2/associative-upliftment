@@ -17,7 +17,8 @@ const AutoPlayVideos = ({ videoSrc }) => {
     }, [inView]);
     return (
         <div ref={inViewRef}>
-            <video ref={videoRef} autoPlay>
+            <video ref={videoRef} webkit-playsInline="true"
+    playsInline="true" autoPlay controls >
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>

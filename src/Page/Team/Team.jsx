@@ -20,9 +20,10 @@ const Team = ({ children }) => {
             <h2 className="text-lg lg:text-4xl font-medium font-sans text-center mt-4 mb-6">
                 Speacialist At {fillteredData?.industry}
             </h2> */}
-                <img src={fillteredData?.banner} alt="" className="mb-4 w-full hidden lg:block" />
+                
                 <img src={fillteredData?.mobileBanner} alt="" className="my-4 lg:hidden" />
                 <div className="max-w-7xl mx-auto">
+                <img src={fillteredData?.banner} alt="" className="mb-4 w-3/4 mx-auto my-4 rounded-md hidden lg:block" />
                     <p className="mb-4 text-sm lg:text-base">
                         {fillteredData?.info1}
                     </p>
