@@ -50,7 +50,7 @@ const Carro = () => {
   return (
     <>
       <div className=" max-w-7xl relative mx-auto mt-10">
-        <h1 className="text-3xl lg:text-4xl font-bold pt-16 mb-5">Popular Services</h1>
+        <h1 className="text-3xl lg:text-4xl font-bold pt-8 mb-5">Popular Services</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}

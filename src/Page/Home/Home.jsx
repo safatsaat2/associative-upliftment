@@ -4,6 +4,7 @@ import AboutHome from "./AboutHome";
 import Ad from "./Ad";
 import Banner from "./Banner";
 import CardCarro from "./CardCarro";
+import ExtraSection from "./ExtraSection";
 import Footer from "./Footer";
 import SignUpNow from "./SignUpNow";
 import VideoSection from "./VideoSection";
@@ -22,7 +23,7 @@ const Home = () => {
       </div>
       <VideoSection/>
       <Ad />
-      
+      <ExtraSection/>
       <Carro />
       <div className="relative lg:mt-[370px]">
         <div className="">
