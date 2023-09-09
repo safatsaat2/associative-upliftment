@@ -39,7 +39,7 @@ const UpperNav = () => {
                     </div>
                     </Link>
                     <Link to="/signup">
-                    <div className='border border-black py-1 px-5 rounded-md text-md cursor-pointer hover:bg-black hover:text-white'>
+                    <div className='border border-black py-1 px-5 rounded-md text-md cursor-pointer bg-black text-white'>
                         Join
                     </div>
                     </Link>

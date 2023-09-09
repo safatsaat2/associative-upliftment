@@ -1,7 +1,8 @@
-const About = ({children}) => {
+const About = ({ children }) => {
   return (
     <>
-      <div className="lg:flex items-center mt-20 gap-x-6 max-w-7xl lg:mx-auto mx-4">
+      <img src="https://i.ibb.co/MM5sg1n/b-11.png" alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
+      <div className="lg:flex items-center mt-5 gap-x-6 max-w-7xl lg:mx-auto mx-4">
         {/* <img src="https://i.ibb.co/LSvhZg4/image-4.png" alt="" /> */}
         <div className="mt-5">
           <p className="pb-2">

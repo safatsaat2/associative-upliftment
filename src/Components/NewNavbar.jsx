@@ -88,7 +88,7 @@ const NewNavbar = () => {
                             <Link
                                 key={item.name}
                                 to={item.href}
-                                className="text-white ml-16  text-sm font-medium"
+                                className="text-white ml-12  text-sm font-medium"
                                 aria-current={item.current ? "page" : undefined}
                                 onMouseOver={() => handelFunction(item.name)}
 
@@ -102,46 +102,46 @@ const NewNavbar = () => {
                             {
                                 showStrategy ? <>
                                     <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Market Penetration
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Market Expansion
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Product Development
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Diversification
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Merger and Acquisition
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Partnerships and Alliances
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Data Analytics
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Customer Personalization
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Employee Training
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Customer Feedback
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Continuous Improvement
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Market Research
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Mobile App Development
                                         </div>
-                                        <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Brand Reinvention
                                         </div>
                                     </div>
@@ -150,24 +150,36 @@ const NewNavbar = () => {
                                     showTeam ?
                                         <>
                                             <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                <Link to="/team/1">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Strategy Stars Team
                                                 </div>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                </Link>
+                                                <Link to="/team/2">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Dynamic Squad Team
                                                 </div>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                </Link>
+                                                <Link to="/team/3">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Galaxy Gliders Team
                                                 </div>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                </Link>
+                                                <Link to="/team/4">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Titans Alliance Team
                                                 </div>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                </Link>
+                                                <Link to="/team/5">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Dragon Squad Team
                                                 </div>
-                                                <div className="pt-5 text-sm cursor-pointer font-medium" >
+                                                </Link>
+                                                <Link to="/team/6">
+                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                                     Galactic Guardians Team
                                                 </div>
+                                                </Link>
                                             </div>
 
                                         </>
@@ -176,27 +188,27 @@ const NewNavbar = () => {
                                             <>
                                                 <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
                                                     <Link to="/about" onClick={toTop}>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             About us
                                                         </div>
                                                     </Link>
                                                     <Link to="/privacy" onClick={toTop}>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Privacy Policy
                                                         </div>
                                                     </Link>
-                                                    <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Careers
                                                     </div>
                                                     <Link to="/terms&conditions" onClick={toTop}>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Terms and Conditions
                                                         </div>
                                                     </Link>
-                                                    <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Team
                                                     </div>
-                                                    <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Our Impact
                                                     </div>
                                                 </div>
@@ -206,37 +218,37 @@ const NewNavbar = () => {
                                             showTalent ?
                                                 <>
                                                     <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Core Service Skills
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Time Management
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Project Management
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Customer Service
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Client Management
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Problem-Solving
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Creativity
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Research Skills
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Communication
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Self-Motivation
                                                         </div>
-                                                        <div className="pt-5 text-sm cursor-pointer font-medium">
+                                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Adaptability
                                                         </div>
                                                     </div>

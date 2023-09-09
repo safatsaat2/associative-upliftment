@@ -1,8 +1,9 @@
 const Privacy = ({ children }) => {
     return (
       <>
+      <img src="https://i.ibb.co/P4m2Pnn/b-10.png" alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
         <div className="mt-10 max-w-7xl mx-2 lg:mx-auto">
-          <h1
+          {/* <h1
             data-aos="zoom-in-up"
             data-aos-duration="1000"
             className=" text-2xl lg:text-[64px] font-semibold text-center leading-[135%]"
@@ -15,7 +16,7 @@ const Privacy = ({ children }) => {
             className="text-md lg:text-lg font-semibold text-center leading-[135%]"
           >
             Last updated: July 26, 2023
-          </p>
+          </p> */}
           <p className="mt-10 text-sm lg:text-base">
             This Privacy Policy describes Our policies and procedures on the
             collection, use and disclosure of Your information when You use the
