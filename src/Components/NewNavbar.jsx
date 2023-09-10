@@ -102,48 +102,143 @@ const NewNavbar = () => {
                             {
                                 showStrategy ? <>
                                     <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
-                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                            Market Penetration
-                                        </div>
-                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                            Market Expansion
-                                        </div>
+                                        <Link to="/strategy/marketPenetration">
+                                            <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                Market Penetration
+                                            </div>
+                                        </Link>
+                                        <Link to="/strategy/marketExpansion">
+                                            <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                Market Expansion
+                                            </div>
+                                        </Link>
+                                        <Link to="/strategy/productDevelopment">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Product Development
-                                        </div>
+                                        </div>                                        
+                                        </Link>
+                                        <Link to="/strategy/diversification">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Diversification
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/mergerAndAcquistion">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Merger and Acquisition
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/partnershipsAndAlliances">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Partnerships and Alliances
                                         </div>
+                                        
+                                        </Link>
+                                        <Link to="/strategy/dataAnalytics">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Data Analytics
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/customerPersonalization">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Customer Personalization
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/employeeTraining">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Employee Training
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/customerFeedback">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Customer Feedback
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/continuousImprovement">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Continuous Improvement
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/marketResearch">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Market Research
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/mobileAppDevelopment">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Mobile App Development
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/brandReinvention">
                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
                                             Brand Reinvention
                                         </div>
+                                        </Link>
+                                        <Link to="/strategy/franchising">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Franchising
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/verticalIntegration">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Vertical Integration
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/horizontalIntegration">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Horizontal Integration
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/e-commerceAndOnlineExpansion">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            E-commerce and Online Expansion
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/exporting">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Exporting
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/innovation">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Innovation
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/customerRetention">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Customer Retention
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/customerAcquisition">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Customer Acquisition
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/diversifiedMarketing">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Diversified Marketing
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/data-DrivenDecisions">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Data-Driven Decisions
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/efficiencyImprovements">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Efficiency Improvements
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/employeeDevelopment">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Employee Development
+                                        </div>
+                                        </Link>
+                                        <Link to="/strategy/sustainabilityAndCorporateSocialResponsibility">
+                                        <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                            Sustainability and Corporate Social Responsibility
+                                        </div>
+                                        </Link>
+         
                                     </div>
                                 </>
                                     :
@@ -151,34 +246,34 @@ const NewNavbar = () => {
                                         <>
                                             <div className=' grid grid-cols-2 justify-center gap-x-3 px-3'>
                                                 <Link to="/team/1">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Strategy Stars Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Strategy Stars Team
+                                                    </div>
                                                 </Link>
                                                 <Link to="/team/2">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Dynamic Squad Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Dynamic Squad Team
+                                                    </div>
                                                 </Link>
                                                 <Link to="/team/3">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Galaxy Gliders Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Galaxy Gliders Team
+                                                    </div>
                                                 </Link>
                                                 <Link to="/team/4">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Titans Alliance Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Titans Alliance Team
+                                                    </div>
                                                 </Link>
                                                 <Link to="/team/5">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Dragon Squad Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Dragon Squad Team
+                                                    </div>
                                                 </Link>
                                                 <Link to="/team/6">
-                                                <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
-                                                    Galactic Guardians Team
-                                                </div>
+                                                    <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium" >
+                                                        Galactic Guardians Team
+                                                    </div>
                                                 </Link>
                                             </div>
 

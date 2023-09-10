@@ -30,6 +30,7 @@ import AdminUserList from "../Page/Dashboard/AdminDashBoard/AdminUserList";
 import DashWelcome from "../Page/Dashboard/DashWelcome";
 import DashYourOffer from "../Page/Dashboard/DashYourOffer";
 import DashService from "../Page/Dashboard/DashService";
+import Strategy from "../Page/Strategy/Strategy";
 
 export const router = createBrowserRouter([
   {
@@ -64,6 +65,12 @@ export const router = createBrowserRouter([
         element: <Team>
           <Footer child='ok' />
         </Team>
+      },
+      {
+        path: "/strategy/:name",
+        element: <Strategy>
+          <Footer child='ok'/>
+        </Strategy>
       },
       {
         path: "/about",
