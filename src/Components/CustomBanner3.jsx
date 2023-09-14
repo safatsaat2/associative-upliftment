@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CustomBanner = ({ img, header, para }) => {
+const CustomBanner3 = () => {
     return (
         <>
             <div className='flex  items-center justify-between gap-x-[190px]'>
@@ -14,4 +14,4 @@ const CustomBanner = ({ img, header, para }) => {
     );
 };
 
-export default CustomBanner;
+export default CustomBanner3;
