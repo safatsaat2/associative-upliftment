@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import BeInContact from '../../Components/BeInContact';
 import StrategyMiddleBanner from '../../Components/StrategyMiddleBanner';
+import Loader from '../../Components/Loader';
 
 const Strategy = ({children}) => {
 
     const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const { name } = useParams()
 
@@ -19,10 +21,20 @@ const Strategy = ({children}) => {
             })
     }, [])
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setLoading(false)
+        }, 2000);
+        return () => clearTimeout(timer);
+      }, []);
+
     console.log(data)
 
-
+    if(loading){
+        return <Loader/>
+    }
     return (
+        
         <>
             <div className='max-w-7xl mx-auto'>
                 <BeInContact title="A Successful Business" description="A successful business strategy begins with a clear and compelling vision that guides all decision-making. It involves a thorough analysis of the market and competition to identify opportunities and threats. Once the strategic direction is set, it's crucial to prioritize objectives and allocate resources effectively. Continual adaptation and flexibility are essential to stay agile in a dynamic business environment. Finally, a well-executed strategy should focus on delivering value to customers and stakeholders, ultimately driving sustainable growth and profitability." image="https://i.ibb.co/CbcRQDf/Rectangle-6492.png" />
