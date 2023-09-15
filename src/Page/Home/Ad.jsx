@@ -21,7 +21,7 @@ const Ad = () => {
             <Link to='/services' onClick={toTop}><button className="bg-[#FFE500] px-10 py-4 lg:px-10 lg:py-4 text-black rounded-lg font-semibold">See Our Services</button></Link>
 
           </div>
-          <img className="hidden w-[550px] lg:block" src="https://i.ibb.co/gdXf6vr/Group-1000003522.png" alt="" />
+          <img className="hidden w-[550px] lg:block" src="https://i.ibb.co/2FWwP8L/Group-1000003444-4.png" alt="" />
         </div>
       </div>
     </>
