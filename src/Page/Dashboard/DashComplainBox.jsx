@@ -2,12 +2,12 @@
 const DashComplainBox = () => {
     return (
         <>
-            <h1 className="lg:text-xl font-bold text-black mb-4 font-red">Must Read Before Creating Tickets!</h1>
+            <h1 className="lg:text-2xl font-bold text-black mb-4 font-red">Must Read Before Creating Tickets!</h1>
             <div className="mb-6">
-                <p className="text-[10px] mb-2 text-black font-red"><span className="text-sm font-semibold font-red">Speedy Response Time:</span> Expect to hear from our dedicated support team within just 1 to 24 hours max! We`re committed to resolving your query swiftly.</p>
-                <p className="text-[10px] mb-2 text-black font-red"><span className="text-sm font-semibold font-red">Patience is Key:</span> After creating your ticket, simply sit back and relax. Our experts are working diligently to provide you with the assistance you need.</p>
-                <p className="text-[10px] mb-2 text-black font-red"><span className="text-sm font-semibold font-red">One Ticket, One Solution:</span> To ensure efficient handling of your concern, please avoid creating multiple tickets for the same issue. Our team is here to streamline the process for you.</p>
-                <p className="text-[10px] mb-2 text-black font-red font-semibold">We're here to make your experience smooth and hassle-free. Your satisfaction is our priority! 🌟</p>
+                <p className=" mb-2 text-black font-red"><span className="text-lg font-semibold font-red">Speedy Response Time:</span> Expect to hear from our dedicated support team within just 1 to 24 hours max! We`re committed to resolving your query swiftly.</p>
+                <p className=" mb-2 text-black font-red"><span className="text-lg font-semibold font-red">Patience is Key:</span> After creating your ticket, simply sit back and relax. Our experts are working diligently to provide you with the assistance you need.</p>
+                <p className=" mb-2 text-black font-red"><span className="text-lg font-semibold font-red">One Ticket, One Solution:</span> To ensure efficient handling of your concern, please avoid creating multiple tickets for the same issue. Our team is here to streamline the process for you.</p>
+                <p className=" mb-2 text-black font-red font-semibold">We're here to make your experience smooth and hassle-free. Your satisfaction is our priority! 🌟</p>
             </div>
             <form className="flex flex-col justify-center items-center rounded-[40px] bg-white">
                 <div className="w-full">
