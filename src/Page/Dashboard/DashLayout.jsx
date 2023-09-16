@@ -23,15 +23,14 @@ const DashLayout = () => {
   }, [email])
   return (
     <>
-      <div className="hidden lg:flex bg-[#E9F7FF] ">
-
-        <div className="flex lg: bg-white">
+      <div className="hidden lg:block bg-[#E9F7FF] ">
+      <Dashboardtitle />
+        <div className="bg-[#3186EC]">
           {type === "admin" ? <AdminNav /> : <DashNav />}
 
         </div>
 
         <div className="w-full bg-[#E9F7FF]">
-          <Dashboardtitle />
           <div className="py-4 lg:mx-4 min-h-screen">
             <Outlet></Outlet>
           </div>
@@ -40,7 +39,7 @@ const DashLayout = () => {
 
       <div className=" lg:hidden bg-[#E9F7FF] ">
 
-
+      
           {type === "admin" ? <AdminNav /> : <DashNav />}
           
 
