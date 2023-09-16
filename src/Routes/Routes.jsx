@@ -33,6 +33,7 @@ import DashService from "../Page/Dashboard/DashService";
 import Strategy from "../Page/Strategy/Strategy";
 import Career from "../Page/Career";
 import OurImpact from "../Page/OurImpact/OurImpact";
+import Business from "../Page/Business/Business";
 
 export const router = createBrowserRouter([
   {
@@ -104,6 +105,14 @@ export const router = createBrowserRouter([
           <OurImpact>
             <Footer child='ok' />
           </OurImpact>
+        ,
+      },
+      {
+        path: "/business",
+        element:
+          <Business>
+            <Footer child='ok' />
+          </Business>
         ,
       },
       // {

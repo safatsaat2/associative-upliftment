@@ -12,7 +12,10 @@ const UpperNav = () => {
                 <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
                 <p className='text-xl font-bold'>Associative Upliftment</p>
                 <div className='flex gap-x-8 ml-10'>
+                  <Link to="/business">
                   <p className='font-medium cursor-pointer'>Business</p>
+                  </Link>
+
                   <p className='font-medium cursor-pointer'>Success</p>
                 </div>
                 </div>
