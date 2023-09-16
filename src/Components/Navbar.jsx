@@ -37,7 +37,7 @@ const Navbar = () => {
                 item.current
                   ? "bg-gray-900 text-white"
                   : " text-white",
-                "rounded-md ml-16 my-4 text-sm font-medium"
+                "rounded-md ml-16 my-2 text-sm font-medium"
               )}
               aria-current={item.current ? "page" : undefined}
             >

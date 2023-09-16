@@ -83,7 +83,7 @@ const NewNavbar = () => {
         <>
             <div className="hidden bg-black w-full lg:block ">
                 <div className="max-w-7xl mx-auto flex justify-end items-center ">
-                    <div className='relative my-4'>
+                    <div className='relative my-2'>
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}

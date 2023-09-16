@@ -7,7 +7,7 @@ const UpperNav = () => {
     const { user, logOut } = useContext(AuthContext);
     return (
         <>
-            <div className='lg:flex justify-between py-2 hidden items-center w-[1280px]'>
+            <div className='lg:flex justify-between py-3 hidden items-center w-[1280px]'>
                 <div className='flex gap-x-5 items-center'>
                 <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
                 <p className='text-xl font-bold'>Associative Upliftment</p>
