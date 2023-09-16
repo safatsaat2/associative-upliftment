@@ -34,6 +34,7 @@ import Strategy from "../Page/Strategy/Strategy";
 import Career from "../Page/Career";
 import OurImpact from "../Page/OurImpact/OurImpact";
 import Business from "../Page/Business/Business";
+import Success from "../Page/Success/Success";
 
 export const router = createBrowserRouter([
   {
@@ -113,6 +114,14 @@ export const router = createBrowserRouter([
           <Business>
             <Footer child='ok' />
           </Business>
+        ,
+      },
+      {
+        path: "/success",
+        element:
+          <Success>
+            <Footer child='ok' />
+          </Success>
         ,
       },
       // {
