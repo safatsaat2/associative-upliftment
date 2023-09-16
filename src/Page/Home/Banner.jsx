@@ -9,7 +9,7 @@ const Banner = () => {
                     <div className="pt-[40px]">
                         <h1 className="text-[80px] leading-[90px] text-white w-[812px]">Grow Your Business By Joining Us</h1>
                         <p className="leading-[26px] w-[405px] text-white mt-12">You just give your product information. We will arrange it and present to the audience.</p>
-                        <Link to='/signup'><button className='bg-[#FFE600] px-3 py-3 mt-8 text-black rounded-lg '>Get Started</button></Link>
+                        <Link to='/signup'><button className='bg-[#FFE600] font-semibold px-3 py-3 mt-8 text-black rounded-lg '>Join Us</button></Link>
 
                     </div>
 
@@ -31,7 +31,7 @@ const Banner = () => {
                     <h1 className="text-[40px] leading-[50px] -mt-24 text-white text-center w-[344px] mx-auto">Grow Your Business By Joining Us</h1>
                     <p className="leading-[22px] text-white mt-[24px] w-[266px] mx-auto text-[12px] text-center">You just give your product information. We will arrange it and present to the audience.</p>
                     <div className="w-full grid justify-center">
-                        <Link to='/signup'><button className='bg-[#FFE600] px-3 py-3 mt-3 text-black rounded-lg'>Get Started</button></Link>
+                        <Link to='/signup'><button className='bg-[#FFE600] px-3 py-3 mt-3 text-black rounded-lg'>Join Us</button></Link>
                     </div>
                 </div>
                 <img className="mt-2" src="https://i.ibb.co/0nf5c23/replicate-prediction-bj5i6vbbl4pp36opxbqxpws5ce.png" alt="" />
