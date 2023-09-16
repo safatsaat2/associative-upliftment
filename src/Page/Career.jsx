@@ -19,7 +19,7 @@ const Career = ({children}) => {
 
     return (
         <>
-         <img src="https://i.ibb.co/9r0SSr1/b-14.png" alt="" className="mb-8 h-[400px] object-cover w-full hidden lg:block" />
+         <img src="https://i.ibb.co/9r0SSr1/b-14.png" alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
          <div className="mt-10 max-w-7xl mx-2 lg:mx-auto">
             Hello
         </div>

@@ -306,9 +306,12 @@ const NewNavbar = () => {
                                                     <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Team
                                                     </div>
+                                                    <Link to="/ourimpact">
                                                     <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Our Impact
                                                     </div>
+                                                    </Link>
+                                                    
                                                 </div>
 
                                             </>

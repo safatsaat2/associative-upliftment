@@ -32,6 +32,7 @@ import DashYourOffer from "../Page/Dashboard/DashYourOffer";
 import DashService from "../Page/Dashboard/DashService";
 import Strategy from "../Page/Strategy/Strategy";
 import Career from "../Page/Career";
+import OurImpact from "../Page/OurImpact/OurImpact";
 
 export const router = createBrowserRouter([
   {
@@ -95,6 +96,14 @@ export const router = createBrowserRouter([
           <Career>
             <Footer child='ok' />
           </Career>
+        ,
+      },
+      {
+        path: "/ourimpact",
+        element:
+          <OurImpact>
+            <Footer child='ok' />
+          </OurImpact>
         ,
       },
       // {
