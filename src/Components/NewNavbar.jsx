@@ -292,9 +292,12 @@ const NewNavbar = () => {
                                                             Privacy Policy
                                                         </div>
                                                     </Link>
+                                                    <Link to="/career">
                                                     <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                         Careers
                                                     </div>
+                                                    </Link>
+                                                    
                                                     <Link to="/terms&conditions" onClick={toTop}>
                                                         <div className="mt-5 hover:text-[#1973E3] text-sm cursor-pointer font-medium">
                                                             Terms and Conditions

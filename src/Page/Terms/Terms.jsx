@@ -1,15 +1,16 @@
 const Terms = ({ children }) => {
   return (
     <>
+    <img src="https://i.ibb.co/jWVhZgF/b-12.png" alt="" className="mb-8 h-[400px] object-cover w-full hidden lg:block" />
       <div className="mt-10 max-w-7xl mx-2 lg:mx-auto">
-      <h2
+      {/* <h2
         data-aos="zoom-in-up"
         data-aos-duration="1000"
         className="text-2xl lg:text-[64px]  font-semibold text-center leading-[135%]"
       >
         <strong>Terms and Conditions</strong>
         <p className="mt-6 text-md lg:text-lg font-medium text-center">Welcome to International Associative Upliftment!</p>
-      </h2>
+      </h2> */}
 
       
 

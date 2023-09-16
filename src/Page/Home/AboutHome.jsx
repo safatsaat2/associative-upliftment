@@ -18,7 +18,7 @@ const AboutHome = () => {
             </div>
             <div className="lg:flex items-center mt-10 gap-x-6 max-w-7xl lg:mx-auto mx-4">
                 <div >
-                    <h3 className="text-4xl font-bold pb-6">Sell quality products quickly.</h3>
+                    <h3 className="text-4xl font-red font-bold pb-6">Sell quality products quickly.</h3>
                     <p className="pb-2">
                         Planning to decorate your project by a talented master craftsman in
                         minutes, 5 to 6 master craftsmen work daily for long-lasting
