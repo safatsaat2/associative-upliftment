@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <Ad />
       <div className="max-w-7xl mx-auto my-10">
-        <CustomBanner4 img="https://i.ibb.co/WVWkR7X/Rectangle-6512-2.png" header="Business Plan" para="Associative Upliftment works on top-level execution through strategic planning aligned with your business goals and objectives. This includes conducting market research, analyzing industry trends, and identifying growth opportunities." />
+        <CustomBanner4 img="https://i.ibb.co/wdXVj4m/Whats-App-Image-2023-09-17-at-15-50-17.jpg" header="Business Plan" para="Associative Upliftment works on top-level execution through strategic planning aligned with your business goals and objectives. This includes conducting market research, analyzing industry trends, and identifying growth opportunities." />
 
         <CustomBanner2 img="https://i.ibb.co/bb72WPb/Rectangle-6512-3.png" header="Client Response" para="Associative Upliftment looks after Associative Upliftment clients by responding correctly! Responding effectively to clients is a critical skill in building and maintaining successful relationships. By providing prompt and appropriate responses, Associative Upliftment demonstrates professionalism, attentiveness, and a commitment to meeting the needs of Associative Upliftment clients." />
       </div>
