@@ -22,8 +22,8 @@ const DashAddFunds = () => {
                 </button>
             </div>
             {/* Modal For Pay Pal */}
-            <dialog id="my_modal_3" className="modal">
-                <div className="modal-box">
+            <dialog id="my_modal_3" className="modal ">
+                <div className="modal-box bg-white">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -33,8 +33,8 @@ const DashAddFunds = () => {
                 </div>
             </dialog>
             {/* Modal For Cash Pay */}
-            <dialog id="my_modal_4" className="modal">
-                <div className="modal-box">
+            <dialog id="my_modal_4" className="modal ">
+                <div className="modal-box bg-white">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>

@@ -19,7 +19,7 @@ const Home = () => {
 
         <AboutHome />
         <CustomBanner3 img="https://i.ibb.co/0Y5Zqd5/Rectangle-6512.png" header="Success Mission" para="Our success is the result of setting clear goals and working diligently towards them. Our success strategy is built on several key principles. First and foremost, we prioritize clear and well-defined goals. By setting specific, measurable, achievable, relevant, and time-bound (Associative Upliftment) objectives, we provide a clear direction for our efforts." />
-        <CustomBanner2 img="https://i.ibb.co/B66XQVn/replicate-prediction-ev5jgrrb6bejmmzbxarmww4eyi.png" header="Market Research" para="We begin by conducting thorough market research to understand customer needs, preferences, and trends. Our strategy revolves around delivering exceptional value and solutions to our customers, continuously refining our offerings to meet their evolving demands. We prioritize innovation in product development, processes, and technology. We maintain flexibility and adaptability to respond swiftly to market changes, staying ahead of competitors and identifying new opportunities." />
+        <CustomBanner2 img="https://i.ibb.co/dPgTwLX/Rectangle-6512-4.png" header="Market Research" para="We begin by conducting thorough market research to understand customer needs, preferences, and trends. Our strategy revolves around delivering exceptional value and solutions to our customers, continuously refining our offerings to meet their evolving demands. We prioritize innovation in product development, processes, and technology. We maintain flexibility and adaptability to respond swiftly to market changes, staying ahead of competitors and identifying new opportunities." />
 
       </div>
       <Ad />
