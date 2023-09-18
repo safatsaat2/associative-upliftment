@@ -783,7 +783,7 @@ const DashCustom = () => {
     const status = "Pending";
     const info = { date, infor, selectedCat, selectedSer, quantity, charge, email, status }
     if(quantity > 0 && selectedCat !== null && selectedSer !== null && infor !== ""){
-      axios.post("http://localhost:7000/orders", info)
+      axios.post("https://associative-upliftment-server.vercel.app/orders", info)
       .then(res => {
         console.log(res)
         if (res.data.insertedId) {
