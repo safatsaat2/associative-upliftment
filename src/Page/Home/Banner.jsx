@@ -9,7 +9,7 @@ const Banner = () => {
                     <div className="pt-[40px]">
                         <h1 className="text-[80px] leading-[90px] text-white w-[812px]">Grow Your Business By Joining Us</h1>
                         <p className="leading-[26px] w-[405px] text-white mt-12">You just give your product information. We will arrange it and present to the audience.</p>
-                        <Link to='/signup'><button className='bg-[#FFE600] font-semibold px-3 py-3 mt-8 text-black rounded-lg '>Join Us</button></Link>
+                        <Link to='/signup'><button className='bg-[#FFE600] font-semibold px-6 py-3 mt-8 text-black rounded-lg '>Join Us</button></Link>
 
                     </div>
 
