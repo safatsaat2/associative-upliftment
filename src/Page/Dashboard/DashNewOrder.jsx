@@ -1,10 +1,11 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useContext, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import moment from 'moment/moment'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../Provider/AuthProvider'
 
 const category = [
   {
@@ -154,7 +155,8 @@ function classNames(...classes) {
 }
 
 const DashNewOrder = () => {
-
+ const {user} = useContext(AuthContext)
+ const email = user?.email
   const navigate = useNavigate()
   const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
@@ -177,18 +179,26 @@ const DashNewOrder = () => {
 
 
   const handleSubmit = () => {
-    const info = { date, infor, selectedCat, selectedSer, quantity, charge, team }
-    axios.post("http://localhost:7000/orders", info)
+    const status = "Pending";
+    const info = { date, infor, selectedCat, selectedSer, quantity, charge, team, email, status }
+    if(quantity > 0 && team !== "" && selectedCat !== null && selectedSer !== null){
+      axios.post("https://associative-upliftment-server.vercel.app/orders", info)
       .then(res => {
         console.log(res)
         if (res.data.insertedId) {
           Swal.fire(
             'Please Wait for the Approval',
-            'success'
+            'Success'
           )
           navigate('/')
         }
       })
+    }
+    Swal.fire(
+      'Please Select All the requirement',
+      'Failed'
+    )
+    
   }
   return (
     <div className="my-4 ">

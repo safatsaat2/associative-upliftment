@@ -1,16 +1,21 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { useEffect } from "react";
 
 const DashOrders = () => {
 
     const { user } = useContext(AuthContext)
     const [orders, setOrders] = useState([])
-    axios.get(`https://associative-upliftment-server.vercel.app/orders/${user?.email}`)
+    console.log(orders)
+
+    useEffect(()=>{
+        axios.get(`https://associative-upliftment-server.vercel.app/orders/${user?.email}`)
         .then(res => {
-            const data = res.data
+            const data = res.data;
             setOrders(data)
         })
+    },[user])
     return (
         <div className="my-5 lg:my-20 lg:mx-4 h-screen">
             <div className="lg:flex grid grid-cols-2 gap-y-2">
@@ -38,17 +43,17 @@ const DashOrders = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* {orders.map(order => )} */}
-                        <tr className="bg-white font-red ">
-                            <th>hi</th>
-                            <td>hi</td>
-                            <td>hi</td>
-                            <td>hi</td>
-                            <td>hi</td>
-                            <td>hi</td>
-                            <td>hi</td>
-                            <td>hi</td>
-                        </tr>
+                        {orders.map(order => <tr className="bg-white font-red ">
+                            <th>{order?._id}</th>
+                            <td>{order?.date}</td>
+                            <td>{order?.infor}</td>
+                            <td>${order?.charge}</td>
+                            <td>{order?.quantity}</td>
+                            <td>{order?.selectedSer?.name}</td>
+                            <td>{order?.status}</td>
+                            <td>NONE</td>
+                        </tr>)}
+                        
                     </tbody>
                 </table>
             </div>

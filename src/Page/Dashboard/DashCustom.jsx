@@ -1,6 +1,11 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useContext, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import { AuthContext } from '../../Provider/AuthProvider'
+import moment from 'moment'
+import { useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+import axios from 'axios'
 
 const category = [
   {
@@ -758,13 +763,44 @@ function classNames(...classes) {
 
 
 const DashCustom = () => {
+  const {user} = useContext(AuthContext)
+ const email = user?.email
+  const navigate = useNavigate()
     const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
   const [quantity, setQuantity] = useState(0)
+  const [infor, setInfor] = useState("")
+  const date = moment().format('MMMM Do YYYY, h:mm:ss a');
   const handleQuantity = (e) => {
     setQuantity(e.target.value);
   }
+  const handleInfo = (e) => {
+    setInfor(e.target.value)
+  }
   const charge = quantity * selectedSer?.price;
+
+  const handleSubmit = () => {
+    const status = "Pending";
+    const info = { date, infor, selectedCat, selectedSer, quantity, charge, email, status }
+    if(quantity > 0 && selectedCat !== null && selectedSer !== null && infor !== ""){
+      axios.post("http://localhost:7000/orders", info)
+      .then(res => {
+        console.log(res)
+        if (res.data.insertedId) {
+          Swal.fire(
+            'Please Wait for the Approval',
+            'Success'
+          )
+          navigate('/')
+        }
+      })
+    }
+    Swal.fire(
+      'Please Select All the requirement',
+      'Failed'
+    )
+    
+  }
     return (
         <div className="my-4 ">
       <div className="grid grid-cols-1 gap-x-6">
@@ -1269,7 +1305,7 @@ const DashCustom = () => {
               Information
           </p>
           <div className='bg-white lg:mt-6 dashShadow rounded-[10px]'>
-            <textarea className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
+            <textarea onChange={handleInfo} className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
           </div>
         </div>
 
@@ -1295,7 +1331,7 @@ const DashCustom = () => {
       </div>
 
       {/* Submit Button */}
-          <div className="text-2xl font-semibold bg-[#3186EC] text-white rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
+          <div onClick={handleSubmit} className="text-2xl font-semibold cursor-pointer bg-[#3186EC] text-white rounded-[10px] text-center py-4 w-[230px] mx-auto my-6">Submit</div>
     </div>
     );
 };
