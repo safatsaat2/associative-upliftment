@@ -5,6 +5,26 @@ const Dashboard = () => {
 
   return (
     <div className="">
+      {/* You can open the modal using document.getElementById('ID').showModal() method */}
+      <button className="btn" >open modal</button>
+      <dialog id="my_modal_3" className="modal" >
+        <div className="modal-box w-11/12 max-w-5xl">
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <div className='w-full lg:flex justify-between items-center rounded-[10px] mt-6'>
+            <div>
+              <h3 className="lg:text-[32px]  lg:pt-4 pl-4 font-red  pt-4">FACEBOOK POST DESIGN</h3>
+              <p className="text-[12px] lg:text-lg my-[12px] lg:pt-6 lg:py-4 pl-4 font-red">NEW FACEBOOK POST DESIGN 2023
+
+              </p>
+              <p className="text-[12px] lg:text-lg my-[12px]  lg:py-4 pl-4 font-red">Invite Your 5 Friends</p>
+            </div>
+            <button className="lg:text-lg  mr-16 mb-4 lg:mb-0 text-white font-red bg-[#1E6ECE] px-2 py-2 rounded-[10px] ml-4 lg:ml-0">Get Free</button>
+          </div>
+        </div>
+      </dialog>
       {/* First line of dashboard */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-12">
         <div className="py-4 px-12 col-span-2 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center">
@@ -30,37 +50,37 @@ const Dashboard = () => {
             <h3 className="lg:text-3xl font-red">Free Services</h3>
             <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
               <p className="text-[8px] lg:text-[16px]">Service 1</p>
-              <Link to="/dashboard/service/1">
-                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                  FREE
-                </button>
-              </Link>
+
+              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+
 
             </div>
             <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
               <p className="text-[8px] lg:text-[16px]">Service 2</p>
-              <Link to="/dashboard/service/2">
-                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                  FREE
-                </button>
-              </Link>
+
+              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+
             </div>
             <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
               <p className="text-[8px] lg:text-[16px]">Service 3
-</p>
-              <Link to="/dashboard/service/3">
-                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                  FREE
-                </button>
-              </Link>
+              </p>
+
+              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+
             </div>
             <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
               <p className="text-[8px] lg:text-[16px]">Service 4</p>
-              <Link to="/dashboard/service/4">
-                <button className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                  FREE
-                </button>
-              </Link>
+
+              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+                FREE
+              </button>
+
             </div>
           </div>
         </div>
