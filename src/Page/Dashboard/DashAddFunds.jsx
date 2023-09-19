@@ -18,7 +18,7 @@ const DashAddFunds = () => {
                     PayPal
                 </button>
                 <button className="py-[15px] pl-[15px] w-full bg-white text-left text-lg rounded-[30px] mb-[51px]" onClick={() => document.getElementById('my_modal_4').showModal()}>
-                    Cash Pay
+                    Cash App
                 </button>
             </div>
             {/* Modal For Pay Pal */}
