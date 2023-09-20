@@ -3,23 +3,26 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import getOrders from "../../../Hooks/getOrders";
 
 const AdminOrderPage = () => {
+    const [orders, refetch] = getOrders()
     const { user } = useContext(AuthContext)
-    const [orders, setOrders] = useState([])
-    useEffect(() => {
-        axios.get(`https://associative-upliftment-server.vercel.app/orders`)
-            .then(res => {
-                const data = res.data
-                setOrders(data)
-            })
-    }, [])
+    // const [orders, setOrders] = useState([])
+    // useEffect(() => {
+    //     axios.get(`https://associative-upliftment-server.vercel.app/orders`)
+    //         .then(res => {
+    //             const data = res.data
+    //             setOrders(data)
+    //         })
+    // }, [])
 
     const acceptHandler = (id) =>{
         axios.patch(`https://associative-upliftment-server.vercel.app/orders/accept/${id}`)
         .then(res => {
             if(res.data.modifiedCount){
                 Swal.fire(`This Service is Approved`)
+                refetch()
             }
         })
     }
@@ -28,6 +31,7 @@ const AdminOrderPage = () => {
         .then(res => {
             if(res.data.modifiedCount){
                 Swal.fire(`This Service is Declined`)
+                refetch()
             }
         })
     }

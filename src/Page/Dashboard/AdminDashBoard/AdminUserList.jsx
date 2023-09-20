@@ -1,17 +1,20 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import getUsers from "../../../Hooks/getUsers";
 
 const AdminUserList = () => {
 
-    const [users, setUser] = useState([])
-    useEffect(()=>{
-        axios.get(`https://associative-upliftment-server.vercel.app/users`)
-        .then(res => {
-            const data = res.data
-            setUser(data)
-        })
-    }, [])
+    const [users] = getUsers()
+
+    // const [users, setUser] = useState([])
+    // useEffect(()=>{
+    //     axios.get(`https://associative-upliftment-server.vercel.app/users`)
+    //     .then(res => {
+    //         const data = res.data
+    //         setUser(data)
+    //     })
+    // }, [])
     return (
         <div className="my-20 mx-4 h-screen">
                     <div className="overflow-x-auto">
