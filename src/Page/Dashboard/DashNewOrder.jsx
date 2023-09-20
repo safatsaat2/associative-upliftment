@@ -6,6 +6,8 @@ import axios from 'axios'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../Provider/AuthProvider'
+import getUsers from '../../Hooks/getUsers'
+import { useEffect } from 'react'
 
 const category = [
   {
@@ -155,16 +157,25 @@ function classNames(...classes) {
 }
 
 const DashNewOrder = () => {
+  const [users] = getUsers()
+  console.log(users)
  const {user} = useContext(AuthContext)
  const email = user?.email
   const navigate = useNavigate()
+  const [id, setId] = useState("")
   const [selectedCat, setSelectedCat] = useState(category[0])
   const [selectedSer, setSelectedSer] = useState(null)
   const [team, setTeam] = useState('')
   const [quantity, setQuantity] = useState(0)
   const [infor, setInfor] = useState("")
   const date = moment().format('MMMM Do YYYY, h:mm:ss a');
-  console.log(selectedCat)
+  
+  useEffect(() =>{
+    const [currentUser] = users.filter(user => user.email === email)
+
+  setId(currentUser?._id)
+  },[users, email])
+
   const handleChange = (e) => {
     setTeam(e.target.value);
   };
@@ -204,7 +215,7 @@ const DashNewOrder = () => {
     <div className="my-4 ">
       <div className='grid grid-cols-1 lg:grid-cols-3  lg:gap-x-6'>
         <div className="col-span-1 bg-white text-black font-red w-[204px] lg:w-full lg:text-3xl font-semibold py-4 pl-4 pr-20 mb-6 rounded-xl dashShadow">
-          <p className="mb-2 font-red">ID:*************</p>
+          <p className="mb-2 font-red">ID: <span className="text-base">{id}</span></p>
           <p className='font-red'>Balance: $00</p>
         </div>
       </div>

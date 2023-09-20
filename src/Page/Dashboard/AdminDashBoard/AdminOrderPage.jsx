@@ -16,7 +16,7 @@ const AdminOrderPage = () => {
     }, [])
 
     const acceptHandler = (id) =>{
-        axios.patch(`http://localhost:7000/orders/accept/${id}`)
+        axios.patch(`https://associative-upliftment-server.vercel.app/orders/accept/${id}`)
         .then(res => {
             if(res.data.modifiedCount){
                 Swal.fire(`This Service is Approved`)
@@ -24,7 +24,7 @@ const AdminOrderPage = () => {
         })
     }
     const deleteHandler = (id) =>{
-        axios.patch(`http://localhost:7000/orders/delete/${id}`)
+        axios.patch(`https://associative-upliftment-server.vercel.app/orders/delete/${id}`)
         .then(res => {
             if(res.data.modifiedCount){
                 Swal.fire(`This Service is Declined`)

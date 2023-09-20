@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Dashboard = () => {
 
+
   return (
     <div className="">
-      {/* You can open the modal using document.getElementById('ID').showModal() method */}
-      <button className="btn" >open modal</button>
+      {/* Modal Starts */}
       <dialog id="my_modal_3" className="modal" >
         <div className="modal-box w-11/12 max-w-5xl">
           <form method="dialog">
@@ -25,6 +25,8 @@ const Dashboard = () => {
           </div>
         </div>
       </dialog>
+      {/* Modal Ends */}
+      
       {/* First line of dashboard */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-12">
         <div className="py-4 px-12 col-span-2 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center">
