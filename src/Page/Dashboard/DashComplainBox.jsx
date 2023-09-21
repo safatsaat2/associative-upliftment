@@ -46,7 +46,7 @@ const DashComplainBox = () => {
         e.preventDefault()
         const info = {subject, message, transaction, image}
         if(subject !== "" && message !== "" && transaction !== "" && image !== ""){
-            axios.post("http://localhost:7000/tickets", info)
+            axios.post("https://associative-upliftment-server.vercel.app/tickets", info)
             .then(res => {
                 console.log(res)
                 if (res.data.insertedId) {

@@ -6,7 +6,7 @@ const getTickets = () => {
     const { data: tickets = [], isLoading: loading, refetch } = useQuery({
         queryKey: ["tickets"],
         queryFn: async () => {
-            const res = await fetch('http://localhost:7000/tickets'
+            const res = await fetch('https://associative-upliftment-server.vercel.app/tickets'
             );
             return res.json();
         }

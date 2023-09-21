@@ -50,7 +50,7 @@ const Login = () => {
   }
   {
     return (
-      <div className="relative lg:-mt-10">
+      <div className="relative">
         <div
           className={`w-full ${modal === true ? "block duration-1000" : "hidden"
             } absolute left-0 right-0 top-0 bottom-0 lg:h-[300px] mx-2 lg:w-[400px] lg:mx-auto lg:my-auto bg-slate-50 drop-shadow-2xl rounded-lg flex flex-col justify-center items-center`}
@@ -68,39 +68,34 @@ const Login = () => {
             Again Send Verification
           </button>
         </div>
-        <div className="bg-[url('https://i.ibb.co/DY2ZQ1h/Rectangle-6401.png')] bg-cover bg-center lg:-mt-10 text-white">
+        <div className=" shadow-2xl w-[430px] lg:mt-32 mx-auto px-[30px] pt-[40px] my-10 text-black rounded-[12px]">
           <div className="">
-            <h1 className="text-center  font-bold text-2xl leading-normal lg:text-[60px] mt-10 lg: pt-20 hidden lg:block">
-              International Associative Upliftment <span className="text-[#FFE500]">(IAU)</span>
+            <div className="flex justify-center items-center gap-5">
+            <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
+            <h1 className="text-center text-2xl">
+              Associative Upliftment
             </h1>
-            <p className="text-lg lg:text-2xl text-center mb-10 hidden lg:block">Global Service Company</p>
-            <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto">
-              <img
-                className="w-80 lg:w-[671px] rounded-md mb-10 lg:my-0 hidden lg:block"
-                src="https://i.ibb.co/ydQThpd/rafiki.png"
-                alt=""
-              />
-              <div className="mt-20 lg:mt-0">
-                <h3 className="text-5xl font-semibold text-[#FFE500]">Log in Now!!</h3>
+            </div>
+            
+            <div className="max-w-7xl mx-auto">
+              <div className="mt-[26px]">
+                <h3 className="text-[28px] font-semibold text-center">Sign in</h3>
+
                 <form className="text-white" onSubmit={handleSubmit(onSubmit)}>
-                  <div className="form-control my-10">
-                    <p className="label mb-4">
-                      <span className="label-text text-white">Email:</span>
-                    </p>
+                  <div className="form-control my-[20px]">
+                    
                     <input
                       type="text"
                       {...register("email", { required: true })}
-                      placeholder="Provide Your Email"
-                      className="input text-black input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      placeholder="Email"
+                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.email && (
                       <span className="text-red-500">Email is required</span>
                     )}
                   </div>
                   <div className="form-control">
-                    <p className="label mb-4">
-                      <span className="label-text text-white">Password</span>
-                    </p>
+                    
                     <input
                       type="password"
                       {...register(
@@ -110,37 +105,30 @@ const Login = () => {
                           pattern: /[A-Za-z]{3}/,
                         }
                       )}
-                      placeholder="Provide Your Password"
-                      className="input text-black input-bordered w-full lg:w-[458px] h-[74px] rounded-xl border border-black px-2"
+                      placeholder="Password"
+                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.password && (
                       <span className="text-red-500">Password is must</span>
                     )}
                   </div>
-                  <p className="my-4">Forgot Password? Click here</p>
-                  <div className="form-control mt-6">
+                  <div className="form-control mt-[20px]">
                     <input
-                      className="btn bg-black py-4 px-20 rounded-xl text-white hover:border-2 hover:border-[#FFE500] hover:text-[#FFE500] duration-500 hover:bg-transparent cursor-pointer "
+                      className="btn bg-[#1973E3] py-4 px-20 rounded-[30px] text-white hover:border-2 hover:border-[#1973E3] hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer "
                       type="submit"
                       value="Log in"
                     />
                   </div>
                 </form>
-                <p className="font-medium pt-2 px-3 mt-6">
-                  New User?{" "}
-                  <Link to="/signup" className="text-white hover:text-[#FFE500] duration-500 hover:bg-transparent cursor-pointer font-bold">
+                <p className="font-medium pt-2 px-3 mt-[20px]">
+                  Don't have Account?{" "}
+                  <Link to="/signup" className="text-black hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer font-bold">
                     Sign up
                   </Link>
                 </p>
               </div>
             </div>
-            <Link
-              className="font-bold text-xl border-b-2 grid justify-center text-center mx-auto border-[#FFE500] mt-20 w-[142px]"
-              to="/"
-            >
-              Go to Home
-            </Link>
-            <div className=" pb-20"></div>
+            <div className=" pb-12"></div>
           </div>
         </div>
       </div>
