@@ -35,6 +35,7 @@ import Career from "../Page/Career";
 import OurImpact from "../Page/OurImpact/OurImpact";
 import Business from "../Page/Business/Business";
 import Success from "../Page/Success/Success";
+import AdminTicket from "../Page/Dashboard/AdminDashBoard/AdminTicket";
 
 export const router = createBrowserRouter([
   {
@@ -205,6 +206,10 @@ export const router = createBrowserRouter([
       {
         path: "adminpayment",
         element: <AdminPayment/>
+      },
+      {
+        path: "admintickets",
+        element: <AdminTicket/>
       },
       {
         path: "userlist",

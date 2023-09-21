@@ -84,7 +84,7 @@ const DashComplainBox = () => {
                         <p className='lg:text-xl font-semibold text-black ml-8 lg:ml-0 lg:mr-4 mb-2 mt-4 font-red'>Message</p>
                         <textarea onChange={handleMessage} className="textarea w-5/6 ml-5 lg:w-full lg:ml-0 textarea-ghost bg-[#E5E5EF] dashShadow rounded-[10px]  focus:border-none " placeholder="Write your complain..."></textarea>
                         <p className='lg:text-xl font-red font-semibold text-black ml-8 lg:ml-0 lg:mr-4 mb-2'>Transaction</p>
-                        <input onChange={handleTransction} className='h-14 w-5/6 ml-5 lg:w-full lg:ml-0 dashShadow rounded-[10px] bg-[#E5E5EF] pl-2' type="text" name='transaction' placeholder="Write Your Transaction id..." />
+                        <input onChange={handleTransction} className='h-14 w-5/6 ml-5 lg:w-full lg:ml-0 dashShadow rounded-[10px] bg-[#E5E5EF] pl-2' type="number" name='transaction' placeholder="Write Your Transaction id..." />
                         <p className='lg:text-xl font-red font-semibold text-black ml-8 lg:ml-0 lg:mr-4 mb-2'>Screenshot</p>
                         <input className='bg-[#E5E5EF]' type="file" accept="image/*" onChange={handleImage} name='img' />
                         <input onClick={handleSubmit} type="submit" value="Submit Ticket" className="lg:text-2xl lg:font-semibold bg-[#3186EC] text-white rounded-[10px] text-center w-full py-4 mx-auto my-6 font-red" />

@@ -61,7 +61,7 @@ const AdminNav = () => {
                 User List
               </p>
             </Link>
-            <Link to="/dashboard/addfunds" onClick={toTop} >
+            <Link to="/dashboard/admintickets" onClick={toTop} >
               <p onClick={() => setMenu(!menu)} className="mt-1 text-black text-[10px]   cursor-pointer hover:bg-[#3186EC] hover:text-white font-red rounded-md mx-2 px-3 py-2">
                 Ticket Receive
               </p>
