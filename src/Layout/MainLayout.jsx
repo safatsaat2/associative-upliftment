@@ -1,16 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import UpperNav from "../Components/UpperNav";
 import NewNavbar from "../Components/NewNavbar";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Loader from "../Components/Loader";
 import { useEffect } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const MainLayout = () => {
 
   const [loading, setLoading] = useState(true)
 
+  const navigate = useNavigate()
 
+  const {user} = useContext(AuthContext)
+
+  if(user){
+   return navigate("/dashboard/home")
+  }
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
@@ -22,7 +30,7 @@ const MainLayout = () => {
   if(loading){
     return <Loader/>
   }
-
+  
   return (
     <div >
       <div className="max-w-7xl mx-auto">

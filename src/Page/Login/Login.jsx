@@ -50,7 +50,7 @@ const Login = () => {
   }
   {
     return (
-      <div className="relative">
+      <div className="relative h-full lg:pt-32 bg-white">
         <div
           className={`w-full ${modal === true ? "block duration-1000" : "hidden"
             } absolute left-0 right-0 top-0 bottom-0 lg:h-[300px] mx-2 lg:w-[400px] lg:mx-auto lg:my-auto bg-slate-50 drop-shadow-2xl rounded-lg flex flex-col justify-center items-center`}
@@ -68,7 +68,7 @@ const Login = () => {
             Again Send Verification
           </button>
         </div>
-        <div className=" shadow-2xl w-[430px] lg:mt-32 mx-auto px-[30px] pt-[40px] my-10 text-black rounded-[12px]">
+        <div className=" shadow-2xl w-[430px]  mx-auto px-[30px] pt-[40px] text-black rounded-[12px]">
           <div className="">
             <div className="flex justify-center items-center gap-5">
             <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
@@ -79,7 +79,7 @@ const Login = () => {
             
             <div className="max-w-7xl mx-auto">
               <div className="mt-[26px]">
-                <h3 className="text-[28px] font-semibold text-center">Sign in</h3>
+                <h3 className="text-[28px] font-semibold text-center">Welcome Back</h3>
 
                 <form className="text-white" onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-control my-[20px]">

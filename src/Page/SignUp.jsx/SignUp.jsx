@@ -53,8 +53,8 @@ const SignUp = () => {
   }
   {
     return (
-      <div>
-        <div className="shadow-2xl w-[430px] mx-auto px-[30px] pt-[40px] my-10 text-black rounded-[12px]">
+      <div className="py-10">
+        <div className="shadow-2xl w-[430px] mx-auto px-[30px] pt-[40px]  text-black rounded-[12px]">
           <div className="">
             <div className="flex justify-center items-center gap-5">
               <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />

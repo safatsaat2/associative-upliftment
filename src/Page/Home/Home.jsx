@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import CustomBanner2 from "../../Components/CustomBanner2";
 import CustomBanner3 from "../../Components/CustomBanner3";
 import CustomBanner4 from "../../Components/CustomBanner4";
@@ -10,8 +11,11 @@ import ExtraSection from "./ExtraSection";
 import Footer from "./Footer";
 import SignUpNow from "./SignUpNow";
 import VideoSection from "./VideoSection";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
   return (
     <div>
       <Banner />
