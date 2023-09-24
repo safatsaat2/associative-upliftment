@@ -36,6 +36,7 @@ import OurImpact from "../Page/OurImpact/OurImpact";
 import Business from "../Page/Business/Business";
 import Success from "../Page/Success/Success";
 import AdminTicket from "../Page/Dashboard/AdminDashBoard/AdminTicket";
+import DashContact from "../Page/Dashboard/DashContact";
 
 export const router = createBrowserRouter([
   {
@@ -222,6 +223,10 @@ export const router = createBrowserRouter([
       {
         path: "service/:id",
         element: <DashService/>
+      },
+      {
+        path: "contact",
+        element: <DashContact/>
       },
     ],
   },

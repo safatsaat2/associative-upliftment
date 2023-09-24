@@ -76,10 +76,12 @@ const DashNav = () => {
               Your Offer
             </p>
             </Link>
-
+            <Link to="/dashboard/contact">
             <p onClick={() => setMenu(false)} className=" text-white text-[12px]   cursor-pointer hover:text-white rounded-md mx-2 px-3 py-2">
               Contact
             </p>
+            </Link>
+            
             <Link to="/dashboard/earnmoney" onClick={toTop}>
               <p onClick={() => setMenu(false)} className="  text-white text-[12px]   cursor-pointer hover:text-white rounded-md mx-2 px-3 pt-2 ">
                 Earn Money
