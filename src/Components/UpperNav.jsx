@@ -10,7 +10,7 @@ const UpperNav = () => {
       <div className='lg:flex justify-between py-3 hidden items-center w-[1280px]'>
         <div className='flex gap-x-5 items-center'>
           <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
-          <p className='text-xl font-bold'>Associative Upliftment</p>
+          <p className='text-xl font-bold font-itc text-[#602A2A]'>Associative Upliftment</p>
           <div className='flex gap-x-8 ml-10'>
             <Link to="/business">
               <p className='font-medium cursor-pointer'>Business</p>

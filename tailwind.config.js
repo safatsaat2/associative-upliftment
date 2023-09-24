@@ -13,6 +13,8 @@ export default {
         red: ['Red Rose'],
         saira: ['Saira Stencil One'],
         zen: ['Zen Dots'],
+        itc: ['Bauhaus Modern'],
+        harlow: ['Harlow Solid Italic'],
       },
     },
   },

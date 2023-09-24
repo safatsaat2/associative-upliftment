@@ -85,7 +85,6 @@ const DashNav = () => {
                 Earn Money
               </p>
             </Link>
-
           </div>
         </div>
       </div>
