@@ -26,7 +26,7 @@ const DashLayout = () => {
       <div className="hidden lg:block bg-[#E9F7FF] ">
       <Dashboardtitle />
         <div className="bg-black">
-          {type === "admin" ? <AdminNav /> : <DashNav />}
+          {type === "admin" ? <AdminNav /> : <></>}
 
         </div>
 
@@ -38,9 +38,9 @@ const DashLayout = () => {
       </div>
 
       <div className=" lg:hidden bg-[#E9F7FF] ">
-
+      <Dashboardtitle />
       
-          {type === "admin" ? <AdminNav /> : <DashNav />}
+          {type === "admin" ? <AdminNav /> : <></>}
           
 
 
