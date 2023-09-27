@@ -35,7 +35,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/home" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px] hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px] hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Home
                       </p>
                     </Link>
@@ -43,7 +43,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/neworder" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Hire Team
                       </p>
                     </Link>
@@ -51,7 +51,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/customorder" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Custom Order
                       </p>
                     </Link>
@@ -61,7 +61,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/orders" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Orders
                       </p>
                     </Link>
@@ -69,7 +69,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/ourteam" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Our Team
                       </p>
                     </Link>
@@ -77,7 +77,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/addfunds" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px] hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px] hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Add Funds
                       </p>
                     </Link>
@@ -85,7 +85,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/complainbox" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Ticket
                       </p>
                     </Link>
@@ -93,7 +93,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/youroffer">
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Your Offer
                       </p>
                     </Link>
@@ -101,7 +101,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/contact">
-                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md ">
+                      <p onClick={() => setMenu(false)} className=" text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer rounded-md ">
                         Contact
                       </p>
                     </Link>
@@ -110,7 +110,7 @@ const Dashboardtitle = () => {
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/earnmoney" onClick={toTop}>
-                      <p onClick={() => setMenu(false)} className="  text-white text-[12px]   hover:text-[#16C2B8] cursor-pointer hover:text-white rounded-md">
+                      <p onClick={() => setMenu(false)} className="  text-white text-[12px] hover:text-[#16C2B8] cursor-pointer rounded-md">
                         Earn Money
                       </p>
                     </Link>

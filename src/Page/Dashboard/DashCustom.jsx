@@ -802,19 +802,19 @@ const DashCustom = () => {
     
   }
     return (
-        <div className="my-4 ">
+      <div className="my-4 w-[708px] mx-auto">
       <div className="grid grid-cols-1 gap-x-6">
         <div>
           {/* Category Field */}
           <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
           
-          <div className="bg-white dashShadow rounded-[10px] py-2">
+          <div className="bg-[#D9D9D9] dashShadow rounded-[10px] py-2">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
               {({ open }) => (
                 <>
                   {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Category</Listbox.Label> */}
                   <div className="relative mt-2 rounded-[10px]">
-                    <Listbox.Button className="relative w-full cursor-default  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
+                    <Listbox.Button className="relative w-full cursor-default  bg-[#D9D9D9] py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
                         <span className="ml-3 lg:text-[10px] text-[12px] block font-red truncate">{selectedCat?.name ? selectedCat?.name : "Please Select"}</span>
                       </span>
@@ -828,7 +828,7 @@ const DashCustom = () => {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-[#D9D9D9] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {category.map((person) => (
                           <Listbox.Option
                             key={person.id}
@@ -876,13 +876,13 @@ const DashCustom = () => {
           {/* Service Field */}
 
           <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Service</p>
-          <div className="bg-white dashShadow rounded-[10px] py-2">
+          <div className="bg-[#D9D9D9] dashShadow rounded-[10px] py-2">
             <Listbox value={selectedSer} onChange={setSelectedSer}>
               {({ open }) => (
                 <>
                   {/* <Listbox.Label className="block font-bold leading-6 text-black text-2xl pt-4 pl-4">Service</Listbox.Label> */}
                   <div className="relative mt-2 rounded-[10px]">
-                    <Listbox.Button className="relative w-full cursor-default font-red  bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
+                    <Listbox.Button className="relative w-full cursor-default font-red  bg-[#D9D9D9] py-1.5 pl-3 pr-10 text-left text-gray-900 sm:text-sm sm:leading-6 rounded-[10px]">
                       <span className="flex items-center">
                         <span className="ml-3 lg:text-[10px] text-[12px] block font-red truncate">{selectedSer?.name ? selectedSer?.name : "Please Select"}</span>
                       </span>
@@ -896,7 +896,7 @@ const DashCustom = () => {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                      <Listbox.Options className="absolute z-10 font-red mt-1 max-h-56 w-full overflow-auto rounded-md bg-[#D9D9D9] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {
                           selectedCat.name === "Facebook" ? facebookService.map((person) => (
                             <Listbox.Option
@@ -1279,10 +1279,10 @@ const DashCustom = () => {
 
 
           {/* Description Field */}
-          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl pt-4 pl-4'>
               Description
           </p>
-          <div className='bg-white font-red lg:mt-6 dashShadow rounded-[10px]'>
+          <div className='bg-[#D9D9D9] font-red lg:mt-4 dashShadow rounded-[10px]'>
             
 
             <p className='pt-4 pb-2 pl-4'>
@@ -1301,10 +1301,10 @@ const DashCustom = () => {
 
             </p>
           </div>
-          <p className='font-bold leading-6 font-red text-black lg:text-2xl py-4 pl-4'>
+          <p className='font-bold leading-6 font-red text-black lg:text-2xl pt-4 pl-4'>
               Information
           </p>
-          <div className='bg-white lg:mt-6 dashShadow rounded-[10px]'>
+          <div className='bg-[#D9D9D9] lg:mt-4 dashShadow rounded-[10px]'>
             <textarea onChange={handleInfo} className="textarea textarea-ghost font-red  h-64 focus:border-none w-full" placeholder="Information"></textarea>
           </div>
         </div>
@@ -1316,11 +1316,11 @@ const DashCustom = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
         <div className='lg:flex justify-center items-center'>
           <p className='text-xl font-semibold font-red text-black lg:mb-0 mb-2 mr-4'>Quantity:</p>
-          <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-white' type="number" name='quantity' />
+          <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-[#D9D9D9]' type="number" name='quantity' />
         </div>
         <div className='lg:flex justify-center items-center'>
           <p className='text-xl font-semibold text-black mr-4 lg:mb-0 mb-2 font-red'>Charge: </p>
-          <div className='h-14 w-full dashShadow rounded-[10px] font-red bg-white flex items-center' >
+          <div className='h-14 w-full dashShadow rounded-[10px] font-red bg-[#D9D9D9] flex items-center' >
             <p className='pl-4'>
               ${isNaN(charge) ? 0 : charge}
             </p>

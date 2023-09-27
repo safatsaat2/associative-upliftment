@@ -46,11 +46,11 @@ const Login = () => {
   const closeModal = () => setModal(!modal);
 
   if (user) {
-    return <div className="w-full h-full mx-auto my-auto">You are Already sign in!!</div>;
+    return <div className="w-full h-full mx-auto my-auto">You are Already sign in!! <span className="text-primary">Go to Home</span></div>;
   }
   {
     return (
-      <div className="relative h-full lg:pt-32 bg-white">
+      <div className="relative h-full mt-24 mx-2 lg:mt-0 lg:pt-32 bg-white">
         <div
           className={`w-full ${modal === true ? "block duration-1000" : "hidden"
             } absolute left-0 right-0 top-0 bottom-0 lg:h-[300px] mx-2 lg:w-[400px] lg:mx-auto lg:my-auto bg-slate-50 drop-shadow-2xl rounded-lg flex flex-col justify-center items-center`}
@@ -68,11 +68,11 @@ const Login = () => {
             Again Send Verification
           </button>
         </div>
-        <div className=" shadow-2xl w-[430px]  mx-auto px-[30px] pt-[40px] text-black rounded-[12px]">
+        <div className=" shadow-2xl  w-full lg:w-[430px]  mx-auto px-[30px] pt-[40px] text-black rounded-[12px]">
           <div className="">
-            <div className="flex justify-center items-center gap-5">
+            <div className="flex justify-center items-center gap-1 lg:gap-5">
             <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
-            <h1 className="text-center text-2xl">
+            <h1 className="text-center text-lg lg:text-2xl">
               Associative Upliftment
             </h1>
             </div>
