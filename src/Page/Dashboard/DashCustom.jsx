@@ -802,7 +802,7 @@ const DashCustom = () => {
     
   }
     return (
-      <div className="my-4 w-[708px] mx-auto">
+      <div className="my-4 lg:w-[708px] mx-auto">
       <div className="grid grid-cols-1 gap-x-6">
         <div>
           {/* Category Field */}
