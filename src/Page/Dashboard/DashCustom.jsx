@@ -806,7 +806,7 @@ const DashCustom = () => {
       <div className="grid grid-cols-1 gap-x-6">
         <div>
           {/* Category Field */}
-          <p className="block font-bold leading-5 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
+          <p className="block font-bold leading-6 text-black lg:text-2xl my-4 pl-4 font-red">Category</p>
           
           <div className="bg-[#D9D9D9] dashShadow rounded-[10px] py-2">
             <Listbox value={selectedCat} onChange={setSelectedCat}>
