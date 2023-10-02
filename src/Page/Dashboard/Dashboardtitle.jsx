@@ -17,8 +17,8 @@ const Dashboardtitle = () => {
       <div className="max-w-[1383px] mx-auto flex flex-row items-center justify-between py-6 lg:pt-4 lg:py-[10px]">
 
         <div className=" flex items-center font-semibold ">
-          <img src="https://i.ibb.co/FDrrYPz/Ellipse-759.png" className=' rounded-full' alt="" />
-          <p className="text-base lg:text-[20px] text-white ml-[24px] font-harlow">Associative Upliftment</p>
+          <img src="https://i.ibb.co/S7t2yY9/logo-Associative-Upliftment.png" className=' w-14 rounded-full' alt="" />
+          <p className="text-base lg:text-[20px] text-white ml-[px] font-harlow">Associative Upliftment</p>
         </div>
         <div>
 

@@ -104,47 +104,47 @@ const Footer = ({ child }) => {
             <div className="mt-10">
 
               <Link to="/services/1" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Business Management
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Business Management
+                </div>
               </Link>
               <Link to="/services/2" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Digital Marketing
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Digital Marketing
+                </div>
               </Link>
               <Link to="/services/3" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Web Development
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Web Development
+                </div>
               </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 App Development
               </div>
               <Link to="/services/4" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Graphic Design
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Graphic Design
+                </div>
               </Link>
               <Link to="/services/5" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Email marketing
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Email marketing
+                </div>
               </Link>
               <Link to="/services/6" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Video Editor
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Video Editor
+                </div>
               </Link>
               <Link to="/services/8" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Data entry
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Data entry
+                </div>
               </Link>
               <Link to="/services/9" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Music & Audio
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Music & Audio
+                </div>
               </Link>
             </div>
           </div>
@@ -154,22 +154,22 @@ const Footer = ({ child }) => {
             <div className="mt-10">
 
               <Link to="/about" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                About us
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  About us
+                </div>
               </Link>
               <Link to="/privacy" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Privacy Policy
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Privacy Policy
+                </div>
               </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Careers
               </div>
               <Link to="/terms&conditions" onClick={toTop}>
-              <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
-                Terms and Conditions
-              </div>
+                <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
+                  Terms and Conditions
+                </div>
               </Link>
               <div className="mt-5 text-base cursor-pointer font-medium hover:bg-black hover:text-white hover:px-2 duration-500 hover:text-center hover:py-2 rounded-md">
                 Team
@@ -184,7 +184,10 @@ const Footer = ({ child }) => {
         </div>
       </div>
       <div className="py-6 lg:flex mx-5 justify-between items-center">
-        <img src="https://i.ibb.co/Jk5CCD8/Group-1000003488.png" alt="" />
+        <div className="flex items-center justify-center gap-x-2">
+          <img src="https://i.ibb.co/S7t2yY9/logo-Associative-Upliftment.png" className='w-12 rounded-full' alt="" />
+          <p className='text-xl font-bold font-itc text-[#602A2A]'>Associative Upliftment</p>
+        </div>
 
         <div className="flex gap-x-8 justify-center items-center">
           <p className="text-center mt-[10px]"> Global Service</p>
