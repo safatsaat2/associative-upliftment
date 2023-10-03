@@ -771,9 +771,18 @@ const DashCustom = () => {
   const [quantity, setQuantity] = useState(0)
   const [infor, setInfor] = useState("")
   const date = moment().format('MMMM Do YYYY, h:mm:ss a');
-  const handleQuantity = (e) => {
-    setQuantity(e.target.value);
+  const handleQuantity = () => {
+    return setQuantity(quantity + 1)
   }
+
+  const handleQuantityMinus = () =>{
+    if(quantity > 0){
+      return setQuantity(quantity - 1)
+    }
+    return alert("Quantity is 0")
+    
+  }
+ 
   const handleInfo = (e) => {
     setInfor(e.target.value)
   }
@@ -1314,9 +1323,11 @@ const DashCustom = () => {
       {/* Quantity and Charge */}
 
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 gap-x-6 gap-y-6 lg:gap-y-0'>
-        <div className='lg:flex justify-center items-center'>
+        <div className='lg:flex items-center'>
           <p className='text-xl font-semibold font-red text-black lg:mb-0 mb-2 mr-4'>Quantity:</p>
-          <input onChange={handleQuantity} className='h-14 font-red pl-4 w-full dashShadow rounded-[10px] bg-[#D9D9D9]' type="number" name='quantity' />
+          <div onClick={handleQuantityMinus} className='bg-white border border-gray-500 rounded-full w-10 flex items-center justify-center text-4xl cursor-pointer'>-</div>
+          <div className='text-2xl mx-2'>{quantity}</div>
+          <div onClick={handleQuantity} className='bg-white border border-gray-500 rounded-full w-10 flex items-center justify-center text-4xl cursor-pointer'>+</div>
         </div>
         <div className='lg:flex justify-center items-center'>
           <p className='text-xl font-semibold text-black mr-4 lg:mb-0 mb-2 font-red'>Charge: </p>
