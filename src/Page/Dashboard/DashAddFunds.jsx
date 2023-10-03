@@ -12,7 +12,6 @@ const DashAddFunds = () => {
                     Subject: Your amount of money <br />
                     Message: Enter your remittance transaction ID <br />
                     Photo: Share screenshot of sending money <br />
-                    What's app: +880 1763-362924 <br />
                 </p>
                 <button className="py-[15px] pl-[15px] w-full bg-white text-left text-lg rounded-[30px] mb-[12px]" onClick={() => document.getElementById('my_modal_3').showModal()}>
                     PayPal
