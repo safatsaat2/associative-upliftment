@@ -1326,7 +1326,7 @@ const DashCustom = () => {
         <div className='lg:flex items-center'>
           <p className='text-xl font-semibold font-red text-black lg:mb-0 mb-2 mr-4'>Quantity:</p>
           <div onClick={handleQuantityMinus} className='bg-white border border-gray-500 rounded-full w-10 flex items-center justify-center text-4xl cursor-pointer'>-</div>
-          <div className='text-2xl mx-2'>{quantity}</div>
+          <div className='text-2xl mx-4'><p>{quantity}</p></div>
           <div onClick={handleQuantity} className='bg-white border border-gray-500 rounded-full w-10 flex items-center justify-center text-4xl cursor-pointer'>+</div>
         </div>
         <div className='lg:flex justify-center items-center'>
