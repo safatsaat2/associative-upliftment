@@ -20,7 +20,7 @@ const Business = ({children}) => {
         <>
             <img src="https://i.ibb.co/9VxQ6SZ/b-16.png" alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
             <div className="mt-10 max-w-7xl mx-2 lg:mx-auto">
-                <p className="mt-4">Business is a broad term that refers to organizations or individuals engaged in various economic activities with the primary aim of generating profit or providing goods and services to meet the needs of customers. Here are some key aspects and concepts related to business:</p>
+                <p className="">Business is a broad term that refers to organizations or individuals engaged in various economic activities with the primary aim of generating profit or providing goods and services to meet the needs of customers. Here are some key aspects and concepts related to business:</p>
                 
                 <p className="mt-4"><span className="text-lg font-bold">Entrepreneurship: </span> Business often begins with entrepreneurship, where individuals or groups identify opportunities in the market and take the initiative to start and manage a venture. Entrepreneurs are responsible for making key decisions, taking risks, and driving innovation.</p>
                 
