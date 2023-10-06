@@ -3,7 +3,7 @@ import React from 'react';
 const CustomBanner2 = ({img, header, para}) => {
     return (
         <>
-            <div className='flex items-center justify-between gap-x-[186px] mt-0'>
+            <div className='lg:flex items-center justify-center lg:justify-between lg:gap-x-[186px] mt-0'>
                 
                 <div >
                     <h1 className='font-red text-[62px] leading-[72px]'>{header}</h1>
