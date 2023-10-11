@@ -14,12 +14,17 @@ import VideoSection from "./VideoSection";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import AutoScroll from "./AutoScroll";
+import AutScrollDownBanner from "./AutScrollDownBanner";
 
 const Home = () => {
 
   return (
     <div>
       <Banner />
+
+      <div className="my-20">
+        <AutScrollDownBanner/>
+      </div>
       <div className="max-w-7xl mx-auto">
 
         <AboutHome />

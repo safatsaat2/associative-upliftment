@@ -160,9 +160,9 @@ const Business = ({ children }) => {
                             <p className='text-[18px leading-[30px]'>{tab.details}</p>
                         </div>
                     </div>)}
-                    
-                    
                 </div>
+
+                
             </div>
 
             <div>{children}</div>

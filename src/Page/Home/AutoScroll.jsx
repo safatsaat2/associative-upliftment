@@ -5,6 +5,7 @@ const AutoScroll = () => {
         <div>
             <Marquee
             speed={120}
+            direction="right"
             >
                 <img className="w-[200px] lg:w-[400px] h-[200px] lg:h-[300px] mx-5 rounded-[20px] drop-shadow-lg py-6" src="https://i.ibb.co/VqMwhLy/Whats-App-Image-2023-10-09-at-19-42-12-3a7f8060.jpg" alt="" />
                 <img className="w-[200px] lg:w-[400px] h-[200px] lg:h-[300px] mx-5 rounded-[20px] drop-shadow-lg py-6" src="https://i.ibb.co/7bPpS1J/Whats-App-Image-2023-10-09-at-19-42-19-47f19cc0.jpg" alt="" />
