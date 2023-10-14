@@ -25,6 +25,9 @@ body{
 
 }
 
+.teamBannerBG{
+    background: linear-gradient(90deg, #1973E3 0.38%, rgba(25, 115, 227, 0.00) 73.71%);
+}
 
 .radio{
     flex-shrink: 0;

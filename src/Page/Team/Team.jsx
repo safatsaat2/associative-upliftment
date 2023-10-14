@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import BeInContact from "../../Components/BeInContact";
 import HowItWorks from "../../Components/HowItWorks";
+import TeamBanner from "../../Components/TeamBanner";
 
 const Team = ({ children }) => {
 
@@ -22,8 +23,9 @@ const Team = ({ children }) => {
             <h2 className="text-lg lg:text-4xl font-medium font-sans text-center mt-4 mb-6">
                 Speacialist At {fillteredData?.industry}
             </h2> */}
-                <img src={fillteredData?.banner} alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
-                <img src={fillteredData?.mobileBanner} alt="" className="my-4 lg:hidden" />
+                {/* <img src={fillteredData?.banner} alt="" className="mb-8 h-[400px] w-full hidden lg:block" />
+                <img src={fillteredData?.mobileBanner} alt="" className="my-4 lg:hidden" /> */}
+                <TeamBanner img={fillteredData?.img} name={fillteredData?.teamName} info={fillteredData?.info1} bannerImg={fillteredData?.bannerImg}/>
                 <div className="max-w-7xl mx-auto">
 
 
