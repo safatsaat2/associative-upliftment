@@ -28,13 +28,13 @@ const Banner = () => {
             <div className="mt-5 bg-[url('https://i.ibb.co/2Y2FHpV/replicate-prediction-7eb6xejbu5bdy4h5e4ivkdhyfu.jpg')] bg-cover bg-center block lg:hidden">
                 <div className="pt-[36px] w-[344px] mx-auto">
                     <img className="mb-12 w-[45px] " src="https://i.ibb.co/XYKzYGw/Star-40.png" alt="" />
-                    <h1 className="text-[40px] leading-[50px] -mt-24 text-white text-center w-[344px] mx-auto">Grow Your Business By Joining Us</h1>
+                    <h1 className="text-[40px] leading-[50px] -mt-24 font-red text-white text-center w-[344px] mx-auto">Grow Your <span className="bg-[#149CE6] p-1 font-red rounded-[10px]">Business</span> By Joining Us</h1>
                     <p className="leading-[22px] text-white mt-[24px] w-[266px] mx-auto text-[12px] text-center">You just give your product information. We will arrange it and present to the audience.</p>
                     <div className="w-full grid justify-center">
-                        <Link to='/signup'><button className='bg-[#FFE600] px-3 py-3 mt-3 text-black rounded-lg'>Join Us</button></Link>
+                        <Link to='/signup'><button className='bg-[#149CE6] px-3 py-3 mt-3 text-black rounded-lg'>Join Us</button></Link>
                     </div>
                 </div>
-                <img className="mt-2" src="https://i.ibb.co/0nf5c23/replicate-prediction-bj5i6vbbl4pp36opxbqxpws5ce.png" alt="" />
+                <img className="mt-2" src="https://i.ibb.co/NFj83tg/Rectangle-6383-2.png" alt="" />
                 <img className="absolute right-0 -mt-12 mr-4" src="https://i.ibb.co/k8LDn5S/Star-41-1.png" alt="" />
             </div>
         </>
