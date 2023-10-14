@@ -1,7 +1,7 @@
 
 const AboutHome = () => {
     return (
-        <div className="my-10 lg:my-20">
+        <div className="my-10 mx-[43px] text-center text-[12px] lg:text-base lg:text-left lg:mx-auto lg:my-20">
             <div className="lg:flex items-center gap-x-6 max-w-7xl lg:mx-auto mx-4">
                 <img className="w-[628px] rounded-2xl hidden lg:block" src="https://i.ibb.co/NTfW7sF/Whats-App-Image-2023-08-02-at-20-27-41.jpg" alt="" />
                 <div className="mt-5">
@@ -18,7 +18,7 @@ const AboutHome = () => {
             </div>
             <div className="lg:flex items-center mt-10 gap-x-6 max-w-7xl lg:mx-auto mx-4">
                 <div >
-                    <h3 className="text-4xl font-red font-bold pb-6">Sell quality products quickly.</h3>
+                    <h3 className="text-[20px] leading-[30px] text-[#149CE6] lg:text-black lg:text-4xl font-red lg:font-bold pb-6">Sell quality products quickly.</h3>
                     <p className="pb-2">
                         Planning to decorate your project by a talented master craftsman in
                         minutes, 5 to 6 master craftsmen work daily for long-lasting
