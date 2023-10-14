@@ -117,6 +117,75 @@ const Success = ({ children }) => {
             "item3" : "Management Awards and Accolades",
             "item4" : "Employee Leadership Development",
         },
+        {
+            "key" : 13,
+            "name" : "Leadership and Management Excellence",
+            "item1" : "Strong Leadership Team",
+            "item2" : "Effective Decision-making",
+            "item3" : "Management Awards and Accolades",
+            "item4" : "Employee Leadership Development",
+        },
+        {
+            "key" : 14,
+            "name" : "Quality and Product Excellence",
+            "item1" : "High-quality products or Services",
+            "item2" : "ISO Certifications",
+            "item3" : "Product Awards and Recognitions",
+            "item4" : "Continuous Improvement Initiatives",
+        },
+        {
+            "key" : 15,
+            "name" : "Profitable Growth and Scaling",
+            "item1" : "Expansion into New Locations",
+            "item2" : "Growth in Market Capitalization",
+            "item3" : "Achieving Scaling Goals",
+            "item4" : "Positive Earnings Trends",
+        },
+    ]
+    const info2 = [
+        {
+            "key" : 1,
+            "name" : "Subjective Nature",
+            "item1" : "Success is subjective and can mean different things to different people. What one person considers success may not be the same for someone else. It's highly dependent on an individual's goals, values, and aspirations.",
+            
+        },
+        {
+            "key" : 2,
+            "name" : "Achievement",
+            "item1" : "Success often involves achieving specific goals or objectives. This could be related to career advancement, financial stability, creative accomplishments, or personal development milestones.",
+            
+        },
+        {
+            "key" : 3,
+            "name" : "Hard Work and Effort",
+            "item1" : "In many cases, success is closely tied to hard work, dedication, and perseverance. Achieving one's goals often requires consistent effort and the ability to overcome challenges and setbacks.",
+            
+        },
+        {
+            "key" : 4,
+            "name" : "Measuring Success",
+            "item1" : "People may measure success in various ways, such as by financial wealth, recognition, personal happiness, or the impact they have on others and society as a whole.",
+            
+        },
+        {
+            "key" : 5,
+            "name" : "Continuous Process",
+            "item1" : "Success is not always a one-time event but rather an ongoing process of setting and achieving new goals. It can involve learning from failures and adapting to changing circumstances.",
+            
+        },
+        {
+            "key" : 6,
+            "name" : "Balancing Priorities",
+            "item1" : "Achieving success in one area of life may require balancing and prioritizing other aspects. For example, someone focused on a successful career may need to make sacrifices in terms of personal time and relationships.",
+            
+        },
+        {
+            "key" : 7,
+            "name" : "Personal Fulfillment",
+            "item1" : "True success often includes a sense of personal fulfillment and happiness. It's not solely about external accomplishments but also about feeling content and satisfied with one's life choices.",
+            
+        },
+        
     ]
 
 
@@ -125,8 +194,8 @@ const Success = ({ children }) => {
     }
     return (
         <>
-            <img className="w-auto mx-auto mt-[72px] mb-[122px]" src="https://i.ibb.co/hfdL3Xq/1-12.png" />
-            <div className='w-[1354px] mx-auto bg-[#051D2D] flex relative justify-center'>
+            <img className="w-auto mx-auto mb-[122px]" src="https://i.ibb.co/hfdL3Xq/1-12.png" />
+            <div className='w-[1320px] mx-auto bg-[#051D2D] flex relative justify-center'>
                 <h1 className='text-[48px] text-white top-[43px] leading-[58px] absolute'>Categories related to business success</h1>
                 <div className='mt-[150px] mb-[30px] pl-[21px]'>
                     {info.map(tab => <div key={tab.key} tabIndex={0} className="collapse w-[750px] collapse-arrow border-b border-white text-white rounded-none">
@@ -142,6 +211,20 @@ const Success = ({ children }) => {
                     </div>)}
                 </div>
                 <img className='-ml-[40px]' src="https://i.ibb.co/RvZ2HT9/Rectangle-6544.png" alt="" />
+            </div>
+            <div className='w-[1320px] my-[122px] mx-auto bg-[#051D2D] flex relative justify-center'>
+                <h1 className='text-[48px] text-white top-[43px] leading-[58px] absolute'>Consider about success</h1>
+                <div className='mt-[150px] mb-[30px] pl-[21px]'>
+                    {info2.map(tab => <div key={tab.key} tabIndex={0} className="collapse w-[750px] collapse-arrow border-b border-white text-white rounded-none">
+                        <div className="collapse-title text-xl font-medium">
+                            <p className='text-[20px] py-[12px] leading-[30px]'>{tab.name}</p>
+                        </div>
+                        <div className="collapse-content">
+                            <p className='text-[18px leading-[30px]'>{tab.item1}</p>
+                        </div>
+                    </div>)}
+                </div>
+                <img className='-ml-[40px]' src="https://i.ibb.co/T8mrWGg/Rectangle-6545.png" alt="" />
             </div>
             <div>{children}</div>
         </>

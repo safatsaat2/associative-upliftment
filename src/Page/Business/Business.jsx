@@ -83,7 +83,7 @@ const Business = ({ children }) => {
     return (
         <>
 
-            <img className='w-auto mx-auto mt-[72px]' src="https://i.ibb.co/Pz2tsp3/1-11.png" alt="" />
+            <img className='w-auto mx-auto' src="https://i.ibb.co/Pz2tsp3/1-11.png" alt="" />
             <p className='text-[48px] leading-[58px] mt-[160px] lg:max-w-[1296px] mx-auto'>What is your business
             </p>
             <div className='max-w-[1296px] mx-auto mt-[48px]'>
