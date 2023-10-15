@@ -1,11 +1,17 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Dashboard = () => {
-
+  const { user } = useContext(AuthContext);
+  console.log(user)
+  //  <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
+  //                 FREE
+  //               </button>
 
   return (
-    <div className="">
+    <div className="bg-[#183351] py-[70px] px-[70px] rounded-[38px]">
       {/* Modal Starts */}
       <dialog id="my_modal_3" className="modal" >
         <div className="modal-box w-11/12 max-w-5xl">
@@ -25,115 +31,40 @@ const Dashboard = () => {
           </div>
         </div>
       </dialog>
-      {/* Modal Ends */}
-      
-      {/* First line of dashboard */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-12">
-        <div className="py-4 px-12 col-span-2 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center">
+      <div className="max-w-[1292.01px] mx-auto">
+        <div className="flex justify-between items-end">
+          <p className="text-[40px] font-bold leading-[50px] text-white">Hi {user?.displayName}</p>
+          <p className="text-[32px] leading-[42px] text-white">Balance:$00</p>
+        </div>
+
+        <div className="mt-20 flex items-start gap-x-[68px]">
+          <div className="flex items-center gap-x-[82px]">
+            <img src="https://i.ibb.co/8gcTC7v/Group-1000003604.png" alt="" />
+            <img src="https://i.ibb.co/vjbD9sp/Group-1000003605.png" alt="" />
+          </div>
           <div>
-            <h3 className="text-3xl font-red">Growth</h3>
-            <img className="mx-2" src="https://i.ibb.co/6mg8NyK/Group-1000003452.png" alt="" />
+            <img onClick={() => document.getElementById('my_modal_3').showModal()} className="mt-[19px] cursor-pointer" src="https://i.ibb.co/ChCtMxS/bts.png" alt="" />
+            <img onClick={() => document.getElementById('my_modal_3').showModal()} className="mt-[19px] cursor-pointer" src="https://i.ibb.co/nm77N3p/bts-1.png" alt="" />
+            <img onClick={() => document.getElementById('my_modal_3').showModal()} className="mt-[19px] cursor-pointer" src="https://i.ibb.co/7Q40hWR/bts-2.png" alt="" />
           </div>
         </div>
-        <div className="bg-white pt-4 w-full lg:px-11 dashShadow rounded-[10px] flex flex-col justify-center items-center">
-          <div className="">
-            <h3 className="lg:text-3xl font-red">Balance</h3>
-            <div className="flex gap-x-20">
-              <h1 className="text-[36px] lg:text-[80px] font-red">$</h1>
-              <h1 className="text-[36px] lg:text-[80px] font-red">1500</h1>
-            </div>
-            <div className="text-white text-[10px] lg:text-base text-center p-2 ml-[98px] bg-[#1475EA] lg:p-4 w-[85px] lg:w-[143px] rounded-[10px] lg:ml-[160px] mb-6">SEE HISTORY</div>
+        <div className="mt-[48px] flex items-center gap-x-[30px]">
+          <div>
+            <img src="https://i.ibb.co/y5JDG35/1-20.png" alt="" />
+            <img className="mt-[30px]" src="https://i.ibb.co/px04KcY/2-3.png" alt="" />
           </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-        <div className="py-4 px-6 lg:px-2 bg-white dashShadow rounded-[10px] ">
-          <div className="lg:ml-8">
-            <h3 className="lg:text-3xl font-red">Free Services</h3>
-            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
-              <p className="text-[8px] lg:text-[16px]">Service 1</p>
-
-              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
-
-
-            </div>
-            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
-              <p className="text-[8px] lg:text-[16px]">Service 2</p>
-
-              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
-
-            </div>
-            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
-              <p className="text-[8px] lg:text-[16px]">Service 3
-              </p>
-
-              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
-
-            </div>
-            <div className="grid grid-cols-2 justify-center items-center mt-3 font-red">
-              <p className="text-[8px] lg:text-[16px]">Service 4</p>
-
-              <button onClick={() => document.getElementById('my_modal_3').showModal()} className="bg-[#1475EA] w-[45px] text-[8px] lg:text-base lg:w-[95px] py-2 px-3 ml-20 text-white rounded-[10px]">
-                FREE
-              </button>
-
-            </div>
-          </div>
-        </div>
-        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] flex flex-col justify-center items-center ">
-          <div className="lg:ml-8">
-            <h3 className="lg:text-3xl font-red">Offers</h3>
-            <img className="mx-2" src="https://i.ibb.co/JpfphYj/cards-1.png" alt="" />
-          </div>
-        </div>
-        <div className="py-4 px-12 bg-white dashShadow rounded-[10px] ">
-          <div className="lg:ml-8">
-            <h3 className="lg:text-3xl font-red">Transaction</h3>
-
-
-          </div>
-        </div>
-        <div className="py-4 px-8 bg-white dashShadow rounded-[10px] ">
-          <div className="lg:ml-8">
-            <h3 className="lg:text-3xl font-red">Message</h3>
-            <div className="flex gap-x-5 lg:gap-x-8 mt-3 font-red">
-              <div>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Johhsan, Marks </p>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Adelia, Nadis</p>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Amelia, Laura </p>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Johhsan, Marks </p>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Adelia, Nadis </p>
-                <p className="text-[#1475EA] text-[8px] mt-1 lg:text-base">Amelia, Laura </p>
-              </div>
-              <div>
-                <p className="text-[8px] mt-1 lg:text-base">( Invoice Nomvember )</p>
-                <p className="text-[8px] mt-1 lg:text-base">( Projact Assigment )</p>
-                <p className="text-[8px] mt-1 lg:text-base">( Meeting Schedule )</p>
-                <p className="text-[8px] mt-1 lg:text-base">( Invoice Nomvember )</p>
-                <p className="text-[8px] mt-1 lg:text-base">( Projact Assigment )</p>
-                <p className="text-[8px] mt-1 lg:text-base">( Meeting Schedule )</p>
-              </div>
-              <div>
-                <p className="text-[8px] mt-1 lg:text-base">Status Update : Success</p>
-                <p className="text-[8px] mt-1 lg:text-base">Presentation Material</p>
-                <p className="text-[8px] mt-1 lg:text-base">Projact : Interoir Design</p>
-                <p className="text-[8px] mt-1 lg:text-base">Projact : Interoir Design</p>
-                <p className="text-[8px] mt-1 lg:text-base">Presentation Material</p>
-                <p className="text-[8px] mt-1 lg:text-base">Status Update : Success</p>
-              </div>
-
-
-
-            </div>
+          <div>
+            <img src="https://i.ibb.co/F69grDR/3-4.png" alt="" />
           </div>
         </div>
       </div>
+
+
+
+      {/* Modal Ends */}
+
+      {/* First line of dashboard */}
+
 
     </div>
   );
