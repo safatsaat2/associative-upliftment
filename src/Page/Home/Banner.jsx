@@ -34,7 +34,7 @@ const Banner = () => {
                         <Link to='/signup'><button className='bg-[#149CE6] px-3 py-3 mt-3 text-black rounded-lg'>Join Us</button></Link>
                     </div>
                 </div>
-                <img className="mt-2" src="https://i.ibb.co/NFj83tg/Rectangle-6383-2.png" alt="" />
+                <img className="mt-2 w-full" src="https://i.ibb.co/N6ZRqZB/Rectangle-6383-3.png" alt="" />
                 <img className="absolute right-0 -mt-12 mr-4" src="https://i.ibb.co/k8LDn5S/Star-41-1.png" alt="" />
             </div>
         </>
