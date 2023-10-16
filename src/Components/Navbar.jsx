@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden bg-black w-full lg:block">
+      <div className="hidden bg-black lg:block">
         <div className="max-w-7xl mx-auto flex justify-end items-center">
           {navigation.map((item) => (
             <Link
@@ -52,26 +52,58 @@ const Navbar = () => {
         <Disclosure as="nav">
           {({ open }) => (
             <>
-              <div className=" px-2 sm:px-2 lg:px-0">
-                <div className="relative flex h-12 items-center justify-between">
-                  <div className=" inset-y-0 left-0 flex items-center sm:hidden">
+              <div className=" px-2 bg-black sm:px-2 lg:px-0">
+                <div className="relative flex bg-black h-12 items-center gap-x-[15px]">
+                  <div className=" inset-y-0 left-0 bg-black flex items-center sm:hidden">
                     {/* Mobile menu button*/}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Disclosure.Button className="inline-flex bg-black items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon className="block text-white h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="block text-white h-6 w-6" aria-hidden="true" />
                       )}
                     </Disclosure.Button>
                   </div>
-                  <div className="flex items-center justify-between w-full">
-                    <div className="flex items-center">
+                  <div className="flex items-center justify-between w-full bg-black">
+                    <div className="flex items-center gap-x-10">
                       <img
                         className="block h-8 w-auto lg:hidden"
-                        src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
+                        src="https://i.ibb.co/ftfR2G9/LOGO-1.png"
                         alt="Your Company"
                       />
+                      <div>
+                        {user ? (
+                          <>
+                            <Link to='dashboard' className="text-[#414141] hover:bg-black hover:text-white mr-4 rounded-md px-3 py-2 text-sm font-medium">Dashboard</Link>
+                            <button
+                              onClick={logOut}
+                              className="bg-[#149CE6] text-black rounded-lg p-2 lg:w-[217px] lg:h-[48px]"
+                            >
+                              Logout
+                            </button>
+                          </>
+                        ) : (
+                          <>
+
+                            <div className="flex gap-x-[10px]">
+
+                              <Link to="/login">
+                                <div className='border border-[#149CE6] px-3 py-1 text-white rounded-md text-md cursor-pointer hover:bg-black hover:text-white'>
+                                  Log in
+                                </div>
+                              </Link>
+                              <Link to="/signup">
+                                <div className='bg-[#149CE6] text-black rounded-lg px-3 py-1 lg:w-[217px] lg:h-[48px]'>
+                                  Join
+                                </div>
+                              </Link>
+
+                            </div>
+
+                          </>
+                        )}
+                      </div>
                       {/* <img
                     className="hidden w-auto lg:block"
                     src="https://i.ibb.co/XS17NWx/au-logo-03-1.png"
@@ -111,7 +143,7 @@ const Navbar = () => {
                       className={classNames(
                         item.current
                           ? "bg-gray-900 text-white"
-                          : "text-[#414141] hover:bg-gray-700 hover:text-white",
+                          : "text-white hover:bg-gray-700 hover:text-white",
                         "block rounded-md px-3 py-2 text-base font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
