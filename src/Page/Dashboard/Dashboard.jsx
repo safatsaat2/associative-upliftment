@@ -11,7 +11,7 @@ const Dashboard = () => {
   //               </button>
 
   return (
-    <div className="bg-[#183351] py-[70px] px-[70px] rounded-[38px]">
+    <div className="bg-[#183351] py-[20px] lg:py-[70px] px-[70px] rounded-[38px]">
       {/* Modal Starts */}
       <dialog id="my_modal_3" className="modal" >
         <div className="modal-box w-11/12 max-w-5xl">
@@ -31,14 +31,15 @@ const Dashboard = () => {
           </div>
         </div>
       </dialog>
+
       <div className="max-w-[1292.01px] mx-auto">
-        <div className="flex justify-between items-end">
-          <p className="text-[40px] font-bold leading-[50px] text-white">Hi {user?.displayName}</p>
-          <p className="text-[32px] leading-[42px] text-white">Balance:$00</p>
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end">
+          <p className="text-[24px] lg:text-[40px] font-bold leading-[50px] text-white">Hi {user?.displayName}</p>
+          <p className="text-[18px] lg:text-[32px] leading-[42px] text-white">Balance:$00</p>
         </div>
 
-        <div className="mt-20 flex items-start gap-x-[68px]">
-          <div className="flex items-center gap-x-[82px]">
+        <div className="mt-5 lg:mt-20 flex flex-col lg:flex-row items-center lg:items-start gap-x-[68px]">
+          <div className="flex flex-col lg:flex-row  items-center gap-y-[20px] lg:gap-x-[82px]">
             <img src="https://i.ibb.co/8gcTC7v/Group-1000003604.png" alt="" />
             <img src="https://i.ibb.co/vjbD9sp/Group-1000003605.png" alt="" />
           </div>
@@ -48,7 +49,7 @@ const Dashboard = () => {
             <img onClick={() => document.getElementById('my_modal_3').showModal()} className="mt-[19px] cursor-pointer" src="https://i.ibb.co/7Q40hWR/bts-2.png" alt="" />
           </div>
         </div>
-        <div className="mt-[48px] flex items-center gap-x-[30px]">
+        <div className="mt-5 lg:mt-[48px] flex flex-col lg:flex-row items-center gap-y-[30px] gap-x-[30px]">
           <div>
             <img src="https://i.ibb.co/y5JDG35/1-20.png" alt="" />
             <img className="mt-[30px]" src="https://i.ibb.co/px04KcY/2-3.png" alt="" />
