@@ -14,7 +14,7 @@ const Dashboardtitle = () => {
 
   return (
     <div className="bg-[#3C4F56]">
-      <div className="max-w-[1383px] mx-auto flex flex-row items-center justify-between py-6 lg:pt-4 lg:py-[10px]">
+      <div className="max-w-[1383px] px-2 lg:mx-auto flex flex-row items-center justify-between py-6 lg:pt-4 lg:py-[10px]">
 
         <div className=" flex items-center font-semibold ">
           <img src="https://i.ibb.co/S7t2yY9/logo-Associative-Upliftment.png" className=' w-14 rounded-full' alt="" />
@@ -56,8 +56,6 @@ const Dashboardtitle = () => {
                       </p>
                     </Link>
                   </div>
-
-
 
                   <div className="px-[11px] border-r border-[#EFAF4E] py-[10px]">
                     <Link to="/dashboard/orders" onClick={toTop}>
@@ -123,7 +121,7 @@ const Dashboardtitle = () => {
 
 
         </div>
-        <div className="">
+        <div className="lg:block hidden">
           <div className="flex items-center lg:gap-x-[30px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
               <circle cx="13" cy="10.8333" r="3.25" fill="white" />

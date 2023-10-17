@@ -58,54 +58,54 @@ const DashEarnMoney = () => {
         //     </div>
         // </div>
         <>
-            <div className="my-[75px] flex justify-center items-center gap-x-[150px]  mx-auto">
-                <img className='w-[200px]' src="https://i.ibb.co/2h8MCMx/im.png" alt="" />
-                <div className="flex items-center gap-x-[192px]">
+            <div className="my-[75px] flex justify-center items-start lg:items-center gap-x-[10px] lg:gap-x-[150px] mx-auto">
+                <img className='w-[80px] lg:w-[200px]' src="https://i.ibb.co/2h8MCMx/im.png" alt="" />
+                <div className="flex items-center gap-x-[4px] lg:gap-x-[192px]">
                     <div>
-                        <h3 className='text-[48px] font-bold leading-[58px]'>A Campaign <span className='text-[#1973E3]'>Video</span> 2023</h3>
-                        <p className='mt-[30px] text-[28px] leading-[38px]'>Related to your Business</p>
-                        <p className='mt-[8px] leading-[26px]'>Invite Your 5 Friends</p>
+                        <h3 className='lg:text-[48px] font-bold leading-[20px] lg:leading-[58px]'>A Campaign <span className='text-[#1973E3]'>Video</span> 2023</h3>
+                        <p className='mt-2 lg:mt-[30px] lg:text-[28px] leading-[20px] lg:leading-[38px]'>Related to your Business</p>
+                        <p className='mt-2 lg:mt-[8px] text-[12px] lg:text-base leading-[26px]'>Invite Your 5 Friends</p>
                     </div>
-                    <button className="text-[20px] leading-[30px] text-white bg-[#1973E3] px-[41px] py-[11px] rounded-[10px]">
+                    <button className="text-4 lg:text-[20px] leading-[30px] text-white bg-[#1973E3] px-[20px] lg:px-[41px] py-[5px] lg:py-[11px] rounded-[10px]">
                         Free
                     </button>
                 </div>
             </div>
-            <div className="my-[75px] flex justify-center items-center gap-x-[150px]  mx-auto">
-                <img className='w-[200px]' src="https://i.ibb.co/M8rFrdw/im-1.png" alt="" />
-                <div className="flex items-center gap-x-[242px]">
+            <div className="my-[75px] flex justify-center items-start lg:items-center gap-x-[10px] lg:gap-x-[150px]  mx-auto">
+                <img className='w-[80px] lg:w-[200px]' src="https://i.ibb.co/M8rFrdw/im-1.png" alt="" />
+                <div className="flex items-center gap-x-[4px] lg:gap-x-[242px]">
                     <div>
-                        <h3 className='text-[48px] font-bold leading-[58px]'>Facebook <span className='text-[#1973E3]'>Post</span> Design</h3>
-                        <p className='mt-[30px] text-[28px] leading-[38px]'>Related to your Business</p>
+                        <h3 className='lg:text-[48px] font-bold leading-[20px] lg:leading-[58px]'>Facebook <span className='text-[#1973E3]'>Post</span> Design</h3>
+                        <p className='mt-2 lg:mt-[30px] lg:text-[28px] leading-[20px] lg:leading-[38px]'>Related to your Business</p>
                         <p className='mt-[8px] leading-[26px]'>Invite Your 5 Friends</p>
                     </div>
-                    <button className="text-[20px] leading-[30px] text-white bg-[#1973E3] px-[41px] py-[11px] rounded-[10px]">
+                    <button className="text-4 lg:text-[20px] leading-[30px] text-white bg-[#1973E3] px-[20px] lg:px-[41px] py-[5px] lg:py-[11px] rounded-[10px]">
                         Free
                     </button>
                 </div>
             </div>
-            <div className="my-[75px] flex justify-center items-center gap-x-[130px]  mx-auto">
-                <img className='w-[200px]' src="https://i.ibb.co/K6xJNxk/im-2.png" alt="" />
-                <div className="flex items-center gap-x-[106px]">
+            <div className="my-[75px] flex justify-center items-start lg:items-center gap-x-[10px] lg:gap-x-[130px]  mx-auto">
+                <img className='w-[80px] lg:w-[200px]' src="https://i.ibb.co/K6xJNxk/im-2.png" alt="" />
+                <div className="flex items-center gap-x-[4px] lg:gap-x-[106px]">
                     <div>
-                        <h3 className='text-[48px] font-bold leading-[58px]'>Instagram <span className="text-[#1973E3]">Hashtag</span> Research</h3>
-                        <p className='mt-[30px] text-[28px] leading-[38px]'>Related to your Business</p>
+                        <h3 className='lg:text-[48px] font-bold leading-[20px] lg:leading-[58px]'>Instagram <span className="text-[#1973E3]">Hashtag</span> Research</h3>
+                        <p className='mt-2 lg:mt-[30px] lg:text-[28px] leading-[20px] lg:leading-[38px]'>Related to your Business</p>
                         <p className='mt-[8px] leading-[26px]'>Invite Your 5 Friends</p>
                     </div>
-                    <button className="text-[20px] leading-[30px] text-white bg-[#1973E3] px-[41px] py-[11px] rounded-[10px]">
+                    <button className="text-4 lg:text-[20px] leading-[30px] text-white bg-[#1973E3] px-[20px] lg:px-[41px] py-[5px] lg:py-[11px] rounded-[10px]">
                         Free
                     </button>
                 </div>
             </div>
-            <div className="my-[75px] flex justify-center items-center gap-x-[130px]  mx-auto">
-                <img className='w-[200px]' src="https://i.ibb.co/VwRXJRC/im-3.png" alt="" />
-                <div className="flex items-center gap-x-[200px]">
+            <div className="my-[75px] flex justify-center items-start lg:items-center gap-x-[10px] lg:gap-x-[130px]  mx-auto">
+                <img className='w-[80px] lg:w-[200px]' src="https://i.ibb.co/VwRXJRC/im-3.png" alt="" />
+                <div className="flex items-center gap-x-[4px] lg:gap-x-[200px]">
                     <div>
-                        <h3 className='text-[48px] font-bold leading-[58px]'>Facebook <span className="text-[#1973E3]">Business</span> Page</h3>
-                        <p className='mt-[30px] text-[28px] leading-[38px]'>Related to your Business</p>
+                        <h3 className='lg:text-[48px] font-bold leading-[20px] lg:leading-[58px]'>Facebook <span className="text-[#1973E3]">Business</span> Page</h3>
+                        <p className='mt-2 lg:mt-[30px] lg:text-[28px] leading-[20px] lg:leading-[38px]'>Related to your Business</p>
                         <p className='mt-[8px] leading-[26px]'>Invite Your 5 Friends</p>
                     </div>
-                    <button className="text-[20px] leading-[30px] text-white bg-[#1973E3] px-[41px] py-[11px] rounded-[10px]">
+                    <button className="text-4 lg:text-[20px] leading-[30px] text-white bg-[#1973E3] px-[20px] lg:px-[41px] py-[5px] lg:py-[11px] rounded-[10px]">
                         Free
                     </button>
                 </div>
