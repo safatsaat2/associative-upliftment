@@ -16,7 +16,7 @@ const Dashboardtitle = () => {
     <div className="bg-[#3C4F56]">
       <div className="max-w-[1383px] px-2 lg:mx-auto flex flex-row items-center justify-between py-6 lg:pt-4 lg:py-[10px]">
 
-        <div className=" flex items-center font-semibold ">
+        <div className={menu === true ? "hidden" : " flex items-center font-semibold"}>
           <img src="https://i.ibb.co/S7t2yY9/logo-Associative-Upliftment.png" className=' w-14 rounded-full' alt="" />
           <p className="text-base lg:text-[20px] text-white ml-[px] font-harlow">Associative Upliftment</p>
         </div>
@@ -113,6 +113,13 @@ const Dashboardtitle = () => {
                       </p>
                     </Link>
                   </div>
+
+                  <button
+                    onClick={logOut}
+                    className="bg-[#13C6B1] text-white rounded-lg px-[10px] lg:px-[21px] py-1 lg:py-[11px] text-[12px] lg:text-xl"
+                  >
+                    Logout
+                  </button>
 
                 </div>
               </div>
