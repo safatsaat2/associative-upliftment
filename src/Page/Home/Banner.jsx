@@ -25,7 +25,7 @@ const Banner = () => {
                 </div>
             </div>
             {/* Mobile Section */}
-            <div className=" bg-[url('https://i.ibb.co/xYc0qR9/Whats-App-Image-2023-10-18-at-00-26-30-61b58f49.jpg')] bg-cover bg-center block lg:hidden">
+            <div className=" bg-[url('https://i.ibb.co/2Y2FHpV/replicate-prediction-7eb6xejbu5bdy4h5e4ivkdhyfu.jpg')] bg-cover bg-center block lg:hidden">
                 <div className="pt-[36px] w-[344px] mx-auto">
                     <img className="mb-12 w-[45px] " src="https://i.ibb.co/XYKzYGw/Star-40.png" alt="" />
                     <h1 className="text-[40px] leading-[50px] -mt-24 font-red text-white text-center w-[344px] mx-auto">Grow Your <span className="bg-[#149CE6] p-1 font-red rounded-[10px]">Business</span> By Joining Us</h1>
@@ -34,7 +34,7 @@ const Banner = () => {
                         <Link to='/signup'><button className='bg-[#149CE6] px-3 py-3 mt-3 text-black rounded-lg'>Join Us</button></Link>
                     </div>
                 </div>
-                <img className="mt-2 w-full" src="https://i.ibb.co/RzzM0YP/Whats-App-Image-2023-10-18-at-00-24-08-ba4507b3.jpg" alt="" />
+                <img className="mt-2 w-full" src="https://i.ibb.co/N6ZRqZB/Rectangle-6383-3.png" alt="" />
                 <img className="absolute right-0 -mt-12 mr-4" src="https://i.ibb.co/k8LDn5S/Star-41-1.png" alt="" />
             </div>
         </>
