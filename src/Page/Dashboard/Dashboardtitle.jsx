@@ -116,7 +116,7 @@ const Dashboardtitle = () => {
 
                   <button
                     onClick={logOut}
-                    className="bg-[#13C6B1] text-white rounded-lg px-[10px] lg:px-[21px] py-1 lg:py-[11px] text-[12px] lg:text-xl"
+                    className="bg-[#13C6B1] lg:hidden text-white rounded-lg px-[10px] lg:px-[21px] py-1 lg:py-[11px] text-[12px] lg:text-xl"
                   >
                     Logout
                   </button>
