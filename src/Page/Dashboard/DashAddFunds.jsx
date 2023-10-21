@@ -2,8 +2,6 @@
 const DashAddFunds = () => {
     return (
         <div className="h-screen mt-5">
-
-
             <div className="w-full lg:w-[430px] mx-auto bg-[#1973E3] pt-[30px] px-[30px] rounded-[12px]">
                 <div className="bg-white rounded-[10px]">
                     <p className="text-center py-[52px] px-[13px] leading-[28px]">Take a screenshot after sending money to PayPal or CashApp. After that go to ticket option and enter.</p>

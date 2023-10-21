@@ -1,12 +1,18 @@
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Icon } from "@iconify/react";
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboardtitle = () => {
   const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate()
   const [menu, setMenu] = useState(false)
-
+  const signOut = () => {
+    logOut().then(() => {
+      navigate("/login")
+      alert(" User Has Log out");
+    });
+  };
 
   const toTop = () => {
     window.scrollTo(0, 0);
@@ -115,7 +121,7 @@ const Dashboardtitle = () => {
                   </div>
 
                   <button
-                    onClick={logOut}
+                    onClick={signOut}
                     className="bg-[#13C6B1] lg:hidden text-white rounded-lg px-[10px] lg:px-[21px] py-1 lg:py-[11px] text-[12px] lg:text-xl"
                   >
                     Logout

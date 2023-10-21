@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useContext } from "react";
 
@@ -18,9 +18,11 @@ function classNames(...classes) {
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate()
 
   const signOut = () => {
     logOut().then(() => {
+      navigate("/")
       alert(" User Has Log out");
     });
   };
@@ -77,7 +79,7 @@ const Navbar = () => {
                           <>
                             <Link to='dashboard' className="text-[#414141] hover:bg-black hover:text-white mr-4 rounded-md px-3 py-2 text-sm font-medium">Dashboard</Link>
                             <button
-                              onClick={logOut}
+                              onClick={signOut}
                               className="bg-[#149CE6] text-black rounded-lg p-2 lg:w-[217px] lg:h-[48px]"
                             >
                               Logout
