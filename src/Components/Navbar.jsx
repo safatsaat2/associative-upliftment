@@ -54,7 +54,7 @@ const Navbar = () => {
         <Disclosure as="nav">
           {({ open }) => (
             <>
-              <div className=" px-2 bg-black sm:px-2 lg:px-0">
+              <div className=" px-2 flex items-center justify-between bg-black sm:px-2 lg:px-0">
                 <div className="relative flex bg-black h-12 items-center gap-x-[15px]">
                   <div className=" inset-y-0 left-0 bg-black flex items-center sm:hidden">
                     {/* Mobile menu button*/}
@@ -68,9 +68,9 @@ const Navbar = () => {
                     </Disclosure.Button>
                   </div>
                   <div className="flex items-center justify-between w-full bg-black">
-                    <div className="flex items-center gap-x-10">
+                    <div className="flex items-center justify-between gap-x-10">
                       <img
-                        className="block h-8 w-auto lg:hidden"
+                        className="block h-8 lg:hidden"
                         src="https://i.ibb.co/ftfR2G9/LOGO-1.png"
                         alt="Your Company"
                       />
@@ -88,15 +88,15 @@ const Navbar = () => {
                         ) : (
                           <>
 
-                            <div className="flex gap-x-[10px]">
+                            <div className="flex items-center gap-x-[10px]">
 
                               <Link to="/login">
-                                <div className='border border-[#149CE6] px-3 py-1 text-white rounded-md text-md cursor-pointer hover:bg-black hover:text-white'>
+                                <div className='border border-[#149CE6] px-3 py-1 text-white rounded-md text-[12px] cursor-pointer hover:bg-black hover:text-white'>
                                   Log in
                                 </div>
                               </Link>
                               <Link to="/signup">
-                                <div className='bg-[#149CE6] text-black rounded-lg px-3 py-1 lg:w-[217px] lg:h-[48px]'>
+                                <div className='bg-[#149CE6] text-black text-[12px] rounded-lg px-3 py-1 lg:w-[217px] lg:h-[48px]'>
                                   Join
                                 </div>
                               </Link>
