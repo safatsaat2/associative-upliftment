@@ -30,7 +30,7 @@ const DashOurTeam = () => {
             id:4,
             h3:"Milad Al Rafat",
             img:"https://i.ibb.co/r4k391K/Rectangle-6573-3.png",
-            quote1:"do something new Don't rely on others. Do something Success often requires taking calculated risks, so don't let the fear of failure hold you back; instead, use failures as stepping stones toward your goals. Stay focused and persistent in your pursuits, adapting as needed, and success will become more attainable.",
+            quote1:"Do something new Don't rely on others. Do something Success often requires taking calculated risks, so don't let the fear of failure hold you back; instead, use failures as stepping stones toward your goals. Stay focused and persistent in your pursuits, adapting as needed, and success will become more attainable.",
             quote2: ""
         },
         {
