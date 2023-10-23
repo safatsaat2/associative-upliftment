@@ -9,17 +9,17 @@ const Strategy = ({children}) => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const { name } = useParams()
+    const { name } = useParams();
+
 
     useEffect(() => {
-        fetch("/public/strategy.json")
+        fetch("/strategy.json")
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 const filterData = data.filter(dta => dta.name === name)
-                setData(filterData)
+                setData(filterData);
             })
-    }, [])
+    }, [name])
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,7 +28,7 @@ const Strategy = ({children}) => {
         return () => clearTimeout(timer);
       }, []);
 
-    console.log(data)
+    const innerData = data[0];
 
     if(loading){
         return <Loader/>
@@ -43,6 +43,61 @@ const Strategy = ({children}) => {
                 </div>
                 <div className='my-20'>
                     <BeInContact title="A Small Business" description="In managing a small business, it's essential to prioritize efficiency and cost-effectiveness to maximize limited resources. Effective leadership and communication are crucial for aligning the team with the company's goals and ensuring everyone is working toward the same objectives. Additionally, fostering strong relationships with customers and suppliers can help build a loyal customer base and secure essential partnerships for long-term success." image="https://i.ibb.co/fv0LVrT/Rectangle-6492-1.png" />
+                </div>
+                <div className='my-10'>
+                    <h2 className='text-center text-[48px] text-gray-800 font-bold'>{innerData?.title}</h2>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>Description:</span> {innerData?.description}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs1Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs2Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs3Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs4Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs5Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs6Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs7Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs8Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs9Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs10Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs11Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs12Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs13Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs14Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs15Title}</span> {innerData?.whyUs1}
+                    </p>
+                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                        {innerData?.conclusion}
+                    </p>
+                    
                 </div>
             </div>
             {children}
