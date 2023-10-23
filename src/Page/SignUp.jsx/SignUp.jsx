@@ -71,7 +71,7 @@ const SignUp = () => {
                       type="text"
                       {...register("name", { required: true })}
                       placeholder="Provide Your Name"
-                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
+                      className="input text-black bg-white input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.email && (
                       <p className="text-red-500">Name is required</p>
@@ -137,7 +137,7 @@ const SignUp = () => {
                         "CR",
                         "CA",
                       ]}
-                      className="w-full h-[60px] rounded-[30px] text-black border border-[#191B1D26] px-5"
+                      className="w-full h-[60px] bg-white rounded-[30px] text-black border border-[#191B1D26] px-5"
                     />
 
                     {errors.email && (
@@ -150,7 +150,7 @@ const SignUp = () => {
                       type="email"
                       {...register("email", { required: true })}
                       placeholder="Provide Your Email"
-                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
+                      className="input text-black bg-white input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.email && (
                       <p className="text-red-500">Email is required</p>
@@ -167,7 +167,7 @@ const SignUp = () => {
                           /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                       })}
                       placeholder="Provide Your Password"
-                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
+                      className="input text-black bg-white input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.password?.type === "required" && (
                       <p className="text-red-600">Password is required</p>

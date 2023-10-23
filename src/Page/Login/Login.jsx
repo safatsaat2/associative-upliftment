@@ -64,11 +64,11 @@ const Login = () => {
             Check your Email
           </h1>
           <p className="text-center mt-5">Please Verify Your Email</p>
-          <button onClick={againVerify} className="btn bg-black text-white hover:text-black mt-5">
+          <button onClick={againVerify} className="btn bg-black text-white hover:text-black bg-white mt-5">
             Again Send Verification
           </button>
         </div>
-        <div className=" shadow-2xl  w-full lg:w-[430px]  mx-auto px-[30px] pt-[40px] text-black rounded-[12px]">
+        <div className=" shadow-2xl  w-full lg:w-[430px]  mx-auto px-[30px] pt-[40px] text-black bg-white rounded-[12px]">
           <div className="">
             <div className="flex justify-center items-center gap-1 lg:gap-5">
             <img src="https://i.ibb.co/z2b0DFN/Whats-App-Image-2023-09-05-at-21-37-33.jpg" className='w-10 rounded-full' alt="" />
@@ -88,7 +88,7 @@ const Login = () => {
                       type="text"
                       {...register("email", { required: true })}
                       placeholder="Email"
-                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
+                      className="input text-black bg-white input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.email && (
                       <span className="text-red-500">Email is required</span>
@@ -106,7 +106,7 @@ const Login = () => {
                         }
                       )}
                       placeholder="Password"
-                      className="input text-black input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
+                      className="input text-black bg-white input-bordered w-full h-[60px] rounded-[30px] border border-[#191B1D26] px-5"
                     />
                     {errors.password && (
                       <span className="text-red-500">Password is must</span>
@@ -122,7 +122,7 @@ const Login = () => {
                 </form>
                 <p className="font-medium pt-2 px-3 mt-[20px]">
                   Don't have Account?{" "}
-                  <Link to="/signup" className="text-black hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer font-bold">
+                  <Link to="/signup" className="text-black bg-white hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer font-bold">
                     Sign up
                   </Link>
                 </p>
