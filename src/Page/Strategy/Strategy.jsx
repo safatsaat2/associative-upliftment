@@ -16,7 +16,7 @@ const Strategy = ({children}) => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                const filterData = data.filter(dta => dta.params === name)
+                const filterData = data.filter(dta => dta.name === name)
                 setData(filterData)
             })
     }, [])
