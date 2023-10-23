@@ -44,8 +44,8 @@ const Strategy = ({children}) => {
                 <div className='my-20'>
                     <BeInContact title="A Small Business" description="In managing a small business, it's essential to prioritize efficiency and cost-effectiveness to maximize limited resources. Effective leadership and communication are crucial for aligning the team with the company's goals and ensuring everyone is working toward the same objectives. Additionally, fostering strong relationships with customers and suppliers can help build a loyal customer base and secure essential partnerships for long-term success." image="https://i.ibb.co/fv0LVrT/Rectangle-6492-1.png" />
                 </div>
-                <div className='my-10'>
-                    <h2 className='text-center text-[48px] text-gray-800 font-bold'>{innerData?.title}</h2>
+                <div className='my-10 mx-2'>
+                    <h2 className='text-center text-[22px] lg:text-[48px] text-gray-800 font-bold'>{innerData?.title}</h2>
                     <p className='text-xs lg:text-[18px] mt-4 leading-8'>
                         <span className='font-bold text-gray-800'>Description:</span> {innerData?.description}
                     </p>
