@@ -205,7 +205,7 @@ const Footer = ({ child }) => {
             <div className="collapse-title w-[300px] mx-auto flex justify-between items-center">
               <h4 className="text-xl">Strategy</h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" stroke-width="2" />
+                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" strokeWidth="2" />
               </svg>
             </div>
             <div className="collapse-content w-[300px] mx-auto ">
@@ -266,7 +266,7 @@ const Footer = ({ child }) => {
             <div className="collapse-title w-[300px] mx-auto flex justify-between items-center">
               <h4 className="text-xl">Talent</h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" stroke-width="2" />
+                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" strokeWidth="2" />
               </svg>
             </div>
             <div className="collapse-content w-[300px] mx-auto ">
@@ -315,7 +315,7 @@ const Footer = ({ child }) => {
             <div className="collapse-title w-[300px] mx-auto flex justify-between items-center">
               <h4 className="text-xl">Categories</h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" stroke-width="2" />
+                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" strokeWidth="2" />
               </svg>
             </div>
             <div className="collapse-content w-[300px] mx-auto ">
@@ -372,7 +372,7 @@ const Footer = ({ child }) => {
             <div className="collapse-title w-[300px] mx-auto flex justify-between items-center">
               <h4 className="text-xl">About</h4>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
-                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" stroke-width="2" />
+                <path d="M1 1L8 7.5L15 1" stroke="#1973E3" strokeWidth="2" />
               </svg>
             </div>
             <div className="collapse-content w-[300px] mx-auto ">

@@ -46,55 +46,64 @@ const Strategy = ({children}) => {
                 </div>
                 <div className='my-10 mx-2'>
                     <h2 className='text-center text-[22px] lg:text-[48px] text-gray-800 font-bold'>{innerData?.title}</h2>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
                         <span className='font-bold text-gray-800'>Description -</span> {innerData?.description}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs1Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs1Title} </span> {innerData?.whyUs1}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs2Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs2Title} </span> {innerData?.whyUs2}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs3Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs3Title} </span> {innerData?.whyUs3}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs4Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs4Title} </span> {innerData?.whyUs4}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs5Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs5Title} </span> {innerData?.whyUs5}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs6Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs6Title} </span> {innerData?.whyUs6}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs7Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs7Title} </span> {innerData?.whyUs7}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs8Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs8Title} </span> {innerData?.whyUs8}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs9Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs9Title} </span> {innerData?.whyUs9}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs10Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs10Title} </span> {innerData?.whyUs10}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs11Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs11Title} </span> {innerData?.whyUs11}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs12Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs12Title} </span> {innerData?.whyUs12}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs13Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs13Title} </span> {innerData?.whyUs13}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs14Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs14Title} </span> {innerData?.whyUs14}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
-                        <span className='font-bold text-gray-800'>{innerData?.whyUs15Title} -</span> {innerData?.whyUs1}
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs15Title} </span> {innerData?.whyUs15}
                     </p>
-                    <p className='text-xs lg:text-[18px] mt-4 leading-8'>
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs16Title} </span> {innerData?.whyUs16}
+                    </p>    
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs17Title} </span> {innerData?.whyUs17}
+                    </p>
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
+                        <span className='font-bold text-gray-800'>{innerData?.whyUs18Title} </span> {innerData?.whyUs18}
+                    </p>
+                    <p className='text-xs lg:text-[16px] mt-3 lg:mt-4 leading-6 lg:leading-7'>
                         {innerData?.conclusion}
                     </p>
                     

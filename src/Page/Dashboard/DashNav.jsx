@@ -22,7 +22,7 @@ const DashNav = () => {
             :
             <Icon onClick={() => setMenu(!menu)} icon="akar-icons:cross" className="lg:hidden text-4xl ml-2 pt-2" />
         }
-        <div className={menu === true ? "w-full lg:w-[160px] lg:flex flex-col  rounded-none bg-black h-full" : " lg:flex flex-col rounded-none sticky top-0 bg-black h-full hidden"}>
+        <div className={menu === true ? "w-full lg:w-[160px] lg:flex flex-col rounded-none bg-black h-full" : " lg:flex flex-col rounded-none sticky top-0 bg-black h-full hidden"}>
           <div className="flex flex-col lg:flex-row ">
             {/* <img
               className="pt-4 mt-2 w-[75px] lg:mt-14 ml-3"
