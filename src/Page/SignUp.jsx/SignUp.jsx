@@ -203,6 +203,9 @@ const SignUp = () => {
                     Log in
                   </Link>
                 </p>
+                <Link to="/">
+                <p className="text-black bg-white hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer font-bold text-center mt-5 border rounded-lg py-2 border-black">Go to home</p>
+                </Link>
               </div>
             </div>
             <div className=" pb-12">

@@ -54,7 +54,7 @@ const Navbar = () => {
         <Disclosure as="nav">
           {({ open }) => (
             <>
-              <div className=" px-2 flex items-center justify-between bg-black sm:px-2 lg:px-0">
+              <div className=" px-2 bg-black sm:px-2 lg:px-0">
                 <div className="relative flex bg-black h-12 items-center gap-x-[15px]">
                   <div className=" inset-y-0 left-0 bg-black flex items-center sm:hidden">
                     {/* Mobile menu button*/}
@@ -68,7 +68,7 @@ const Navbar = () => {
                     </Disclosure.Button>
                   </div>
                   <div className="flex items-center justify-between w-full bg-black">
-                    <div className="flex items-center justify-between gap-x-10">
+                    <div className="flex items-center justify-between w-full">
                       <img
                         className="block h-8 lg:hidden"
                         src="https://i.ibb.co/ftfR2G9/LOGO-1.png"

@@ -50,7 +50,7 @@ const Login = () => {
   }
   {
     return (
-      <div className="relative h-full mt-24 mx-2 lg:mt-0 lg:pt-32 bg-white">
+      <div className="relative h-full mt-20 mx-2 lg:mt-0 lg:pt-32 bg-white">
         <div
           className={`w-full ${modal === true ? "block duration-1000" : "hidden"
             } absolute left-0 right-0 top-0 bottom-0 lg:h-[300px] mx-2 lg:w-[400px] lg:mx-auto lg:my-auto bg-slate-50 drop-shadow-2xl rounded-lg flex flex-col justify-center items-center`}
@@ -126,6 +126,9 @@ const Login = () => {
                     Sign up
                   </Link>
                 </p>
+                <Link to="/">
+                <p className="text-black bg-white hover:text-[#1973E3] duration-500 hover:bg-transparent cursor-pointer font-bold text-center mt-5 border rounded-lg py-2 border-black">Go to home</p>
+                </Link>
               </div>
             </div>
             <div className=" pb-12"></div>
